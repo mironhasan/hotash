@@ -61,8 +61,12 @@
         padding: 9px 4px;
         border-radius: 15px;
         color: $white;
-        background: $primary;
         border: 3px solid $white;
+
+        &.red { background: $red-600; }
+        &.blue { background: $blue-600; }
+        &.green { background: $green-600; }
+        &.primary { background: $primary; }
     }
 }
 

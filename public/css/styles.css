@@ -1378,8 +1378,23 @@ input[type="number"].mc-field-input.h-xl {
   padding: 9px 4px;
   border-radius: 15px;
   color: #ffffff;
-  background: #2255bb;
   border: 3px solid #ffffff;
+}
+
+.mc-header-icon sup.red {
+  background: #ff304f;
+}
+
+.mc-header-icon sup.blue {
+  background: #4094f1;
+}
+
+.mc-header-icon sup.green {
+  background: #27bf68;
+}
+
+.mc-header-icon sup.primary {
+  background: #2255bb;
 }
 
 .mc-header-user-group {
@@ -1603,7 +1618,7 @@ input[type="number"].mc-field-input.h-xl {
   line-height: 18px;
   border-radius: 3px;
   letter-spacing: 0.3px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1618,6 +1633,10 @@ input[type="number"].mc-field-input.h-xl {
 
 .mc-sidebar-menu-btn sup.green {
   background: #27bf68;
+}
+
+.mc-sidebar-menu-btn sup.primary {
+  background: #2255bb;
 }
 
 .mc-sidebar-menu-btn::after {

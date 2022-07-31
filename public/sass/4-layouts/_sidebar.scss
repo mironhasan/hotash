@@ -69,12 +69,13 @@
         line-height: 18px;
         border-radius: 3px;
         letter-spacing: 0.3px;
-        @include text-font(10px, 600);
+        @include text-font(9px, 600);
         text-transform: uppercase;
 
         &.red { background: $red-600; }
         &.blue { background: $blue-600; }
         &.green { background: $green-600; }
+        &.primary { background: $primary; }
     }
 
     &::after {
