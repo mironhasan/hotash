@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: $text;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover { text-decoration: none; }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+}
+
+html,
+body {
+    color: $text;
+    background: $white;
+    direction: $direction;
+    scroll-behavior: smooth;
+}
+
+input,
+select,
+button,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+
+    &:focus { outline: none; }
+}
+
+button {
+    cursor: pointer;
+    line-height: 0px;
+    color: $text;
+}
+
+@include laptop-breakpoint {
+    .content-reverse { 
+        flex-direction: column-reverse; 
+    }
+}

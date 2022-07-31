@@ -1,0 +1,158 @@
+.mc-sidebar {
+    @include position-top-left(fixed, 75px, 0px, 3);
+    @include padding(20px, 17px, 20px, 20px);
+    width: 270px;
+    overflow-y: scroll;
+    height: calc(100vh - 75px);
+    @include transition-linear;
+
+    &.hide {
+        left: -270px;
+    }
+
+    &:hover { 
+        &::-webkit-scrollbar-thumb { 
+            background-color: $primary; 
+        }
+    }
+    &::-webkit-scrollbar { 
+        width: 3px;
+    }
+    &::-webkit-scrollbar-thumb { 
+        border-radius: 15px;
+        background-color: transparent; 
+    }
+}
+
+.mc-sidebar-menu {
+    margin-bottom: 22px;
+}
+
+.mc-sidebar-menu-title {
+    @include text-font(12px, 600);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: $gray-500;
+}
+
+.mc-sidebar-menu-item {
+    margin-bottom: 3px;
+    
+    &.active {
+        .mc-sidebar-menu-btn  {
+            color: $primary;
+            background-color: rgba($primary, 0.1);
+        }
+    }
+}
+
+.mc-sidebar-menu-btn {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 8px;
+    @include flex-dimension(center, start, 0px 12px);
+    @include transition-linear;
+
+    i { font-size: 22px; }
+
+    span {
+        @include text-font(15px, 500);
+        text-transform: capitalize;
+        text-align: $start-direction;
+        width: 100%;
+    }
+
+    sup {
+        color: $white;
+        padding: 0px 5px;
+        line-height: 18px;
+        border-radius: 3px;
+        letter-spacing: 0.3px;
+        @include text-font(10px, 600);
+        text-transform: uppercase;
+
+        &.red { background: $red-600; }
+        &.blue { background: $blue-600; }
+        &.green { background: $green-600; }
+    }
+
+    &::after {
+        content: "\e5cc";
+        font-size: 20px;
+        font-family: 'Material Icons';
+    }
+
+    &:hover {
+        background-color: $gray-200;
+    }
+}
+
+.mc-sidebar-dropdown-list {
+    margin: 0px 20px;
+    padding: 7px 0px;
+    border-#{$start-direction}: 1px solid $gray-300;
+}
+
+.mc-sidebar-dropdown-item {
+    &.active {
+        .mc-sidebar-dropdown-link {
+            color: $primary;
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.mc-sidebar-dropdown-link {
+    position: relative;
+    text-transform: capitalize;
+    @include text-font(14px, 500);
+    padding: 3px 20px;
+    margin: 4px 0px;
+    @include transition-linear;
+
+    &::before {
+        content: "";
+        @include position-top-left(absolute, 0px, -1px, 1);
+        width: 2px;
+        height: 100%;
+        background-color: $primary;
+        opacity: 0;
+        @include transition-linear;
+    }
+
+    &:hover {
+        color: $primary;
+
+        &::before { opacity: 1; }
+    }
+}
+
+.mc-sidebar-logout {
+    padding: 45px;
+    border-radius: 8px;
+    background: linear-gradient(rgba($primary, 0.25), rgba($primary, 0.40));
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        @include position-top-left(absolute, 15px, 15px, 1);
+        @include content-center(30px, 30px, 50%);
+        background: linear-gradient(rgba($primary, 0.25), rgba($primary, 0.40));
+    }
+
+    &::after {
+        content: "";
+        @include position-top-right(absolute, -40px, -10px, 1);
+        @include content-center(80px, 80px, 50%);
+        background: linear-gradient(rgba($primary, 0.24), rgba($primary, 0.40));
+    }
+
+    .mc-btn {
+        margin: 0 auto;
+    }
+}

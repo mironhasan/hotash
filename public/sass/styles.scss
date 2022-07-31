@@ -1,0 +1,54 @@
+/*
+*   Template name v1.0.0
+*   Themeforest portfolio (https://themeforest.net/user/mironcoder/portfolio)
+*   Service center (https://www.fiverr.com/mironcoder)
+*   Support email (mironcoder@gmail.com)
+*   All copyrights reserved by Mironcoder
+*/
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import '1-helpers/directions';
+@import '1-helpers/breakpoints';
+@import '1-helpers/colors';
+@import '1-helpers/mixins';
+@import '1-helpers/globals';
+@import '1-helpers/typography';
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import '2-components/logo';
+@import '2-components/button';
+@import '2-components/breadcrumb';
+@import '2-components/dots-menu';
+@import '2-components/chart';
+@import '2-components/table';
+@import '2-components/paginate';
+@import '2-components/field';
+@import '2-components/filter';
+
+//=======================================
+//          3 - ELEMENTS FOLDER
+//=======================================
+@import '3-elements/card-layout';
+@import '3-elements/sales-card';
+@import '3-elements/hero-card';
+@import '3-elements/country-list';
+
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import '4-layouts/header';
+@import '4-layouts/sidebar';
+@import '4-layouts/main';
+@import '4-layouts/footer';
+
+
+
+//=======================================
+//          5 - PAGES FOLDER
+//=======================================

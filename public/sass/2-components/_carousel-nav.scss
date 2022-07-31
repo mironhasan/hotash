@@ -1,0 +1,29 @@
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    span {
+        font-size: 35px;
+        display: inline-block;
+        @include content-center(45px, 45px, 40px, 50%);
+        color: $primary;
+        background: $white;
+        @include transition-linear;
+
+        &:hover{
+            color: $white;
+            background: $primary;
+        }
+    }
+}
+
+.owl-prev {
+    #{$start-direction}: -20px;
+}
+
+.owl-next {
+    #{$end-direction}: -20px;
+}

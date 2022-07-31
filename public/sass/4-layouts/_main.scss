@@ -1,0 +1,11 @@
+.mc-main {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: $gray-100;
+    @include margin(75px, 20px, 20px, 270px);
+    @include transition-linear;
+
+    &.hide {
+        margin-#{$start-direction}: 20px;
+    }
+}

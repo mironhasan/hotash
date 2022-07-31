@@ -1,0 +1,84 @@
+.mc-field-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &.label-row { 
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    &.label-col { 
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &.label-row-reverse {
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+
+    &.label-col-reverse {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}
+
+.mc-field-label {
+    @include text-font(12px, 700);
+    text-transform: uppercase;
+    color: $heading;
+}
+
+.mc-field-select {
+    @include text-font(14px, 500);
+    text-transform: capitalize;
+    border-radius: 8px;
+    padding: 0px 15px;
+    background-image: url(../images/dropdown.svg);
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-color: $gray-200;
+    border: 1px solid $gray-300;
+    color: $text;
+    appearance:none;
+    cursor: pointer;
+
+    &.w-sm { width: 80px; }
+    &.w-md { width: 120px; }
+    &.w-lg { width: 160px; }
+    &.w-xl { width: 200px; }
+    &.w-100 { width: 100%; }
+    &.w-fit { width: fit-content; }
+
+    &.h-sm { height: 40px; }
+    &.h-md { height: 45px; }
+    &.h-lg { height: 50px; }
+    &.h-xl { height: 55px; }
+}
+
+input[type="text"].mc-field-input,
+input[type="email"].mc-field-input,
+input[type="password"].mc-field-input,
+input[type="number"].mc-field-input {
+    padding: 0px 15px;
+    border-radius: 8px;
+    @include text-font(14px, 500);
+    background-color: $gray-200;
+    border: 1px solid $gray-300;
+    color: $text;
+
+    &.w-sm { width: 200px; }
+    &.w-md { width: 300px; }
+    &.w-lg { width: 400px; }
+    &.w-xl { width: 500px; }
+    &.w-100 { width: 100%; }
+    &.w-fit { width: fit-content; }
+
+    &.h-sm { height: 40px; }
+    &.h-md { height: 45px; }
+    &.h-lg { height: 50px; }
+    &.h-xl { height: 55px; }
+}
+

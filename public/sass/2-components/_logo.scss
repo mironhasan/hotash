@@ -1,0 +1,14 @@
+.mc-logo {
+    @include flex-dimension(center, center, 0px 2px);
+    margin-#{$end-direction}: 55px;
+
+    img {
+        height: 45px;
+    }
+
+    span {
+        @include text-font(24px, 900);
+        text-transform: uppercase;
+        color: $heading;
+    }
+}

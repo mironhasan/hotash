@@ -1,0 +1,226 @@
+.mc-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &.product-table {
+        tr {
+            th, td {
+                &:first-child {
+                    max-width: 90px;
+                    min-width: fit-content;
+                }
+    
+                &:nth-child(2) {
+                    max-width: 180px;
+                    min-width: fit-content;
+                }
+            }
+        }
+    }
+
+    .primary {
+        color: $white;
+        background-color: $primary;
+
+        tr {
+            th {
+                padding: 12px 15px;
+                border-#{$end-direction}: 1px solid $blue-800;
+
+                &:last-child {
+                    border-#{$end-direction}: none;
+                }
+            }
+        }
+    }
+
+    .even {
+        tr {
+            &:nth-child(even) {
+                background-color: $gray-100;
+            }
+        }
+    }
+
+    .odd {
+        tr {
+            &:nth-child(odd) {
+                background-color: $gray-100;
+            }
+        }
+    }
+}
+
+.mc-table-head {
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+
+    tr {
+        th {
+            max-width: 120px;
+            min-width: fit-content;
+            padding: 15px 15px;
+            text-align: $start-direction;
+            @include text-font(12px, 600);
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            border-#{$end-direction}: 1px solid $gray-200;
+
+            &:last-child {
+                border-#{$end-direction}: none;
+            }
+        }
+    }
+}
+
+.mc-table-body {
+    tr {
+        td {
+            max-width: 120px;
+            min-width: fit-content;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 15px 15px;
+            @include text-font(14px, 400);
+            border-#{$end-direction}: 1px solid $gray-200;
+            border-bottom: 1px solid $gray-200;
+            color: $text;
+
+            &:last-child {
+                border-#{$end-direction}: none;
+            }
+        }
+    }
+}
+
+.mc-table-check {
+    @include flex-dimension(center, start, 0px 12px);
+
+    input {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        outline: 2px solid $gray-200;
+    }
+
+    p { 
+        font-weight: 700; 
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.mc-table-profile {
+    @include flex-dimension(center, start, 0px 5px);
+
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    p { 
+        min-width: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.mc-table-product {
+    @include flex-dimension(center, start, 0px 8px);
+
+    img {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1px solid $gray-200;
+        box-shadow: 0px 7px 15px 0px rgba($black, 0.06);
+    }
+
+    p {
+        margin-bottom: 3px;
+        line-height: 18px;
+        font-weight: 500;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.mc-table-group {
+    min-width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mc-table-review {
+    @include flex-dimension(center, start, 0px 1px);
+
+    i {
+        font-size: 14px;
+        color: $yellow-600;
+    }
+
+    span {
+        font-size: 12px;
+        color: $gray-600;
+    }
+}
+
+.mc-table-icon {
+    @include flex-dimension(center, start, 0px 10px);
+
+    i { color: $primary; }
+    p {
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+}
+
+.mc-table-role {
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 6px;
+    padding: 0px 8px 1px;
+    width: fit-content;
+
+    &.admin { color: $purple-700; background: $purple-200; }
+    &.client { color: $blue-700; background: $blue-200; }
+    &.member { color: $green-700; background: $green-200; }
+    &.vendor { color: $yellow-700; background: $yellow-200; }
+}
+
+.mc-table-action {
+    display: flex;
+    gap: 6px;
+
+    button {
+        font-size: 16px;
+        padding: 6px 6px;
+        border-radius: 6px;
+        background-color: $gray-200;
+
+        &:nth-child(1) {
+            color: $purple-700;
+            background-color: $purple-200;
+        }
+
+        &:nth-child(2) {
+            color: $green-700;
+            background-color: $green-200;
+        }
+
+        &:nth-child(3) {
+            color: $red-700;
+            background-color: $red-200;
+        }
+    }
+}

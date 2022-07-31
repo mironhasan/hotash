@@ -1,0 +1,49 @@
+.mc-form-select,
+.mc-form-control {
+    width: 100%;
+    height: 55px;
+    padding: 0px 16px;
+    border-radius: 0px;
+    color: $heading;
+    border: 1px solid $border;
+    background-color: $gray-2;
+    @include transition-linear;
+
+    &:focus-within {
+        box-shadow: none;
+        border-color: $primary;
+    }
+}
+
+textarea.mc-form-control {
+    height: 134px;
+    padding: 15px 16px;
+}
+
+.mc-form-select {
+    cursor: pointer;
+    background-position: $end-direction 18px center;
+}
+
+.mc-form-btn {
+    @include text-font (15px, 600);
+    @include flex-dimension (center, center, 0px 8px);
+    text-transform: uppercase;
+    width: 100%;
+    height: 55px;
+    line-height: 24px;
+    border-radius: 0px;
+    padding: 14px 25px;
+    letter-spacing: 0.5px;
+    color: $white;
+    background-color: $primary;
+    box-shadow: 0px 8px 18px 0px rgba($black, 0.12);
+    @include transition-linear;
+
+    &:hover {
+        color: $white;
+        background-color: rgba($primary, 0.8);
+    }
+
+    &:focus { box-shadow: 0px 8px 18px 0px rgba($black, 0.12); }
+}

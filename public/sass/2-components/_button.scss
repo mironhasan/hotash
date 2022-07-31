@@ -1,0 +1,28 @@
+.mc-btn {
+    @include text-font (12px, 600);
+    @include flex-dimension (center, center, 0px 6px);
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: max-content;
+    padding: 14px 22px;
+    letter-spacing: 0.3px;
+    border-radius: 8px;
+    color: $white;
+    background-color: $primary;
+    box-shadow: 0px 8px 18px 0px rgba($black, 0.12);
+    @include transition-linear;
+
+    &:hover {
+        color: $white;
+        background-color: rgba($primary, 0.8);
+    }
+
+    i {
+        font-size: 18px;
+    }
+
+    &.h-sm { height: 40px; }
+    &.h-md { height: 45px; }
+    &.h-lg { height: 50px; }
+    &.h-xl { height: 55px; }
+}

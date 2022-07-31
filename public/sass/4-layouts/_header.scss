@@ -1,0 +1,155 @@
+.mc-header {
+    width: 100%;
+    padding: 15px;
+    @include position-top-left(fixed, 0px, 0px, 5);
+    @include flex-dimension(center, space-between, 0px);
+
+    &.sticky {
+        background-color: rgba($white, 0.95);
+        backdrop-filter: blur(5px);
+    }
+}
+
+.mc-header-left {
+    @include flex-dimension(center, flex-start, 0px 50px);
+}
+
+.mc-header-action {
+    i {
+        font-size: 30px;
+        color: $icon;
+    }
+}
+
+.mc-header-search {
+    width: 280px;
+    padding: 0px 15px;
+    border-radius: 8px;
+    background-color: $gray-200;
+    @include flex-dimension(center, flex-start, 0px);
+
+    button {
+        color: $icon;
+        margin-#{$end-direction}: 15px;
+        padding-#{$end-direction}: 13px;
+        border-#{$end-direction}: 1px solid $gray-400;
+    }
+
+    input {
+        height: 40px;
+    }
+}
+
+.mc-header-right {
+    @include flex-dimension(center, flex-end, 0px 18px);
+}
+
+.mc-header-icon {
+    position: relative;
+
+    i {
+        font-size: 20px;
+        @include content-center(38px, 38px, 50%);
+        color: $icon;
+        background-color: $gray-200;
+    }
+
+    sup {
+        @include position-top-right(absolute, -12px, -8px, 1);
+        @include text-font(11px, 500);
+        letter-spacing: 0.2px;
+        padding: 9px 4px;
+        border-radius: 15px;
+        color: $white;
+        background: $primary;
+        border: 3px solid $white;
+    }
+}
+
+.mc-header-user-group {
+    position: relative;
+}
+
+.mc-header-user-menu {
+    cursor: pointer;
+    @include flex-dimension(center, center, 0px 7px);
+
+    &::after {
+        content: "\e5c5";
+        font-size: 24px;
+        align-self: flex-start;
+        font-family: 'Material Icons';
+        margin-#{$start-direction}: -5px;
+        color: $icon;
+    }
+}
+
+.mc-header-user-image {
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid $primary;
+
+    img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid transparent;
+    }
+}
+
+.mc-header-user-meta {
+    h3 {
+        @include text-font(14px, 600);
+        text-transform: capitalize;
+        margin-bottom: 3px;
+    }
+
+    h4 {
+        @include text-font(12px, 500);
+        color: $text;
+    }
+}
+
+.mc-header-user-list {
+    padding: 10px;
+    min-width: 185px;
+    max-width: fit-content;
+    border-radius: 8px;
+    background-color: $white;
+    box-shadow: 0px 15px 35px 0px rgba($black, 0.1);
+    @include position-top-right(absolute, 75px, 25px, 3);
+    @include transition-linear;
+
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.show {
+        transform-origin: top;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.mc-header-user-link {
+    padding: 7px 10px;
+    border-radius: 6px;
+    @include flex-dimension(center, start, 0px 10px);
+    @include transition-linear;
+
+    &:hover {
+        color: $primary;
+        background-color: $gray-100;
+    } 
+
+    i {
+        font-size: 20px;
+    }
+
+    span {
+        text-transform: capitalize;
+        @include text-font(15px, 500);
+    }
+}

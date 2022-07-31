@@ -1,0 +1,36 @@
+.mc-paginate {
+    margin-top: 25px;
+    @include flex-dimension(center, space-between, 0px);
+}
+
+.mc-paginate-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mc-paginate-list {
+    @include flex-dimension(center, center, 0px 8px);
+}
+
+.mc-paginate-item {
+    cursor: pointer;
+    background-color: $gray-200;
+    @include content-center(35px, 34px, 50%);
+    @include text-font(14px, 600);
+    @include transition-linear;
+
+    i {
+        line-height: 34px;
+    }
+
+    &:hover {
+        color: $white;
+        background: $primary;
+
+    }
+
+    &.active {
+        color: $white;
+        background: $primary;
+    }
+}

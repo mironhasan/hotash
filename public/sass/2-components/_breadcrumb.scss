@@ -1,0 +1,27 @@
+.mc-breadcrumb {
+    @include flex-dimension(center, space-between, 0px);
+}
+
+.mc-breadcrumb-title {
+    text-transform: capitalize;
+}
+
+.mc-breadcrumb-list {
+    @include flex-dimension(center, end, 0px);
+}
+
+.mc-breadcrumb-item {
+    color: $gray-600;
+    @include text-font(15px, 500);
+    text-transform: capitalize;
+}
+
+.mc-breadcrumb-link {
+    color: $primary;
+
+    &::after {
+        content: "~";
+        margin: 0px 8px;
+        color: $text;
+    }
+}
