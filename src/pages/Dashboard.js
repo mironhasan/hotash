@@ -1,11 +1,11 @@
 import React from "react";
 
 // data
-import bread from "../data/breadData";
-import card from "../data/cardData";
-import menu from "../data/menuData";
-import table from "../data/tableData";
-import field from "../data/fieldData";
+import breadcrumb from "../data/breadcrumb.json";
+import table from "../data/table.json";
+import field from "../data/field.json";
+import menu from "../data/menu.json";
+import card from "../data/card.json"
 
 // components
 import Breadcrumb from "../components/Breadcrumb";
@@ -34,8 +34,8 @@ export default function Dashboard() {
         <PageLayout>
             <Row className="row">
                 <Column className="col-xl-12">
-                    <Breadcrumb title={ bread.dashboard.title } active={ bread.dashboard.active }>
-                        {bread.dashboard.link.map((item, index) => (
+                    <Breadcrumb title={ breadcrumb.dashboard.title } active={ breadcrumb.dashboard.active }>
+                        {breadcrumb.dashboard.link.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 <Anchor className="mc-breadcrumb-link" href={ item.href }>{ item.text }</Anchor>
                             </Item>
@@ -64,7 +64,7 @@ export default function Dashboard() {
                     <SalesCard 
                         title = { card.sales.title } 
                         amount = { card.sales.amount } 
-                        dots = { menu.CommonCard }
+                        dots = { menu.salesCard }
                     >
                         <PieCharts chart={ card.sales.chart } />
                     </SalesCard>

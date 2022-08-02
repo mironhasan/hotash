@@ -1,0 +1,12 @@
+{
+    "dashboard": {
+        "title": "dashboard",
+        "active": "dashboard",
+        "link": [
+            { 
+                "href": "#", 
+                "text": "home" 
+            }
+        ]
+    }
+}

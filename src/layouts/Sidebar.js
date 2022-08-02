@@ -1,8 +1,8 @@
 import React from "react";
 
 // data
-import menu from "../data/menuData";
-import button from "../data/buttonData";
+import button from "../data/button.json";
+import menu from "../data/menu.json";
 
 // components
 import Section from "../components/elements/Section";

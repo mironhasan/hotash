@@ -1,11 +1,11 @@
 import React from 'react';
 
 // data
-import logo from '../data/logoData';
-import user from '../data/userData';
-import menu from '../data/menuData';
-import icon from '../data/iconData';
-import field from '../data/fieldData';
+import logo from '../data/logo.json';
+import user from '../data/user.json';
+import icon from '../data/icon.json';
+import menu from "../data/menu.json";
+import field from '../data/field.json';
 
 // components
 import Logo from '../components/Logo';
@@ -35,7 +35,7 @@ export default function Header({ onClick, drawerIcon }) {
             </Group>
             <Group className="mc-header-right">
                 <Icons data={ icon.header } />
-                <Profile data={{ user, menu:menu.user }} />
+                <Profile data={{ user, menu:menu.profile }} />
             </Group>
         </Section>
     );

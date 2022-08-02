@@ -1,0 +1,7 @@
+{
+    "logout": { 
+        "href": "#", 
+        "icon": "lock", 
+        "text": "logout" 
+    }
+}
