@@ -4,6 +4,11 @@
     background-color: $gray-100;
     @include margin(75px, 20px, 20px, 270px);
     @include transition-linear;
+    // display: none;
+
+    @include mobile-breakpoint {
+        margin-#{$start-direction}: 20px;
+    }
 
     &.hide {
         margin-#{$start-direction}: 20px;

@@ -1,14 +1,25 @@
 .mc-logo {
-    @include flex-dimension(center, center, 0px 2px);
-    margin-#{$end-direction}: 55px;
+    @include flex-dimension(center, start, 0px 2px);
+
+    @include laptop-breakpoint {
+        flex-grow: 1;
+    }
 
     img {
         height: 45px;
+
+        @include custom-breakpoint(0px, 500px) {
+            height: 38px;
+        }
     }
 
     span {
         @include text-font(24px, 900);
         text-transform: uppercase;
         color: $heading;
+
+        @include custom-breakpoint(0px, 500px) {
+            display: none;
+        }
     }
 }

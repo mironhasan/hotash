@@ -10,7 +10,7 @@ export default function Icons({ data }) {
                     icon = { item.icon }
                     title = { item.title }
                     badge = { item.badge }
-                    className = "mc-header-icon"
+                    className = {`mc-header-icon ${ item.class }`}
                 />
             ))}
         </>

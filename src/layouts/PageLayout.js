@@ -6,8 +6,9 @@ import Footer from "./Footer";
 
 export default function PageLayout({ children }) {
 
-    const [drawerClass, setDrawerClass] = React.useState("show");
-    const [drawerIcon, setDrawerIcon] = React.useState("menu_open");
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    const [drawerClass, setDrawerClass] = React.useState(`${mediaQuery.matches ? "hide" : "show"}`);
+    const [drawerIcon, setDrawerIcon] = React.useState(`${mediaQuery.matches ? "menu" : "menu_open"}`);
 
     const handleDrawer = () => {
         if(drawerClass === "show") { 

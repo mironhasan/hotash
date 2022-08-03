@@ -22,18 +22,12 @@
             "menu": [
                 { 
                     "icon": "dashboard", 
-                    "text": "dashboard", 
-                    "badge": { "text": "hot", "variant": "red" },
-                    "submenu": [
-                        { "href": "#", "text": "01 dropdown" },
-                        { "href": "#", "text": "02 dropdown" },
-                        { "href": "#", "text": "03 dropdown" }
-                    ]
+                    "text": "dashboard"
                 },
                 { 
                     "icon": "lock", 
                     "text": "authentication", 
-                    "badge": { "text": "new", "variant": "blue" },
+                    "badge": { "text": "hot", "variant": "red square" },
                     "submenu": [
                         { "href": "#", "text": "login" },
                         { "href": "#", "text": "registration" },
@@ -41,8 +35,89 @@
                     ]
                 },
                 { 
+                    "href": "#",
+                    "icon": "account_circle", 
+                    "text": "users" 
+                },
+                { 
+                    "href": "#",
                     "icon": "pix", 
                     "text": "products" 
+                },
+                { 
+                    "href": "#",
+                    "icon": "store", 
+                    "text": "vendors" 
+                },
+                { 
+                    "href": "#",
+                    "icon": "shopping_cart", 
+                    "text": "orders",
+                    "badge": { "text": "05", "variant": "primary round" }
+                },
+                { 
+                    "href": "#",
+                    "icon": "email", 
+                    "text": "messages",
+                    "badge": { "text": "03", "variant": "primary round" }
+                },
+                { 
+                    "href": "#",
+                    "icon": "notifications", 
+                    "text": "notifications",
+                    "badge": { "text": "9+", "variant": "primary round" }
+                },
+                { 
+                    "href": "#",
+                    "icon": "settings", 
+                    "text": "settings" 
+                }
+            ]
+        },
+        {
+            "title": "components",
+            "menu": [
+                { 
+                    "icon": "warning", 
+                    "text": "alerts"
+                },
+                { 
+                    "icon": "donut_small", 
+                    "text": "buttons"
+                },
+                { 
+                    "icon": "add_circle", 
+                    "text": "badges"
+                },
+                { 
+                    "icon": "style", 
+                    "text": "cards"
+                },
+                { 
+                    "icon": "interests", 
+                    "text": "icons"
+                },
+                { 
+                    "icon": "feed", 
+                    "text": "forms"
+                },
+                { 
+                    "icon": "grid_on", 
+                    "text": "tables"
+                }
+            ]
+        },
+        {
+            "title": "supports",
+            "menu": [
+                { 
+                    "icon": "menu_book", 
+                    "text": "Documentation"
+                },
+                { 
+                    "icon": "layers", 
+                    "text": "change log",
+                    "badge": { "text": "v1.0", "variant": "primary square" }
                 }
             ]
         }

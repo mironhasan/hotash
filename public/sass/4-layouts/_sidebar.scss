@@ -6,8 +6,14 @@
     height: calc(100vh - 75px);
     @include transition-linear;
 
+    @include tablet-breakpoint {
+        background: $blue-100;
+        border-top-right-radius: 8px;
+        z-index: 5;
+    }
+
     &.hide {
-        left: -270px;
+        #{$start-direction}: -270px;
     }
 
     &:hover { 
@@ -25,24 +31,41 @@
 }
 
 .mc-sidebar-menu {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
 
 .mc-sidebar-menu-title {
     @include text-font(12px, 600);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 12px;
-    color: $gray-500;
+    margin-bottom: 15px;
+    color: $gray-600;
 }
 
 .mc-sidebar-menu-item {
     margin-bottom: 3px;
+
+    &.focused {
+        .mc-sidebar-menu-btn  {
+            color: $primary;
+            background-color: rgba($primary, 0.1);
+        }
+    }
     
     &.active {
         .mc-sidebar-menu-btn  {
             color: $primary;
             background-color: rgba($primary, 0.1);
+
+            small {
+                transform: rotate(0deg);
+            }
+        }
+
+        .mc-sidebar-dropdown-list {
+            height: auto;
+            overflow: visible;
+            padding: 10px 0px;
         }
     }
 }
@@ -65,12 +88,20 @@
 
     sup {
         color: $white;
-        padding: 0px 5px;
-        line-height: 18px;
-        border-radius: 3px;
         letter-spacing: 0.3px;
-        @include text-font(9px, 600);
+        @include text-font(10px, 600);
         text-transform: uppercase;
+
+        &.square {
+            padding: 0px 5px;
+            line-height: 18px;
+            border-radius: 4px;
+        }
+
+        &.round {
+            padding: 5px 4px;
+            border-radius: 15px;
+        }
 
         &.red { background: $red-600; }
         &.blue { background: $blue-600; }
@@ -78,10 +109,10 @@
         &.primary { background: $primary; }
     }
 
-    &::after {
-        content: "\e5cc";
+    small {
         font-size: 20px;
-        font-family: 'Material Icons';
+        transform: rotate(-90deg);
+        @include transition-linear;
     }
 
     &:hover {
@@ -90,9 +121,11 @@
 }
 
 .mc-sidebar-dropdown-list {
+    height: 0px;
+    overflow: hidden;
     margin: 0px 20px;
-    padding: 7px 0px;
     border-#{$start-direction}: 1px solid $gray-300;
+    @include transition-linear;
 }
 
 .mc-sidebar-dropdown-item {
@@ -108,11 +141,12 @@
 }
 
 .mc-sidebar-dropdown-link {
+    width: 100%;
     position: relative;
     text-transform: capitalize;
-    @include text-font(14px, 500);
-    padding: 3px 20px;
-    margin: 4px 0px;
+    @include text-font(15px, 500);
+    @include padding(3px, 0px, 3px, 20px);
+    margin: 5px 0px;
     @include transition-linear;
 
     &::before {

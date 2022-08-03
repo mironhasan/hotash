@@ -28,9 +28,10 @@ export default function Header({ onClick, drawerIcon }) {
 
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
+            <Logo data={ logo } />
             <Group className="mc-header-left">
-                <Logo data={ logo } />
-                <Button icon={ drawerIcon } onClick={ onClick } className="mc-header-action" />
+                <Button icon="search" className="mc-header-icon search" />
+                <Button icon={ drawerIcon } onClick={ onClick } className="mc-header-icon toggle" />
                 <Search data={ field.header.search } />
             </Group>
             <Group className="mc-header-right">

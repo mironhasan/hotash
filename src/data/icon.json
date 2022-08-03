@@ -2,15 +2,18 @@
     "header": [
         { 
             "icon": "light_mode",    
-            "title": "Theme Mode" 
+            "title": "Theme Mode",
+            "class": "theme"
         },
         { 
             "icon": "language",      
-            "title": "Languages" 
+            "title": "Languages",
+            "class": "language"
         },
         { 
             "icon": "shopping_cart", 
-            "title": "Shopping",      
+            "title": "Shopping",
+            "class": "cart",      
             "badge": { 
                 "text": "05", 
                 "variant": "primary" 
@@ -18,7 +21,8 @@
         },
         { 
             "icon": "email",         
-            "title": "Messages",      
+            "title": "Messages",
+            "class": "message",       
             "badge": { 
                 "text": "03", 
                 "variant": "primary" 
@@ -26,7 +30,8 @@
         },
         { 
             "icon": "notifications", 
-            "title": "Notifications", 
+            "title": "Notifications",
+            "class": "notify",    
             "badge": { 
                 "text": "08", 
                 "variant": "primary" 

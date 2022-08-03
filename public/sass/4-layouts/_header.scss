@@ -8,16 +8,58 @@
         background-color: rgba($white, 0.95);
         backdrop-filter: blur(5px);
     }
+
+    @include laptop-breakpoint {
+        gap: 0px 18px;
+    }
+
+    @include tablet-breakpoint {
+        gap: 0px 15px;
+    }
+
+    @include mobile-breakpoint {
+        gap: 0px 10px;
+    }
 }
 
 .mc-header-left {
     @include flex-dimension(center, flex-start, 0px 50px);
-}
+    margin-#{$start-direction}: -130px;
 
-.mc-header-action {
-    i {
-        font-size: 30px;
-        color: $icon;
+    @include desktop-breakpoint {
+        margin-#{$start-direction}: 0px;
+    }
+
+    @include laptop-breakpoint {
+        gap: 0px 18px;
+    }
+
+    @include tablet-breakpoint {
+        gap: 0px 15px;
+    }
+
+    @include mobile-breakpoint {
+        gap: 0px 10px;
+    }
+
+    .mc-header-icon { 
+        &.search {
+            display: none;
+
+            @include tablet-breakpoint {
+                display: block;
+            }
+        }
+
+        &.toggle {
+            i {
+                font-size: 24px; 
+
+                @include mobile-breakpoint {
+                    font-size: 20px; 
+                }
+            }
+        }
     }
 }
 
@@ -27,6 +69,10 @@
     border-radius: 8px;
     background-color: $gray-200;
     @include flex-dimension(center, flex-start, 0px);
+
+    @include tablet-breakpoint {
+        display: none;
+    }
 
     button {
         color: $icon;
@@ -42,6 +88,24 @@
 
 .mc-header-right {
     @include flex-dimension(center, flex-end, 0px 18px);
+
+    @include laptop-breakpoint {
+        .mc-header-icon {
+            &.cart,
+            &.message,
+            &.notify {
+                display: none;
+            }
+        }
+    }
+
+    @include tablet-breakpoint {
+        gap: 0px 15px;
+    }
+
+    @include mobile-breakpoint {
+        gap: 0px 10px;
+    }
 }
 
 .mc-header-icon {
@@ -52,6 +116,13 @@
         @include content-center(38px, 38px, 50%);
         color: $icon;
         background-color: $gray-200;
+
+        @include mobile-breakpoint {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 18px;
+        }
     }
 
     sup {
@@ -79,12 +150,19 @@
     @include flex-dimension(center, center, 0px 7px);
 
     &::after {
+        width: 18px;
         content: "\e5c5";
         font-size: 24px;
         align-self: flex-start;
         font-family: 'Material Icons';
         margin-#{$start-direction}: -5px;
         color: $icon;
+
+        @include desktop-breakpoint {
+            font-size: 22px;
+            margin-top: 5px;
+            margin-#{$start-direction}: -10px;
+        }
     }
 }
 
@@ -99,10 +177,19 @@
         border-radius: 50%;
         object-fit: cover;
         border: 2px solid transparent;
+
+        @include mobile-breakpoint {
+            width: 35px;
+            height: 35px;
+        }
     }
 }
 
 .mc-header-user-meta {
+    @include desktop-breakpoint {
+        display: none;
+    }
+
     h3 {
         @include text-font(14px, 600);
         text-transform: capitalize;
