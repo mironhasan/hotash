@@ -42,8 +42,8 @@ export default function Dashboard() {
                         ))}
                     </Breadcrumb>
                 </Column>
-                <Column className="col-xl-8">
-                    <Row className="row row-cols-2">
+                <Column className="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                    <Row className="row row-cols-1 row-cols-sm-2">
                         {card.hero.map((item, index) => (
                             <Column key = { index } className="col">
                                 <HeroCard 
@@ -60,7 +60,7 @@ export default function Dashboard() {
                         ))}
                     </Row>
                 </Column>
-                <Column className="col-xl-4">
+                <Column className="col-12 col-xl-4">
                     <SalesCard 
                         title = { card.sales.title } 
                         amount = { card.sales.amount } 
@@ -69,7 +69,7 @@ export default function Dashboard() {
                         <PieCharts chart={ card.sales.chart } />
                     </SalesCard>
                 </Column>
-                <Column className="col-xl-6">
+                <Column className="col-12 col-xl-6">
                     <CardLayout 
                         title = { card.weeks.title } 
                         dots = { menu.CommonCard }
@@ -77,7 +77,7 @@ export default function Dashboard() {
                         <AreaCharts chart={ card.weeks.chart } />
                     </CardLayout>
                 </Column>
-                <Column className="col-xl-6">
+                <Column className="col-12 col-xl-6">
                     <CardLayout 
                         title = { card.years.title } 
                         dots = { menu.CommonCard }
@@ -90,7 +90,7 @@ export default function Dashboard() {
                         title = { card.popular.title } 
                         dots = { menu.CommonCard }
                     >
-                        <Row className="row row-cols-4 mb-4">
+                        <Row className="row row-cols-1 row-cols-sm-4 row-cols-xl-4 mb-4">
                             <Column className="col">
                                 <SelectField
                                     label = { field.productTable.select.category.label }
@@ -128,7 +128,7 @@ export default function Dashboard() {
                         <Paginate />
                     </CardLayout>
                 </Column>
-                <Column className="col-xl-8">
+                <Column className="col-12 col-xl-8">
                     <CardLayout 
                         title = { card.traffic.title } 
                         dots = { menu.CommonCard }
@@ -136,7 +136,7 @@ export default function Dashboard() {
                         <TrafficTable data={ table.traffic } />
                     </CardLayout>
                 </Column>
-                <Column className="col-xl-4">
+                <Column className="col-12 col-xl-4">
                     <CardLayout 
                         title = { card.country.title } 
                         dots = { menu.CommonCard }

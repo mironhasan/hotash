@@ -82,3 +82,42 @@ input[type="number"].mc-field-input {
     &.h-xl { height: 55px; }
 }
 
+// ICON FIELD STYLE
+.mc-icon-field {
+    @include flex-dimension(center, start, 0px);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: $white;
+    border: 1px solid $white;
+    @include transition-linear;
+
+    &:focus-within {
+        border-color: $primary;
+        i { color: $primary; }
+        button { opacity: 1; }
+    }
+
+    &.h-sm { height: 40px; }
+    &.h-md { height: 45px; }
+    &.h-lg { height: 50px; }
+    &.h-xl { height: 55px; }
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: $text;
+    }
+
+    i,
+    button {
+        font-size: 20px;
+        padding: 0px 13px;
+        color: $gray-800;
+        @include transition-linear;
+    }
+
+    button {
+        opacity: 0;
+        @include transition-linear;
+    }
+}

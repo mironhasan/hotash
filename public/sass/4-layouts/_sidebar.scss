@@ -1,19 +1,19 @@
 .mc-sidebar {
-    @include position-top-left(fixed, 75px, 0px, 3);
+    @include position-top-left(fixed, 75px, -270px, 3);
     @include padding(20px, 17px, 20px, 20px);
     width: 270px;
     overflow-y: scroll;
     height: calc(100vh - 75px);
     @include transition-linear;
 
-    @include tablet-breakpoint {
-        background: $blue-100;
-        border-top-right-radius: 8px;
+    @include laptop-breakpoint {
         z-index: 5;
+        background: $white;
+        border-#{$end-direction}: 1px solid $gray-200;
     }
 
-    &.hide {
-        #{$start-direction}: -270px;
+    &.active {
+        #{$start-direction}: 0px;
     }
 
     &:hover { 

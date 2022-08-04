@@ -1,8 +1,12 @@
+.mc-table-responsive {
+    overflow-x: auto;
+}
+
 .mc-table {
     width: 100%;
     border-collapse: collapse;
 
-    &.product-table {
+    &.product {
         tr {
             th, td {
                 &:first-child {
@@ -145,7 +149,7 @@
     }
 
     p {
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         line-height: 18px;
         font-weight: 500;
         overflow: hidden;

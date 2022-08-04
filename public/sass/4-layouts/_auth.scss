@@ -1,0 +1,114 @@
+.mc-auth {
+    max-width: 350px;
+    margin: 30px auto 50px;
+    text-align: center;
+}
+
+.mc-auth-logo {
+    margin-bottom: 10px;
+
+    img {
+        height: 55px;
+    }
+}
+
+.mc-auth-title {
+    margin-bottom: 25px;
+}
+
+.mc-auth-form {
+    padding: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: $gray-200;
+    border: 1px solid $gray-300;
+}
+
+.mc-auth-btn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    @include text-font(12px, 700);
+    letter-spacing: 2px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: $white;
+    background-color: $primary;
+}
+
+.mc-auth-forgot {
+    @include text-font(12px, 500);
+    text-transform: uppercase;
+    @include transition-linear;
+
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
+
+.mc-auth-divide {
+    margin: 15px 0 18px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 17px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $gray-400;
+    }
+
+    span {
+        @include content-center(36px, 32px, 50%);
+        display: inline-block;
+        font-size: 15px;
+        color: $text;
+        background: $gray-200;
+        border: 1px solid $gray-400;
+    }
+}
+
+.mc-auth-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a {
+        height: 40px;
+        font-size: 14px;
+        border-radius: 8px;
+        color: $white;
+        background-color: $primary;
+        @include flex-dimension(center, center, 0px 10px);
+
+        &.facebook { background-color: $facebook; }
+        &.twitter { background-color: $twitter; }
+    }
+}
+
+.mc-auth-navigate {
+    @include flex-dimension(center, center, 5px);
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    background: $gray-200;
+    border: 1px solid $gray-300;
+
+    a {
+        color: $primary;
+        font-weight: 500;
+        text-transform: capitalize;
+        @include transition-linear;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

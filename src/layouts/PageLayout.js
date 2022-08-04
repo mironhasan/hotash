@@ -6,26 +6,14 @@ import Footer from "./Footer";
 
 export default function PageLayout({ children }) {
 
-    const mediaQuery = window.matchMedia("(max-width: 767px)");
-    const [drawerClass, setDrawerClass] = React.useState(`${mediaQuery.matches ? "hide" : "show"}`);
-    const [drawerIcon, setDrawerIcon] = React.useState(`${mediaQuery.matches ? "menu" : "menu_open"}`);
-
-    const handleDrawer = () => {
-        if(drawerClass === "show") { 
-            setDrawerClass("hide"); 
-            setDrawerIcon("menu"); 
-        }
-        else { 
-            setDrawerClass("show"); 
-            setDrawerIcon("menu_open"); 
-        }
-    };
+    const mediaQuery = window.matchMedia("(max-width: 991px)");
+    const [drawer, setDrawer] = React.useState( mediaQuery.matches ? false : true );
 
     return (
         <>
-            <Header drawerIcon={ drawerIcon }  onClick={ handleDrawer } />
-            <Sidebar drawerClass={ drawerClass } />
-            <Main drawerClass={ drawerClass }>
+            <Header toggle={drawer ? "menu_open" : "menu"}  onClick={()=> setDrawer(!drawer)} />
+            <Sidebar drawer={drawer ? "active" : ""} />
+            <Main drawer={drawer ? "active" : ""}>
                 { children }
                 <Footer />
             </Main>

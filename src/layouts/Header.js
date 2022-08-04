@@ -17,7 +17,7 @@ import Icons from '../components/header/Icons';
 import Group from '../components/structure/Group';
 
 
-export default function Header({ onClick, drawerIcon }) {
+export default function Header({ onClick, toggle }) {
 
     const [scroll, setScroll] = React.useState("fixed");
 
@@ -28,10 +28,15 @@ export default function Header({ onClick, drawerIcon }) {
 
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
-            <Logo data={ logo } />
+            <Logo 
+                src = { logo.src }
+                alt = { logo.alt }
+                name = { logo.name }
+                href = { logo.href } 
+            />
             <Group className="mc-header-left">
                 <Button icon="search" className="mc-header-icon search" />
-                <Button icon={ drawerIcon } onClick={ onClick } className="mc-header-icon toggle" />
+                <Button icon={ toggle } onClick={ onClick } className="mc-header-icon toggle" />
                 <Search data={ field.header.search } />
             </Group>
             <Group className="mc-header-right">

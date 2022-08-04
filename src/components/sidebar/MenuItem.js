@@ -4,11 +4,10 @@ import Item from "../elements/Item";
 import Anchor from "../elements/Anchor";
 import Button from "../elements/Button";
 
-export default function MenuItem({ item, index }) {
+export default function MenuItem({ item, itemIndex, menuIndex }) {
     const [open, setOpen] = React.useState(false);
-
     return (
-        <Item className={`mc-sidebar-menu-item ${open ? "active" : ""} ${index == 0 ? "focused" : ""}`}>
+        <Item className={`mc-sidebar-menu-item ${open ? "active" : ""} ${(itemIndex === 0 && menuIndex === 0) ? "focused" : ""}`}>
             {item.submenu ?
                 <>
                     <Button 

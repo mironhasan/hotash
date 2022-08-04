@@ -263,6 +263,16 @@ p {
   gap: 0px;
 }
 
+@media (max-width: 575px) {
+  .mc-breadcrumb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px 0px;
+  }
+}
+
 .mc-breadcrumb-title {
   text-transform: capitalize;
 }
@@ -387,19 +397,23 @@ p {
   text-transform: capitalize;
 }
 
+.mc-table-responsive {
+  overflow-x: auto;
+}
+
 .mc-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.mc-table.product-table tr th:first-child, .mc-table.product-table tr td:first-child {
+.mc-table.product tr th:first-child, .mc-table.product tr td:first-child {
   max-width: 90px;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
 
-.mc-table.product-table tr th:nth-child(2), .mc-table.product-table tr td:nth-child(2) {
+.mc-table.product tr th:nth-child(2), .mc-table.product tr td:nth-child(2) {
   max-width: 180px;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -555,7 +569,7 @@ p {
 }
 
 .mc-table-product p {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   line-height: 18px;
   font-weight: 500;
   overflow: hidden;
@@ -686,6 +700,16 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0px;
+}
+
+@media (max-width: 575px) {
+  .mc-paginate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px 0px;
+  }
 }
 
 .mc-paginate-title {
@@ -938,6 +962,83 @@ input[type="email"].mc-field-input.h-xl,
 input[type="password"].mc-field-input.h-xl,
 input[type="number"].mc-field-input.h-xl {
   height: 55px;
+}
+
+.mc-icon-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 0px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.mc-icon-field:focus-within {
+  border-color: #2255bb;
+}
+
+.mc-icon-field:focus-within i {
+  color: #2255bb;
+}
+
+.mc-icon-field:focus-within button {
+  opacity: 1;
+}
+
+.mc-icon-field.h-sm {
+  height: 40px;
+}
+
+.mc-icon-field.h-md {
+  height: 45px;
+}
+
+.mc-icon-field.h-lg {
+  height: 50px;
+}
+
+.mc-icon-field.h-xl {
+  height: 55px;
+}
+
+.mc-icon-field input {
+  width: 100%;
+  height: 100%;
+  color: #5e5d72;
+}
+
+.mc-icon-field i,
+.mc-icon-field button {
+  font-size: 20px;
+  padding: 0px 13px;
+  color: #6a6a6a;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.mc-icon-field button {
+  opacity: 0;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
 }
 
 .mc-filter-between {
@@ -1593,6 +1694,7 @@ input[type="number"].mc-field-input.h-xl {
   max-width: fit-content;
   border-radius: 8px;
   background-color: #ffffff;
+  border: 1px solid #f0f0f0;
   -webkit-box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -1618,9 +1720,14 @@ input[type="number"].mc-field-input.h-xl {
   opacity: 1;
 }
 
+.mc-header-user-item:last-child .mc-header-user-link {
+  color: #ff304f;
+}
+
 .mc-header-user-link {
-  padding: 7px 10px;
-  border-radius: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1656,7 +1763,7 @@ input[type="number"].mc-field-input.h-xl {
 .mc-sidebar {
   position: fixed;
   top: 75px;
-  left: 0px;
+  left: -270px;
   z-index: 3;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1672,16 +1779,16 @@ input[type="number"].mc-field-input.h-xl {
   -o-transition: all linear .3s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .mc-sidebar {
-    background: #eff8ff;
-    border-top-right-radius: 8px;
     z-index: 5;
+    background: #ffffff;
+    border-right: 1px solid #f0f0f0;
   }
 }
 
-.mc-sidebar.hide {
-  left: -270px;
+.mc-sidebar.active {
+  left: 0px;
 }
 
 .mc-sidebar:hover::-webkit-scrollbar-thumb {
@@ -1931,7 +2038,7 @@ input[type="number"].mc-field-input.h-xl {
   margin-top: 75px;
   margin-bottom: 20px;
   margin-right: 20px;
-  margin-left: 270px;
+  margin-left: 20px;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;
   -moz-transition: all linear .3s;
@@ -1941,12 +2048,179 @@ input[type="number"].mc-field-input.h-xl {
 
 @media (max-width: 575px) {
   .mc-main {
+    padding: 10px;
+    margin-top: 75px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.mc-main.active {
+  margin-left: 270px;
+}
+
+@media (max-width: 991px) {
+  .mc-main.active {
     margin-left: 20px;
   }
 }
 
-.mc-main.hide {
-  margin-left: 20px;
+.mc-auth {
+  max-width: 350px;
+  margin: 30px auto 50px;
+  text-align: center;
+}
+
+.mc-auth-logo {
+  margin-bottom: 10px;
+}
+
+.mc-auth-logo img {
+  height: 55px;
+}
+
+.mc-auth-title {
+  margin-bottom: 25px;
+}
+
+.mc-auth-form {
+  padding: 35px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  border: 1px solid #e4e4e4;
+}
+
+.mc-auth-btn {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  background-color: #2255bb;
+}
+
+.mc-auth-forgot {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.mc-auth-forgot:hover {
+  color: #2255bb;
+  text-decoration: underline;
+}
+
+.mc-auth-divide {
+  margin: 15px 0 18px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.mc-auth-divide::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 17px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #d1d1d1;
+}
+
+.mc-auth-divide span {
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  color: #5e5d72;
+  background: #f0f0f0;
+  border: 1px solid #d1d1d1;
+}
+
+.mc-auth-connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.mc-auth-connect a {
+  height: 40px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #2255bb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px 10px;
+}
+
+.mc-auth-connect a.facebook {
+  background-color: #3b5998;
+}
+
+.mc-auth-connect a.twitter {
+  background-color: #00acee;
+}
+
+.mc-auth-navigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  border: 1px solid #e4e4e4;
+}
+
+.mc-auth-navigate a {
+  color: #2255bb;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.mc-auth-navigate a:hover {
+  text-decoration: underline;
 }
 
 .mc-footer {
@@ -1954,4 +2228,10 @@ input[type="number"].mc-field-input.h-xl {
   font-size: 14px;
   margin-top: 24px;
   text-align: center;
+}
+
+@media (max-width: 575px) {
+  .mc-footer {
+    margin-bottom: 20px;
+  }
 }

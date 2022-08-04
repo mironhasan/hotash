@@ -3,11 +3,11 @@ import Text from "./elements/Text";
 import Image from "./elements/Image";
 import { Link } from "react-router-dom";
 
-export default function Logo({ data }) {
+export default function Logo({ src, alt, name, href }) {
     return (
-        <Link to={ data.href } className="mc-logo">
-            <Image src={ data.src } alt={ data.alt } />
-            { data.name && <Text as="span">{ data.name }</Text> }
+        <Link to={ href } className="mc-logo">
+            <Image src={ src } alt={ alt } />
+            { name && <Text as="span">{ name }</Text> }
         </Link>
     )
 }

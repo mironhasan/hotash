@@ -2,15 +2,19 @@
     padding: 24px;
     border-radius: 8px;
     background-color: $gray-100;
-    @include margin(75px, 20px, 20px, 270px);
+    @include margin(75px, 20px, 20px, 20px);
     @include transition-linear;
-    // display: none;
-
+    
     @include mobile-breakpoint {
-        margin-#{$start-direction}: 20px;
+        padding: 10px;
+        @include margin(75px, 0px, 0px, 0px);
     }
 
-    &.hide {
-        margin-#{$start-direction}: 20px;
+    &.active {
+        margin-#{$start-direction}: 270px;
+
+        @include laptop-breakpoint {
+            margin-#{$start-direction}: 20px;
+        }
     }
 }

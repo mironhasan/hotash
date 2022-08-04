@@ -1,5 +1,10 @@
 .mc-breadcrumb {
     @include flex-dimension(center, space-between, 0px);
+
+    @include mobile-breakpoint {
+        flex-direction: column;
+        gap: 15px 0px;
+    }
 }
 
 .mc-breadcrumb-title {

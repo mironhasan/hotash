@@ -1,0 +1,40 @@
+{
+    "title": "Login to Hotash",
+    "input": [
+        { 
+            "icon": "email", 
+            "type": "email", 
+            "placeholder": "enter your email",
+            "fieldSize": "h-sm"
+        },
+        { 
+            "icon": "lock", 
+            "type": "password", 
+            "placeholder": "enter your password",
+            "fieldSize": "h-sm",
+            "passwordVisible" : true
+        }
+    ],
+    "button": { "type": "button", "text": "sign in" },
+    "forgot": { "path": "/forgot-password", "text": "forgot password" },
+    "divide": { "text": "or" },
+    "connect": [
+        { 
+            "path": "#", 
+            "variant": "twitter", 
+            "icon": "icofont-twitter", 
+            "text": "Continue with Twitter" 
+        },
+        { 
+            "path": "#", 
+            "variant": "facebook", 
+            "icon": "icofont-facebook", 
+            "text": "Continue with Facebook" 
+        }
+    ],
+    "navigate": {
+        "title": "Don't have an account?",
+        "path": "/register",
+        "text": "register"
+    }
+}

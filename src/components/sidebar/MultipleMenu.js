@@ -5,17 +5,19 @@ import Menu from "../elements/Menu";
 import MenuItem from "./MenuItem";
 
 export default function MultipleMenu({ data }) {
+
     return (
         <>
-            {data.map((item, index) => (
-                <Menu key={ index }  className="mc-sidebar-menu">
+            {data.map((item, menuIndex) => (
+                <Menu key={ menuIndex }  className="mc-sidebar-menu">
                     <Heading as="h5" className="mc-sidebar-menu-title">{ item.title }</Heading>
                     <List className="mc-sidebar-menu-list">
-                        {item.menu.map((item, index) => ( 
+                        {item.menu.map((item, itemIndex) => ( 
                             <MenuItem 
-                                key = { index } 
-                                index = {index} 
+                                key = { itemIndex } 
                                 item = { item } 
+                                itemIndex = { itemIndex } 
+                                menuIndex = { menuIndex } 
                             />  
                         ))}
                     </List>

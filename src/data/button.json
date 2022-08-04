@@ -1,6 +1,6 @@
 {
     "logout": { 
-        "href": "#", 
+        "href": "/login", 
         "icon": "lock", 
         "text": "logout" 
     }

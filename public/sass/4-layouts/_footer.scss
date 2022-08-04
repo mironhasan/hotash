@@ -3,4 +3,8 @@
     font-size: 14px;
     margin-top: 24px;
     text-align: center;
+
+    @include mobile-breakpoint {
+        margin-bottom: 20px;
+    }
 }
