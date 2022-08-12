@@ -1,21 +1,12 @@
 import React from 'react';
-
-// data
-import logo from '../data/logo.json';
-import user from '../data/user.json';
-import icon from '../data/icon.json';
-import menu from "../data/menu.json";
-import field from '../data/field.json';
-
-// components
 import Logo from '../components/Logo';
 import Button from '../components/elements/Button';
 import Section from '../components/elements/Section';
 import Search from '../components/header/Search';
 import Profile from "../components/header/Profile";
 import Icons from '../components/header/Icons';
-import Group from '../components/structure/Group';
-
+import Box from '../components/elements/Box';
+import header from "../data/header.json";
 
 export default function Header({ onClick, toggle }) {
 
@@ -29,20 +20,31 @@ export default function Header({ onClick, toggle }) {
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
             <Logo 
-                src = { logo.src }
-                alt = { logo.alt }
-                name = { logo.name }
-                href = { logo.href } 
+                src = { header.logo.src }
+                alt = { header.logo.alt }
+                name = { header.logo.name }
+                href = { header.logo.path } 
             />
-            <Group className="mc-header-left">
-                <Button icon="search" className="mc-header-icon search" />
-                <Button icon={ toggle } onClick={ onClick } className="mc-header-icon toggle" />
-                <Search data={ field.header.search } />
-            </Group>
-            <Group className="mc-header-right">
-                <Icons data={ icon.header } />
-                <Profile data={{ user, menu:menu.profile }} />
-            </Group>
+            <Box className="mc-header-left">
+                <Button 
+                    icon = { header.search.icon } 
+                    className = "mc-header-icon search" 
+                />
+                <Button 
+                    icon = { toggle } 
+                    onClick = { onClick } 
+                    className = "mc-header-icon toggle" 
+                />
+                <Search 
+                    icon = { header.search.icon }
+                    type = { header.search.type } 
+                    placeholder = { header.search.placeholder } 
+                />
+            </Box>
+            <Box className="mc-header-right">
+                <Icons data={ header.icons } />
+                <Profile data={ header.profile } />
+            </Box>
         </Section>
     );
 }

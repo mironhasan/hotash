@@ -1,21 +1,22 @@
 import React from "react";
-import Box from "../structure/Box";
+import Box from "../elements/Box";
 import Icon from "../elements/Icon";
 import Text from "../elements/Text";
+import Table from "../elements/Table";
 
-export default function TrafficTable({ data }) {
+export default function TrafficTable({ thead, tbody }) {
     return (
-        <div className="mc-table-responsive">
-            <table className="mc-table">
+        <Box className="mc-table-responsive">
+            <Table className="mc-table">
                 <thead className="mc-table-head">
                     <tr>
-                        {data.head.map((item, index) => (
+                        {thead.map((item, index) => (
                             <th key={ index }>{ item }</th>
                         ))}
                     </tr>
                 </thead>
                 <tbody className="mc-table-body">
-                    {data.body.map((item, index) => (
+                    {tbody.map((item, index) => (
                         <tr key={ index }> 
                             <td>
                                 <Box className="mc-table-icon">
@@ -30,7 +31,7 @@ export default function TrafficTable({ data }) {
                         </tr>
                     ))}
                 </tbody>
-            </table>
-        </div>
+            </Table>
+        </Box>
     )
 }

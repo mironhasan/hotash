@@ -28,7 +28,7 @@
 
         tr {
             th {
-                padding: 12px 15px;
+                padding: 13px 15px;
                 border-#{$end-direction}: 1px solid $blue-800;
 
                 &:last-child {
@@ -110,7 +110,7 @@
     }
 
     p { 
-        font-weight: 700; 
+        font-weight: 600; 
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -125,6 +125,7 @@
         height: 25px;
         border-radius: 50%;
         object-fit: cover;
+        box-shadow: 0px 3px 10px 0px rgba($black, 0.15);
     }
 
     p { 
@@ -182,6 +183,20 @@
 .mc-table-icon {
     @include flex-dimension(center, start, 0px 10px);
 
+    &.role {
+        gap: 4px;
+
+        i { 
+            font-size: 20px; 
+
+            &.purple { color: $purple-700; }
+            &.yellow { color: $yellow-700; }
+            &.green { color: $green-700; }
+            &.blue { color: $blue-700; }
+            &.red { color: $red-700; }
+        }
+    }
+
     i { color: $primary; }
     p {
         font-weight: 500;
@@ -189,40 +204,46 @@
     }
 }
 
-.mc-table-role {
-    font-weight: 500;
+.mc-table-badge {
     line-height: 22px;
     border-radius: 6px;
-    padding: 0px 8px 1px;
+    padding: 0px 7px 1px;
     width: fit-content;
 
-    &.admin { color: $purple-700; background: $purple-200; }
-    &.client { color: $blue-700; background: $blue-200; }
-    &.member { color: $green-700; background: $green-200; }
-    &.vendor { color: $yellow-700; background: $yellow-200; }
+    &.purple { color: $purple-700; background: $purple-200; }
+    &.blue { color: $blue-700; background: $blue-200; }
+    &.green { color: $green-700; background: $green-200; }
+    &.yellow { color: $yellow-700; background: $yellow-200; }
+    &.red { color: $red-700; background: $red-200; }
 }
 
 .mc-table-action {
     display: flex;
     gap: 6px;
 
+    a,
     button {
         font-size: 16px;
         padding: 6px 6px;
         border-radius: 6px;
         background-color: $gray-200;
 
-        &:nth-child(1) {
+        &.view {
             color: $purple-700;
             background-color: $purple-200;
         }
 
-        &:nth-child(2) {
+        &.edit {
             color: $green-700;
             background-color: $green-200;
         }
 
-        &:nth-child(3) {
+        &.delete {
+            color: $red-700;
+            background-color: $red-200;
+        }
+
+        &.block {
             color: $red-700;
             background-color: $red-200;
         }

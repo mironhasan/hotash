@@ -1,12 +1,12 @@
 import React from "react";
-import Box from "../structure/Box";
+import Box from "../elements/Box";
 import Anchor from "../elements/Anchor";
 
 export default function Logout({ data }) {
     return (
         <Box className="mc-sidebar-logout">
             <Anchor 
-                href = { data.href } 
+                href = { data.path } 
                 icon = { data.icon } 
                 text = { data.text } 
                 className = "mc-btn"

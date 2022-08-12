@@ -26,3 +26,11 @@
     &.h-lg { height: 50px; }
     &.h-xl { height: 55px; }
 }
+
+.btn {
+    @include text-font(12px, 500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 22px;
+    border-radius: 8px;
+}

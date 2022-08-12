@@ -3,14 +3,11 @@ import Form from "../elements/Form";
 import Button from "../elements/Button";
 import Input from "../elements/Input";
 
-export default function Search({ data }) {
+export default function Search({ icon, type, placeholder }) {
     return (
         <Form className="mc-header-search">
-            <Button className="material-icons">search</Button>
-            <Input 
-                type = { data.type } 
-                placeholder = { data.place } 
-            />
+            <Button className="material-icons">{ icon }</Button>
+            <Input type={ type } placeholder={ placeholder } />
         </Form>
     )
 }

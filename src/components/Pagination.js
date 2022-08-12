@@ -1,17 +1,17 @@
 import React from "react";
-import Box from "./structure/Box";
+import Box from "./elements/Box";
 import Icon from "./elements/Icon";
 import Item from "./elements/Item";
 import List from "./elements/List";
 import Text from "./elements/Text";
 
-export default function Paginate() {
+export default function Pagination() {
     return (
         <Box className="mc-paginate">
             <Text className="mc-paginate-title">Showing <b>12</b> of <b>60</b> Results</Text>
             <List className="mc-paginate-list">
                 <Item className="mc-paginate-item">
-                    <Icon>chevron_left</Icon>
+                    <Icon type="chevron_left" />
                 </Item>
                 <Item className="mc-paginate-item active">1</Item>
                 <Item className="mc-paginate-item">2</Item>
@@ -19,7 +19,7 @@ export default function Paginate() {
                 <Item className="mc-paginate-item">...</Item>
                 <Item className="mc-paginate-item">45</Item>
                 <Item className="mc-paginate-item">
-                    <Icon>chevron_right</Icon>
+                    <Icon type="chevron_right" />
                 </Item>
             </List>
         </Box>

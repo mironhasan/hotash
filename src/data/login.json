@@ -1,33 +1,48 @@
 {
+    "logo": {
+        "path": "#",
+        "src": "images/logo/blue.png",
+        "alt": "blue",
+        "name": "hotash"
+    },
+    "pattern": { 
+        "src": "images/pattern.png", 
+        "alt": "line-pattern" 
+    },
     "title": "Login to Hotash",
     "input": [
         { 
             "icon": "email", 
             "type": "email", 
             "placeholder": "enter your email",
-            "fieldSize": "h-sm"
+            "fieldSize": "w-100 h-sm"
         },
         { 
             "icon": "lock", 
             "type": "password", 
             "placeholder": "enter your password",
-            "fieldSize": "h-sm",
+            "fieldSize": "w-100 h-sm",
             "passwordVisible" : true
+        },
+        {
+            "icon": "verified_user",
+            "fieldSize": "w-100 h-sm",
+            "option": ["select user role", "admin", "member", "client", "manager", "vendor"]
         }
     ],
-    "button": { "type": "button", "text": "sign in" },
-    "forgot": { "path": "/forgot-password", "text": "forgot password" },
+    "button": { "type": "button", "text": "sign in", "fieldSize": "h-sm" },
+    "forgot": { "path": "/forgot-password", "text": "forgot password?" },
     "divide": { "text": "or" },
     "connect": [
         { 
             "path": "#", 
-            "variant": "twitter", 
+            "classes": "twitter h-sm", 
             "icon": "icofont-twitter", 
             "text": "Continue with Twitter" 
         },
         { 
             "path": "#", 
-            "variant": "facebook", 
+            "classes": "facebook h-sm", 
             "icon": "icofont-facebook", 
             "text": "Continue with Facebook" 
         }

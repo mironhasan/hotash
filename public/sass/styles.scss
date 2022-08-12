@@ -6,7 +6,6 @@
 *   All copyrights reserved by Mironcoder
 */
 
-
 //========================================
 //          1 - HELPERS FOLDER
 //========================================
@@ -17,18 +16,22 @@
 @import '1-helpers/globals';
 @import '1-helpers/typography';
 
+
 //========================================
 //          2 - COMPONENTS FOLDER
 //========================================
 @import '2-components/logo';
-@import '2-components/button';
-@import '2-components/breadcrumb';
-@import '2-components/dots-menu';
+@import '2-components/form';
 @import '2-components/chart';
 @import '2-components/table';
-@import '2-components/paginate';
 @import '2-components/field';
-@import '2-components/filter';
+@import '2-components/modal';
+@import '2-components/button';
+@import '2-components/dropdown';
+@import '2-components/dots-menu';
+@import '2-components/pagination';
+@import '2-components/breadcrumb';
+
 
 //=======================================
 //          3 - ELEMENTS FOLDER
@@ -45,11 +48,11 @@
 @import '4-layouts/header';
 @import '4-layouts/sidebar';
 @import '4-layouts/main';
-@import '4-layouts/auth';
 @import '4-layouts/footer';
-
 
 
 //=======================================
 //          5 - PAGES FOLDER
 //=======================================
+@import '5-pages/auth';
+@import '5-pages/register';

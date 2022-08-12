@@ -1,7 +1,8 @@
 import React from "react";
+import Section from "../components/elements/Section";
 
 export default function Footer() {
     return (
-        <footer className="mc-footer">© All Rights Reserved by ♥ Mironcoder</footer>
+        <Section as="footer" className="mc-footer">© All Rights Reserved by ♥ Mironcoder</Section>
     )
 }

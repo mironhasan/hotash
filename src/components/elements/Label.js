@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Label({ children, ...rest }) {
-    return <label { ...rest }>{ children }</label>
+export default function Label({ text, children, ...rest }) {
+    return <label { ...rest }>{ text } { children }</label>
 }

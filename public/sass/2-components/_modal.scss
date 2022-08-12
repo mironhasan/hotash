@@ -4,62 +4,102 @@
 
 .modal-close {
     position: absolute;
-    top: 25px;
-    #{$end-direction}: 25px;
+    top: -12px;
+    #{$end-direction}: -12px;
 
     i {
-        @include content-center(40px, 40px, 40px, 50%);
-        color: $dark;
+        @include content-center(35px, 35px, 50%);
+        font-size: 20px;
+        color: $black;
         background: $white;
+        box-shadow: 0px 5px 12px 0px rgba($black, 0.2);
         @include transition-linear;
 
         &:hover {
             color: $white;
-            background: $primary;
+            background: $red-600;
         }
     }
 }
 
 .modal-dialog {
-    max-width: 1100px;
     margin: 100px auto;
+    max-width: fit-content;
 }
 
 .modal-content {
-    padding: 50px;
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
 .modal-header {
-    border: none;
     padding: 0px;
-    margin-bottom: 35px;
+    border: none;
+    margin-bottom: 30px;
+}
 
-    h2 {
-        font-size: 30px;
-        text-transform: uppercase;
+.modal-title {
+    @include text-font(20px, 600);
+    text-transform: capitalize;
+    color: $heading;
+}
 
-        span { color: $primary; }
+.modal-footer {
+    padding: 0px;
+    border: none;
+    margin-top: 35px;
+    justify-content: center;
+    gap: 15px;
+    
+    >* { margin: 0px; }
+}
+
+// user modal
+.mc-user-modal {
+    width: 450px;
+    padding: 0px 40px 40px;
+
+    img {
+        @include content-center(100px, 0, 50%);
+        border: 12px solid $white;
+        margin: -45px auto 0px;
+        display: block;
     }
 
     h4 {
-        @include flex-dimension(center, flex-end, 0px 10px);
-        
-        i { 
-            font-size: 32px;
-            color: $primary; 
-        }
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
 
-        span { font-weight: 600; }
+    p { 
+        font-size: 15px; 
+        margin-bottom: 25px;
+        text-align: center;
     }
 }
 
-.modal-body { padding: 0px; }
+// alert modal
+.mc-alert-modal {
+    width: 450px;
+    padding: 0px 35px 35px;
+    text-align: center;
 
-@media (max-width: 767px) {
-    .modal-header {
-        align-items: flex-start;
-        flex-direction: column;
-        row-gap: 15px;
+    i {
+        font-size: 45px;
+        color: $red-700;
+        margin-top: -35px;
+        background-color: $white;
+        @include content-center(80px, 80px, 50%);
+        text-shadow: 0px 7px 10px rgba($black, 0.12);
+    }
+
+    h3 {
+        @include text-font(24px, 800);
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }

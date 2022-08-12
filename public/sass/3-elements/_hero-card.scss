@@ -1,6 +1,5 @@
 .mc-hero-card {
     position: relative;
-    z-index: 1;
     padding: 22px;
     border-radius: 8px;
     background-color: $white;
@@ -64,7 +63,7 @@
 }
 
 .mc-hero-card-trend {
-    @include position-bottom-left(absolute, 0px, 0px, -1);
+    @include position-bottom-left(absolute, 0px, 0px, 1);
     font-size: 150px;
     opacity: 0.8;
 }
@@ -75,6 +74,8 @@
 }
 
 .mc-hero-card-meta {
+    position: relative;
+    z-index: 1;
     @include text-font(32px, 700);
     color: $white;
 
@@ -93,6 +94,8 @@
 }
 
 .mc-hero-card-foot {
+    position: relative;
+    z-index: 1;
     @include flex-dimension(center, space-between, 0px);
 }
 

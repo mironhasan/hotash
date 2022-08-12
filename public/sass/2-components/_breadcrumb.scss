@@ -19,14 +19,26 @@
     color: $gray-600;
     @include text-font(15px, 500);
     text-transform: capitalize;
+
+    &::after {
+        content: "/";
+        margin: 0px 8px;
+        color: $text;
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .mc-breadcrumb-link {
     color: $primary;
+    @include transition-linear;
 
-    &::after {
-        content: "~";
-        margin: 0px 8px;
-        color: $text;
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
     }
 }

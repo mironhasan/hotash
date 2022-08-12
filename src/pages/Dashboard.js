@@ -1,18 +1,8 @@
+// packages
 import React from "react";
-
-// data
-import breadcrumb from "../data/breadcrumb.json";
-import table from "../data/table.json";
-import field from "../data/field.json";
-import menu from "../data/menu.json";
-import card from "../data/card.json"
-
-// components
+import { Row, Col } from "react-bootstrap";
+import PageLayout from "../layouts/PageLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import Anchor from "../components/elements/Anchor";
-import Item from "../components/elements/Item";
-import Row from "../components/structure/Row";
-import Column from "../components/structure/Column";
 import HeroCard from "../components/cards/HeroCard";
 import SalesCard from "../components/cards/SalesCard";
 import CardLayout from "../components/cards/CardLayout";
@@ -21,31 +11,30 @@ import BarCharts from "../components/charts/BarCharts";
 import AreaCharts from "../components/charts/AreaCharts";
 import ProductTable from "../components/tables/ProductTable";
 import TrafficTable from "../components/tables/TrafficTable";
-import Paginate from "../components/Paginate";
+import Pagination from "../components/Pagination";
 import CountryList from "../components/CountryList";
-import SelectField from "../components/fields/SelectField";
-
-// layouts
-import PageLayout from "../layouts/PageLayout";
-
+import LabelField from "../components/fields/LabelField";
+import Item from "../components/elements/Item";
+import Anchor from "../components/elements/Anchor";
+import dashboard from "../data/dashboard.json";
 
 export default function Dashboard() {
     return (
         <PageLayout>
-            <Row className="row">
-                <Column className="col-xl-12">
-                    <Breadcrumb title={ breadcrumb.dashboard.title } active={ breadcrumb.dashboard.active }>
-                        {breadcrumb.dashboard.link.map((item, index) => (
-                            <Item key={ index } className="mc-breadcrumb-item">
-                                <Anchor className="mc-breadcrumb-link" href={ item.href }>{ item.text }</Anchor>
+            <Row>
+                <Col xl={12}>
+                    <Breadcrumb title={ dashboard.pageTitle }>
+                        {dashboard.breadcrumb.map((item, index) => (
+                             <Item key={ index } className="mc-breadcrumb-item">
+                                {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
                         ))}
                     </Breadcrumb>
-                </Column>
-                <Column className="col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                    <Row className="row row-cols-1 row-cols-sm-2">
-                        {card.hero.map((item, index) => (
-                            <Column key = { index } className="col">
+                </Col>
+                <Col xs={12} xl={8}>
+                    <Row xs={1} sm={2}>
+                        {dashboard.heroCard.map((item, index) => (
+                            <Col key={ index }>
                                 <HeroCard 
                                     icon = { item.icon }
                                     trend = { item.trend }
@@ -54,97 +43,81 @@ export default function Dashboard() {
                                     variant = { item.variant }
                                     percent = { item.percent }
                                     compare = { item.compare }
-                                    dots = { menu.heroCard }
+                                    dotsMenu = { item.dotsMenu }
                                 /> 
-                            </Column>
+                            </Col>
                         ))}
                     </Row>
-                </Column>
-                <Column className="col-12 col-xl-4">
+                </Col>
+                <Col xs={12} xl={4}>
                     <SalesCard 
-                        title = { card.sales.title } 
-                        amount = { card.sales.amount } 
-                        dots = { menu.salesCard }
+                        title = { dashboard.salesCard.title } 
+                        amount = { dashboard.salesCard.amount } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <PieCharts chart={ card.sales.chart } />
+                        <PieCharts chart={ dashboard.salesCard.chart } />
                     </SalesCard>
-                </Column>
-                <Column className="col-12 col-xl-6">
+                </Col>
+                <Col xs={12} xl={6}>
                     <CardLayout 
-                        title = { card.weeks.title } 
-                        dots = { menu.CommonCard }
+                        title = { dashboard.weeksCard.title } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <AreaCharts chart={ card.weeks.chart } />
+                        <AreaCharts chart={ dashboard.weeksCard.chart } />
                     </CardLayout>
-                </Column>
-                <Column className="col-12 col-xl-6">
+                </Col>
+                <Col xs={12} xl={6}>
                     <CardLayout 
-                        title = { card.years.title } 
-                        dots = { menu.CommonCard }
+                        title = { dashboard.yearsCard.title } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <BarCharts chart={ card.years.chart } />
+                        <BarCharts chart={ dashboard.yearsCard.chart } />
                     </CardLayout>
-                </Column>
-                <Column className="col-xl-12">
+                </Col>
+                <Col xl={12}>
                     <CardLayout 
-                        title = { card.popular.title } 
-                        dots = { menu.CommonCard }
+                        title = { dashboard.productCard.title } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <Row className="row row-cols-1 row-cols-sm-4 row-cols-xl-4 mb-4">
-                            <Column className="col">
-                                <SelectField
-                                    label = { field.productTable.select.category.label }
-                                    option = { field.productTable.select.category.option }
-                                    labelDir = "label-col"
-                                    fieldSize = "w-100 h-sm"
-                                />
-                            </Column>
-                            <Column className="col">
-                                <SelectField
-                                    label = { field.productTable.select.brand.label }
-                                    option = { field.productTable.select.brand.option }
-                                    labelDir = "label-col"
-                                    fieldSize = "w-100 h-sm"
-                                />
-                            </Column>
-                            <Column className="col">
-                                <SelectField
-                                    label = { field.productTable.select.rating.label }
-                                    option = { field.productTable.select.rating.option }
-                                    labelDir = "label-col"
-                                    fieldSize = "w-100 h-sm"
-                                />
-                            </Column>
-                            <Column className="col">
-                                <SelectField
-                                    label = { field.productTable.select.show.label }
-                                    option = { field.productTable.select.show.option }
-                                    labelDir = "label-col"
-                                    fieldSize = "w-100 h-sm"
-                                />
-                            </Column>
+                        <Row xs={1} sm={4} className="mb-4">
+                            {dashboard.productCard.filter.map((item, index)=> (
+                                <Col key={ index }>
+                                    <LabelField
+                                        label = { item.label }
+                                        option = { item.option }
+                                        labelDir = "label-col"
+                                        fieldSize = "w-100 h-sm"
+                                    />
+                                </Col>
+                            ))}
                         </Row>
-                        <ProductTable data={ table.product } />
-                        <Paginate />
+                        <ProductTable 
+                            thead = { dashboard.productCard.thead } 
+                            tbody = { dashboard.productCard.tbody }
+                        />
+                        <Pagination />
                     </CardLayout>
-                </Column>
-                <Column className="col-12 col-xl-8">
+                </Col>
+                <Col xs={12} xl={8}>
                     <CardLayout 
-                        title = { card.traffic.title } 
-                        dots = { menu.CommonCard }
+                        title = { dashboard.trafficCard.title } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <TrafficTable data={ table.traffic } />
+                        <TrafficTable 
+                            thead = { dashboard.trafficCard.thead } 
+                            tbody = { dashboard.trafficCard.tbody }
+                        />
                     </CardLayout>
-                </Column>
-                <Column className="col-12 col-xl-4">
+                </Col>
+                <Col xs={12} xl={4}>
                     <CardLayout 
-                        title = { card.country.title } 
-                        dots = { menu.CommonCard }
+                        title = { dashboard.countryCard.title } 
+                        dotsMenu = { dashboard.dotsMenu }
                     >
-                        <CountryList data={ card.country.list } />
+                        <CountryList data={ dashboard.countryCard.country } />
                     </CardLayout>
-                </Column>
+                </Col>
             </Row>
         </PageLayout>
-    )
+    );
 }

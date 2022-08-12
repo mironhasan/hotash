@@ -1,0 +1,300 @@
+{
+    "pageTitle": "dashborad",
+    "breadcrumb": [
+        { "path": "/", "text": "home" },
+        { "text": "dashboard" }
+    ],
+    "heroCard": [
+        {
+            "variant": "green",
+            "title": "total users",
+            "number": "277",
+            "icon": "account_circle",
+            "trend": "trending_up",
+            "percent": "+ 95%",
+            "compare": "last month",
+            "dotsMenu": {
+                "dots": "more_vert",
+                "dropdown": [
+                    { "icon": "history", "text": "last day" },
+                    { "icon": "history", "text": "last week" },
+                    { "icon": "history", "text": "last month" },
+                    { "icon": "history", "text": "last year" }
+                ]
+            }
+        },
+        {
+            "variant": "purple",
+            "title": "total orders",
+            "number": "338",
+            "icon": "shopping_cart",
+            "trend": "trending_down",
+            "percent": "- 30%",
+            "compare": "last month",
+            "dotsMenu": {
+                "dots": "more_vert",
+                "dropdown": [
+                    { "icon": "history", "text": "last day" },
+                    { "icon": "history", "text": "last week" },
+                    { "icon": "history", "text": "last month" },
+                    { "icon": "history", "text": "last year" }
+                ]
+            }
+        },
+        {
+            "variant": "blue",
+            "title": "total products",
+            "number": "557",
+            "icon": "shopping_bag",
+            "trend": "trending_down",
+            "percent": "- 25%",
+            "compare": "last month",
+            "dotsMenu": {
+                "dots": "more_vert",
+                "dropdown": [
+                    { "icon": "history", "text": "last day" },
+                    { "icon": "history", "text": "last week" },
+                    { "icon": "history", "text": "last month" },
+                    { "icon": "history", "text": "last year" }
+                ]
+            }
+        },
+        {
+            "variant": "yellow",
+            "title": "total reviews",
+            "number": "166",
+            "icon": "hotel_class",
+            "trend": "trending_up",
+            "percent": "+ 45%",
+            "compare": "last month",
+            "dotsMenu": {
+                "dots": "more_vert",
+                "dropdown": [
+                    { "icon": "history", "text": "last day" },
+                    { "icon": "history", "text": "last week" },
+                    { "icon": "history", "text": "last month" },
+                    { "icon": "history", "text": "last year" }
+                ]
+            }
+        }
+    ],
+    "salesCard": {
+        "title": "total sales",
+        "amount": "$3,787,681.00",
+        "chart": [
+            { "name": "Sales", "value": 400 },
+            { "name": "Invests", "value": 300 },
+            { "name": "Expense", "value": 250 },
+            { "name": "Profits", "value": 350 }
+        ]
+    },
+    "weeksCard": {
+        "title": "weekly overview",
+        "chart": [
+            { "name": "fri", "uv": 2000, "pv": 2400, "amt": 2400 },
+            { "name": "sat", "uv": 3000, "pv": 1398, "amt": 2210 },
+            { "name": "san", "uv": 2000, "pv": 9800, "amt": 2290 },
+            { "name": "mon", "uv": 2780, "pv": 3908, "amt": 2000 },
+            { "name": "tue", "uv": 1890, "pv": 4800, "amt": 2181 },
+            { "name": "wen", "uv": 2390, "pv": 3800, "amt": 2500 },
+            { "name": "thu", "uv": 3490, "pv": 4300, "amt": 2100 }
+        ]
+    },
+    "yearsCard": {
+        "title": "yearly overview",
+        "chart": [
+            { "name": 2022, "profit": 4000, "sales": 2400, "amt": 2400 },
+            { "name": 2021, "profit": 3000, "sales": 1398, "amt": 2210 },
+            { "name": 2020, "profit": 2000, "sales": 9800, "amt": 2290 },
+            { "name": 2019, "profit": 2780, "sales": 3908, "amt": 2000 },
+            { "name": 2018, "profit": 1890, "sales": 4800, "amt": 2181 },
+            { "name": 2017, "profit": 2390, "sales": 3800, "amt": 2500 }
+        ]
+    },
+    "productCard": {
+        "title": "popular products",
+        "filter":[
+            { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
+            { "label": "rating by", "option": ["1 star", "2 star", "3 star", "4 star", "5 star"] },
+            { "label": "brand by", "option": ["ecstasy", "freeland", "rongdhonu"] },
+            { "label": "category by", "option": ["mans", "womans", "kids", "accessory"] }
+        ],
+        "thead": ["product", "category", "brand", "sales", "amount", "published", "action"],
+        "tbody": [
+            {
+                "id": "#783404edft97e3445", 
+                "src": "images/product/01.jpg",
+                "alt": "scart",
+                "name": "Existing product name", 
+                "review": { "percent": "4", "number": "169" },
+                "category": "womans",
+                "brand": "fashonic", 
+                "sales": "380",
+                "amount": "$38,089", 
+                "published": "24/07/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            },
+            {
+                "id": "#237804edft97e3445", 
+                "src": "images/product/02.jpg",
+                "alt": "belt",
+                "name": "Existing product name", 
+                "review": { "percent": "3.5", "number": "293" },
+                "category": "accessory",
+                "brand": "freeland", 
+                "sales": "902",
+                "amount": "$12,978", 
+                "published": "03/04/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            },
+            {
+                "id": "#63704edft97e3445", 
+                "src": "images/product/03.jpg",
+                "alt": "coart",
+                "name": "Existing product name", 
+                "review": { "percent": "4", "number": "189" },
+                "category": "mans",
+                "brand": "iconics", 
+                "sales": "283",
+                "amount": "$93,279", 
+                "published": "28/09/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            },
+            {
+                "id": "#18944edft97e3445", 
+                "src": "images/product/04.jpg",
+                "alt": "dress",
+                "name": "Existing product name", 
+                "review": { "percent": "3", "number": "184" },
+                "category": "girls",
+                "brand": "designik", 
+                "sales": "923",
+                "amount": "$189,299", 
+                "published": "23/05/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            },
+            {
+                "id": "#83367edft97e3445", 
+                "src": "images/product/05.jpg",
+                "alt": "shirt",
+                "name": "Existing product name", 
+                "review": { "percent": "5", "number": "123" },
+                "category": "boys",
+                "brand": "smarter", 
+                "sales": "383",
+                "amount": "$103,389", 
+                "published": "03/11/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            },
+            {
+                "id": "#988904edft97e3445", 
+                "src": "images/product/06.jpg",
+                "alt": "jeans",
+                "name": "Existing product name", 
+                "review": { "percent": "4.7", "number": "245" },
+                "category": "others",
+                "brand": "ecstasy", 
+                "sales": "1233",
+                "amount": "$78,903", 
+                "published": "15/06/2022 14:02",
+                "action": { "edit": "edit", "delete": "delete" }
+            }
+        ]
+    },
+    "trafficCard": {
+        "title": "traffic sources",
+        "thead": ["source", "users", "sessions", "bounce rate", "avg. duration"],
+        "tbody": [
+            { 
+                "source": { "icon": "directions", "text": "direct" },
+                "users": "872", 
+                "sessions": "1077",
+                "bounce": "63%", 
+                "duration": "00:09:18"
+            },
+            { 
+                "source": { "icon": "dataset_linked", "text": "referral" },
+                "users": "789", 
+                "sessions": "390",
+                "bounce": "74%", 
+                "duration": "00:03:20"
+            },
+            { 
+                "source": { "icon": "compost", "text": "organic" },
+                "users": "872", 
+                "sessions": "1077",
+                "bounce": "63%", 
+                "duration": "00:09:18"
+            },
+            { 
+                "source": { "icon": "interests", "text": "social" },
+                "users": "1023", 
+                "sessions": "1265",
+                "bounce": "29%", 
+                "duration": "00:06:25"
+            },
+            { 
+                "source": { "icon": "campaign", "text": "campaign" },
+                "users": "7843", 
+                "sessions": "2389",
+                "bounce": "35%", 
+                "duration": "00:15:25"
+            },
+            { 
+                "source": { "icon": "devices_other", "text": "others" },
+                "users": "872", 
+                "sessions": "1077",
+                "bounce": "63%", 
+                "duration": "00:09:18"
+            }
+        ]
+    },
+    "countryCard": {
+        "title": "country sales",
+        "country": [
+            {
+                "src": "images/flag/bangladesh.jpg",
+                "alt": "bangladesh",
+                "name": { "title": "country", "text": "bangladesh" },
+                "sales": { "title": "sales", "text": "2500" },
+                "bounce": { "title": "bounce", "text": "29.9%" }
+            },
+            {
+                "src": "images/flag/usa.jpg",
+                "alt": "united state",
+                "name": { "title": "country", "text": "united state" },
+                "sales": { "title": "sales", "text": "1400" },
+                "bounce": { "title": "bounce", "text": "13.6%" }
+            },
+            {
+                "src": "images/flag/saudi.jpg",
+                "alt": "saudi arabia",
+                "name": { "title": "country", "text": "saudi arabia" },
+                "sales": { "title": "sales", "text": "3900" },
+                "bounce": { "title": "bounce", "text": "42.5%" }
+            },
+            {
+                "src": "images/flag/germany.jpg",
+                "alt": "germany",
+                "name": { "title": "country", "text": "germany" },
+                "sales": { "title": "sales", "text": "4170" },
+                "bounce": { "title": "bounce", "text": "15.7%" }
+            },
+            {
+                "src": "images/flag/philippines.jpg",
+                "alt": "philippines",
+                "name": { "title": "country", "text": "philippines" },
+                "sales": { "title": "sales", "text": "5298" },
+                "bounce": { "title": "bounce", "text": "35.4%" }
+            }
+        ]
+    },
+    "dotsMenu": {
+        "dots": "more_horiz",
+        "dropdown": [
+            { "icon": "edit", "text": "edit" },
+            { "icon": "delete", "text": "delete" },
+            { "icon": "download", "text": "download" }
+        ]
+    }
+}

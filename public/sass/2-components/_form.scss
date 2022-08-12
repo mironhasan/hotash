@@ -1,31 +1,61 @@
-.mc-form-select,
-.mc-form-control {
-    width: 100%;
-    height: 55px;
-    padding: 0px 16px;
-    border-radius: 0px;
+.form-group {
+    &.inline {
+        @include flex-dimension(center, start, 0px);
+
+        .form-label {
+            width: 70px;
+            flex-shrink: 0;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.form-label {
+    @include text-font(13px, 700);
+    text-transform: uppercase;
+    white-space: nowrap;
     color: $heading;
-    border: 1px solid $border;
-    background-color: $gray-2;
+}
+
+.form-select,
+.form-control {
+    width: 100%;
+    height: 45px;
+    padding: 0px 16px;
+    border-radius: 8px;
+    color: $text;
+    @include text-font(15px, 500);
+    border: 1px solid $gray-300;
+    background-color: $gray-200;
     @include transition-linear;
 
     &:focus-within {
         box-shadow: none;
         border-color: $primary;
+        background-color: $gray-100;
     }
 }
 
-textarea.mc-form-control {
+textarea.form-control {
     height: 134px;
     padding: 15px 16px;
 }
 
-.mc-form-select {
+.form-select {
     cursor: pointer;
     background-position: $end-direction 18px center;
 }
 
-.mc-form-btn {
+.form-control[type=file]::-webkit-file-upload-button,
+.form-control[type=file]::file-selector-button {
+    padding: 17px 12px;
+    font-size: 15px;
+    color: $text;
+    border: none;
+    background: none;
+}
+
+.form-btn {
     @include text-font (15px, 600);
     @include flex-dimension (center, center, 0px 8px);
     text-transform: uppercase;

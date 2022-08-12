@@ -1,0 +1,89 @@
+{
+    "logo": {
+        "path": "#",
+        "src": "images/logo/blue.png",
+        "alt": "blue",
+        "name": "hotash"
+    },
+    "toggle": { 
+        "open": "menu_open", 
+        "close": "menu" 
+    },
+    "search":{
+        "icon": "search",
+        "type": "text", 
+        "placeholder": "quick finding..." 
+    },
+    "theme": {
+        "light": "light_mode",
+        "dark": "dark_mode",
+        "title": "Theme Mode",
+        "addClass": "theme"
+    },
+    "language": { 
+        "icon": "language",      
+        "title": "Languages",
+        "addClass": "language"
+    },
+    "cart": { 
+        "icon": "shopping_cart", 
+        "title": "Shopping",
+        "addClass": "cart",      
+        "badge": { "text": "05", "variant": "primary" } 
+    },
+    "message": { 
+        "icon": "email",         
+        "title": "Messages",
+        "addClass": "message",       
+        "badge": { "text": "03", "variant": "primary" } 
+    },
+    "notify": { 
+        "icon": "notifications", 
+        "title": "Notifications",
+        "addClass": "notify",    
+        "badge": { "text": "08", "variant": "primary" } 
+    },
+    "icons": [
+        { 
+            "icon": "light_mode",    
+            "title": "Theme Mode",
+            "addClass": "theme"
+        },
+        { 
+            "icon": "language",      
+            "title": "Languages",
+            "addClass": "language"
+        },
+        { 
+            "icon": "shopping_cart", 
+            "title": "Shopping",
+            "addClass": "cart",      
+            "badge": { "text": "05", "variant": "primary" } 
+        },
+        { 
+            "icon": "email",         
+            "title": "Messages",
+            "addClass": "message",       
+            "badge": { "text": "03", "variant": "primary" } 
+        },
+        { 
+            "icon": "notifications", 
+            "title": "Notifications",
+            "addClass": "notify",    
+            "badge": { "text": "08", "variant": "primary" } 
+        }
+    ],
+    "profile": {
+        "name": "miron mahmud",
+        "role": "superadmin",
+        "username": "@mironcoder",
+        "email": "mironcoder@gmail.com",
+        "src": "images/avatar/01.jpg",
+        "alt": "user",
+        "dropdown": [
+            { "path": "#", "icon": "person", "text": "my account" },
+            { "path": "/forgot-password", "icon": "privacy_tip", "text": "reset password" },
+            { "path": "/login", "icon": "lock", "text": "logout" }
+        ]
+    }
+}

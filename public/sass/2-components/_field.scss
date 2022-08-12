@@ -1,4 +1,4 @@
-.mc-field-group {
+.mc-label-field-group {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -24,44 +24,14 @@
     }
 }
 
-.mc-field-label {
+.mc-label-field-title {
     @include text-font(12px, 700);
     text-transform: uppercase;
     color: $heading;
 }
 
-.mc-field-select {
-    @include text-font(14px, 500);
-    text-transform: capitalize;
-    border-radius: 8px;
-    padding: 0px 15px;
-    background-image: url(../images/dropdown.svg);
-    background-position: right 12px center;
-    background-repeat: no-repeat;
-    background-size: 12px;
-    background-color: $gray-200;
-    border: 1px solid $gray-300;
-    color: $text;
-    appearance:none;
-    cursor: pointer;
-
-    &.w-sm { width: 80px; }
-    &.w-md { width: 120px; }
-    &.w-lg { width: 160px; }
-    &.w-xl { width: 200px; }
-    &.w-100 { width: 100%; }
-    &.w-fit { width: fit-content; }
-
-    &.h-sm { height: 40px; }
-    &.h-md { height: 45px; }
-    &.h-lg { height: 50px; }
-    &.h-xl { height: 55px; }
-}
-
-input[type="text"].mc-field-input,
-input[type="email"].mc-field-input,
-input[type="password"].mc-field-input,
-input[type="number"].mc-field-input {
+.mc-label-field-input,
+.mc-label-field-select {
     padding: 0px 15px;
     border-radius: 8px;
     @include text-font(14px, 500);
@@ -76,15 +46,26 @@ input[type="number"].mc-field-input {
     &.w-100 { width: 100%; }
     &.w-fit { width: fit-content; }
 
-    &.h-sm { height: 40px; }
+    &.h-sm { height: 42px; }
     &.h-md { height: 45px; }
-    &.h-lg { height: 50px; }
-    &.h-xl { height: 55px; }
+    &.h-lg { height: 48px; }
+    &.h-xl { height: 50px; }
+}
+
+.mc-label-field-select {
+    text-transform: capitalize;
+    background-image: url(../images/dropdown.svg);
+    background-position: $end-direction 12px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    appearance:none;
+    cursor: pointer;
 }
 
 // ICON FIELD STYLE
 .mc-icon-field {
     @include flex-dimension(center, start, 0px);
+    padding: 0px 12px;
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: $white;
@@ -97,21 +78,40 @@ input[type="number"].mc-field-input {
         button { opacity: 1; }
     }
 
-    &.h-sm { height: 40px; }
-    &.h-md { height: 45px; }
-    &.h-lg { height: 50px; }
-    &.h-xl { height: 55px; }
+    &.w-sm { width: 200px; }
+    &.w-md { width: 300px; }
+    &.w-lg { width: 400px; }
+    &.w-xl { width: 500px; }
+    &.w-100 { width: 100%; }
+    &.w-fit { width: fit-content; }
 
-    input {
+    &.h-sm { height: 42px; }
+    &.h-md { height: 45px; }
+    &.h-lg { height: 48px; }
+    &.h-xl { height: 50px; }
+
+    input,
+    select {
         width: 100%;
         height: 100%;
         color: $text;
+        padding: 0px 12px;
+    }
+
+    select {
+        font-size: 14px;
+        text-transform: capitalize;
+        background-image: url(../images/dropdown.svg);
+        background-position: $end-direction 0px center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+        appearance: none;
+        cursor: pointer;
     }
 
     i,
     button {
         font-size: 20px;
-        padding: 0px 13px;
         color: $gray-800;
         @include transition-linear;
     }

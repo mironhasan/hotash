@@ -1,44 +1,31 @@
 {
-    "profile": [
-        { 
-            "href": "#", 
-            "icon": "person",      
-            "text": "my account" 
-        },
-        { 
-            "href": "#", 
-            "icon": "privacy_tip", 
-            "text": "reset password" 
-        },
-        { 
-            "href": "/login", 
-            "icon": "lock",        
-            "text": "logout" 
-        }
-    ],
-    "sidebar": [
+    "navs": [
         {
             "title": "main menu",
             "menu": [
                 { 
+                    "href": "/",
                     "icon": "dashboard", 
                     "text": "dashboard"
                 },
                 { 
                     "icon": "lock", 
-                    "text": "authentication", 
-                    "badge": { "text": "hot", "variant": "red square" },
+                    "text": "authentication",
                     "submenu": [
                         { "href": "/login", "text": "login" },
-                        { "href": "#", "text": "registration" },
-                        { "href": "#", "text": "forgot password" }
+                        { "href": "/register", "text": "registration" },
+                        { "href": "/forgot-password", "text": "forgot password" }
                     ]
                 },
                 { 
-                    "href": "#",
                     "icon": "account_circle", 
-                    "text": "users" 
-                }, 
+                    "text": "users", 
+                    "badge": { "text": "hot", "variant": "red square" },
+                    "submenu": [
+                        { "href": "/all-user", "text": "all user" },
+                        { "href": "/my-account", "text": "my account" }
+                    ]
+                },
                 { 
                     "href": "#",
                     "icon": "pix", 
@@ -118,70 +105,10 @@
                     "icon": "layers", 
                     "text": "change log",
                     "badge": { "text": "v1.0", "variant": "primary square" }
-                },
-                { 
-                    "icon": "perm_phone_msg", 
-                    "text": "contact"
                 }
             ]
         }
     ],
-    "heroCard": {
-        "icon": "more_vert",
-        "position": "top",
-        "dropdown": [
-            { 
-                "icon": "history", 
-                "text": "last day" 
-            },
-            { 
-                "icon": "history", 
-                "text": "last week" 
-            },
-            { 
-                "icon": "history", 
-                "text": "last month" 
-            },
-            { 
-                "icon": "history", 
-                "text": "last year" 
-            }
-        ]
-    },
-    "salesCard": {
-        "icon": "more_horiz",
-        "position": "bottom",
-        "dropdown": [
-            { 
-                "icon": "edit", 
-                "text": "edit" 
-            },
-            { 
-                "icon": "delete", 
-                "text": "delete" 
-            },
-            { 
-                "icon": "download", 
-                "text": "download" 
-            }
-        ]
-    },
-    "CommonCard": {
-        "icon": "more_horiz",
-        "position": "bottom",
-        "dropdown": [
-            { 
-                "icon": "edit", 
-                "text": "edit" 
-            },
-            { 
-                "icon": "delete", 
-                "text": "delete" 
-            },
-            { 
-                "icon": "download", 
-                "text": "download" 
-            }
-        ]
-    }
+    "button": { "icon": "lock", "path": "/login", "text": "logout" }
+
 }

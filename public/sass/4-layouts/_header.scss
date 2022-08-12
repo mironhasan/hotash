@@ -1,6 +1,6 @@
 .mc-header {
     width: 100%;
-    padding: 15px;
+    padding: 15px 20px;
     @include position-top-left(fixed, 0px, 0px, 5);
     @include flex-dimension(center, space-between, 0px);
 
@@ -20,11 +20,17 @@
     @include mobile-breakpoint {
         gap: 0px 10px;
     }
+
+    .mc-logo {
+        @include laptop-breakpoint { flex-grow: 1; }
+        img { @include custom-breakpoint(0px, 500px) { height: 38px; } }
+        span { @include custom-breakpoint(0px, 500px) { display: none; } }
+    }
 }
 
 .mc-header-left {
     @include flex-dimension(center, flex-start, 0px 50px);
-    margin-#{$start-direction}: -130px;
+    margin-#{$start-direction}: -150px;
 
     @include desktop-breakpoint {
         margin-#{$start-direction}: 0px;
@@ -65,24 +71,31 @@
 
 .mc-header-search {
     width: 280px;
-    padding: 0px 15px;
+    padding: 0px 12px;
     border-radius: 8px;
-    background-color: $gray-200;
+    background-color: rgba($primary, .06);
     @include flex-dimension(center, flex-start, 0px);
+    @include transition-linear;
+
+    &:hover {
+        background-color: rgba($primary, .1);
+        button { color: $primary; }
+    }
 
     @include tablet-breakpoint {
         display: none;
     }
 
     button {
-        color: $icon;
-        margin-#{$end-direction}: 15px;
-        padding-#{$end-direction}: 13px;
+        margin-#{$end-direction}: 12px;
+        padding-#{$end-direction}: 10px;
         border-#{$end-direction}: 1px solid $gray-400;
+        @include transition-linear;
     }
 
     input {
         height: 40px;
+        width: 100%;
     }
 }
 
@@ -113,9 +126,15 @@
 
     i {
         font-size: 20px;
+        color: $gray-800;
+        background-color: rgba($primary, .06);
         @include content-center(38px, 38px, 50%);
-        color: $icon;
-        background-color: $gray-200;
+        @include transition-linear;
+
+        &:hover {
+            color: $primary;
+            background-color: rgba($primary, .1);
+        }
 
         @include mobile-breakpoint {
             width: 35px;
@@ -127,9 +146,8 @@
 
     sup {
         @include position-top-right(absolute, -12px, -8px, 1);
-        @include text-font(11px, 500);
-        letter-spacing: 0.2px;
-        padding: 9px 4px;
+        @include text-font(10px, 500);
+        padding: 8px 4px 9px;
         border-radius: 15px;
         color: $white;
         border: 3px solid $white;
@@ -146,22 +164,39 @@
 }
 
 .mc-header-user-menu {
-    cursor: pointer;
     @include flex-dimension(center, center, 0px 7px);
 
-    &::after {
-        width: 18px;
-        content: "\e5c5";
-        font-size: 24px;
-        align-self: flex-start;
-        font-family: 'Material Icons';
-        margin-#{$start-direction}: -5px;
-        color: $icon;
+    &.btn {
+        border: inherit;
+        padding: inherit;
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        border-color: inherit;
+        letter-spacing: inherit;
+        text-transform: inherit;
+        background-color: inherit;
+        border-radius: inherit;
+        box-shadow: inherit;
 
-        @include desktop-breakpoint {
-            font-size: 22px;
-            margin-top: 5px;
-            margin-#{$start-direction}: -10px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &.dropdown-toggle {
+        &::after {
+            content: "";
+            display: inherit;
+            margin-left: inherit;
+            vertical-align: inherit;
+            align-self: flex-start;
+            margin-top: 8px;
+            border-radius: 5px;
+            border-bottom: 0;
+            border-top: 5px solid;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
         }
     }
 }
@@ -186,6 +221,7 @@
 }
 
 .mc-header-user-meta {
+    text-align: $start-direction;
     @include desktop-breakpoint {
         display: none;
     }
@@ -202,39 +238,8 @@
     }
 }
 
-.mc-header-user-list {
-    padding: 10px;
-    min-width: 185px;
-    max-width: fit-content;
-    border-radius: 8px;
-    background-color: $white;
-    border: 1px solid $gray-200;
-    box-shadow: 0px 15px 35px 0px rgba($black, 0.1);
-    @include position-top-right(absolute, 75px, 25px, 3);
-    @include transition-linear;
-
-    &.hide {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    &.show {
-        transform-origin: top;
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-.mc-header-user-item {
-    &:last-child {
-        .mc-header-user-link {
-            color: $red-600;
-        }
-    }
-}
-
 .mc-header-user-link {
-    padding: 8px 10px;
+    padding: 6px 10px;
     border-radius: 8px;
     white-space: nowrap;
     @include flex-dimension(center, start, 0px 10px);
@@ -252,5 +257,9 @@
     span {
         text-transform: capitalize;
         @include text-font(15px, 500);
+    }
+
+    &:last-child {
+        color: $red-600;
     }
 }

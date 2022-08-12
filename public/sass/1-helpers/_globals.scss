@@ -14,12 +14,23 @@ a {
     text-decoration: none;
     display: inline-block;
 
-    &:hover { text-decoration: none; }
+    &:hover { 
+        text-decoration: none; 
+        color: inherit;
+    }
 }
 
 ul,
 ol {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
+}
+
+sup, 
+sub {
+    top: inherit;
+    bottom: inherit;
 }
 
 h1,
@@ -28,7 +39,13 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 0px;
+    padding: 0px;
     color: $heading;
+}
+
+p {
+    margin: 0px;
 }
 
 html,
@@ -56,8 +73,3 @@ button {
     color: $text;
 }
 
-@include laptop-breakpoint {
-    .content-reverse { 
-        flex-direction: column-reverse; 
-    }
-}

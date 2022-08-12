@@ -35,7 +35,7 @@
 }
 
 .mc-sidebar-menu-title {
-    @include text-font(12px, 600);
+    @include text-font(13px, 500);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -49,6 +49,8 @@
         .mc-sidebar-menu-btn  {
             color: $primary;
             background-color: rgba($primary, 0.1);
+
+            i { color: $primary; }
         }
     }
     
@@ -57,9 +59,8 @@
             color: $primary;
             background-color: rgba($primary, 0.1);
 
-            small {
-                transform: rotate(0deg);
-            }
+            i { color: $primary; }
+            small { transform: rotate(0deg); }
         }
 
         .mc-sidebar-dropdown-list {
@@ -77,35 +78,45 @@
     @include flex-dimension(center, start, 0px 12px);
     @include transition-linear;
 
-    i { font-size: 22px; }
+    &:hover {
+        background-color: $gray-200;
+    }
+
+    i { 
+        font-size: 22px; 
+        color: $gray-700;
+        @include transition-linear;
+    }
 
     span {
         @include text-font(15px, 500);
         text-transform: capitalize;
         text-align: $start-direction;
-        width: 100%;
+        flex-grow: 1;
     }
 
     sup {
         color: $white;
+        line-height: 18px;
         letter-spacing: 0.3px;
         @include text-font(10px, 600);
         text-transform: uppercase;
 
         &.square {
-            padding: 0px 5px;
-            line-height: 18px;
+            padding: 0px 5px 1px;
             border-radius: 4px;
         }
 
         &.round {
-            padding: 5px 4px;
             border-radius: 15px;
+            padding: 0px 4px 1px;
         }
 
         &.red { background: $red-600; }
         &.blue { background: $blue-600; }
         &.green { background: $green-600; }
+        &.purple { background: $purple-600; }
+        &.yellow { background: $yellow-600; }
         &.primary { background: $primary; }
     }
 
@@ -113,10 +124,6 @@
         font-size: 20px;
         transform: rotate(-90deg);
         @include transition-linear;
-    }
-
-    &:hover {
-        background-color: $gray-200;
     }
 }
 
@@ -142,11 +149,11 @@
 
 .mc-sidebar-dropdown-link {
     width: 100%;
+    font-size: 15px;
     position: relative;
     text-transform: capitalize;
-    @include text-font(15px, 500);
-    @include padding(3px, 0px, 3px, 20px);
-    margin: 5px 0px;
+    padding-#{$start-direction}: 20px;
+    margin: 6px 0px;
     @include transition-linear;
 
     &::before {

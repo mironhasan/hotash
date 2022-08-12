@@ -11,8 +11,8 @@
 }
 
 .mc-card-head {
-    @include flex-dimension(center, space-between, 0px);
     margin-bottom: 28px;
+    @include flex-dimension(center, space-between, 0px);
 }
 
 .mc-card-title {
