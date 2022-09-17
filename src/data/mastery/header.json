@@ -37,7 +37,7 @@
     ],
     "logo": {
         "path": "#",
-        "src": "images/logo/blue.png",
+        "src": "images/logo.png",
         "alt": "blue",
         "name": "hotash"
     },
