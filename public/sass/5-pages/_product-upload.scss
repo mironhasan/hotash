@@ -1,0 +1,108 @@
+.mc-product-upload-organize {
+    @include flex-dimension(end, start, 15px);
+
+    .mc-label-field-group {
+        width: 100%;
+    }
+
+    .mc-btn {
+        width: 90px;
+        height: 42px;
+        flex-shrink: 0;
+        padding: 8px 12px;
+    }
+}
+
+.mc-product-upload-media {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+}
+
+.mc-product-upload-image {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        &::after { opacity: 1; color: $primary; }
+        img { border-color: $primary; }
+    }
+
+    &.active {
+        &::after { opacity: 1; }
+        img { border-color: $green-600; }
+    }
+
+    &::after {
+        @include position-top-right(absolute, 12px, 12px, 1);
+        font-family: 'Material Icons';
+        line-height: 22px;
+        font-size: 22px;
+        content: "\e86c";
+        color: $green-600;
+        opacity: 0;
+        @include transition-linear;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 2px dashed $gray-300;
+        filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
+        @include transition-linear;
+    }
+}
+
+.mc-product-upload-file {
+    width: 180px;
+    position: relative;
+    border-radius: 8px;
+    border: 2px dashed $gray-300;
+    filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
+    @include transition-linear;
+
+    &:hover {
+        border-color: $gray-500;
+    }
+
+    input { 
+        width: 100%;
+        height: 100%;
+        visibility: hidden; 
+    }
+
+    label {
+        @include position-top-left(absolute, 0px, 0px, 1);
+        @include flex-dimension(center, center, 0px);
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        text-align: center;
+
+        i {
+            font-size: 90px;
+            opacity: 0.1;
+        }
+
+        p {
+            width: 100px;
+            font-size: 14px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.mc-product-upload-btn {
+    width: 100%;
+    margin-top: 50px;
+    text-transform: capitalize;
+    @include text-font(15px, 500);
+    letter-spacing: 0.5px;
+    gap: 10px;
+
+    i {font-size: 20px;  }
+}

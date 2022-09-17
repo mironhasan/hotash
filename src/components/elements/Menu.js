@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Menu({ children, ...rest }) {
-    return <menu { ...rest }>{ children }</menu>
+export default function Menu({ children, className }) {
+    return <menu className={ className }>{ children }</menu>
 }

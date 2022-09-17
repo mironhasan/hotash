@@ -13,4 +13,9 @@
         text-transform: uppercase;
         color: $heading;
     }
+
+    &.lg {
+        img { height: 60px; }
+        span { font-size: 34px; }
+    }
 }

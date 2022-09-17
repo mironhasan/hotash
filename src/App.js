@@ -1,19 +1,49 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import ForgotPassword from "./pages/ForgotPassword";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import AllUser from "./pages/AllUser";
+import { Overview, Documentation, ChangeLog } from "./pages/supports";
+import { Avatars, Alerts, Buttons, Charts, Tables, Fields, Headings, Colors } from "./pages/blocks";
+import { Ecommerce, Analytics, CRM, ForgotPassword, Register, Login, UserList, UserProfile, MyAccount, 
+    ProductList, ProductView, ProductUpload, InvoiceList, InvoiceDetails, OrderList, Message, 
+    Notification, BlankPage, Settings } from "./pages/mastery";
 
 export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Dashboard /> } />
+                {/* Mastery Pages */}
+                <Route path="/ecommerce" element={<Ecommerce /> } />
+                <Route path="/analytics" element={<Analytics /> } />
+                <Route path="/crm" element={<CRM /> } />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
-                <Route path="/all-user" element={<AllUser />} />
+                <Route path="/user-list" element={<UserList />} />
+                <Route path="/user-profile" element={<UserProfile />} />
+                <Route path="/my-account" element={<MyAccount />} />
+                <Route path="/product-list" element={<ProductList />} />
+                <Route path="/product-view" element={<ProductView />} />
+                <Route path="/product-upload" element={<ProductUpload />} />
+                <Route path="/invoice-list" element={<InvoiceList />} />
+                <Route path="/invoice-details" element={<InvoiceDetails />} />
+                <Route path="/order-list" element={<OrderList />} />
+                <Route path="/message" element={<Message />} />
+                <Route path="/notification" element={<Notification />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/blank-page" element={<BlankPage />} />
+
+                {/* Blocks Pages */} 
+                <Route path="/headings" element={<Headings />} />
+                <Route path="/buttons" element={<Buttons />} />
+                <Route path="/avatars" element={<Avatars />} />
+                <Route path="/colors" element={<Colors />} />
+                <Route path="/charts" element={<Charts />} />
+                <Route path="/tables" element={<Tables />} />
+                <Route path="/fields" element={<Fields />} />
+                <Route path="/alerts" element={<Alerts />} />
+
+                {/* Supports Pages */}
+                <Route path="/" element={<Overview />} />
+                <Route path="/documentation" element={<Documentation />} />
+                <Route path="/changelog" element={<ChangeLog />} />
             </Routes>
         </BrowserRouter>
     );

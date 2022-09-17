@@ -20,12 +20,13 @@
 .mc-paginate-item {
     cursor: pointer;
     background-color: $gray-200;
-    @include content-center(35px, 34px, 50%);
-    @include text-font(14px, 600);
+    @include content-center(35px, 35px, 50%);
+    @include text-font(12px, 500);
     @include transition-linear;
 
     i {
-        line-height: 34px;
+        line-height: 35px;
+        font-size: 20px;
     }
 
     &:hover {

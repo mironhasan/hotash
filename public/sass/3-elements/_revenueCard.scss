@@ -1,0 +1,54 @@
+.mc-revenue-card-header {
+    margin-bottom: 28px;
+    @include flex-dimension(start, space-between, 0px);
+
+    .mc-icon-field {
+        background-color: $gray-100;
+        border-color: $gray-200;
+        margin-bottom: 0px;
+    }
+}
+
+.mc-revenue-card-group {
+    @include flex-dimension(start, space-between, 0px);
+    margin-bottom: 25px;
+}
+
+.mc-revenue-card-report {
+    @include flex-dimension(center, center, 15px);
+
+    i {
+        font-size: 35px;
+        color: $primary;
+
+        &.blue {
+            background: -webkit-linear-gradient($blue-700, $blue-500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &.green {
+            background: -webkit-linear-gradient($green-700, $green-500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &.purple {
+            background: -webkit-linear-gradient($purple-700, $purple-500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+
+        span {
+            color: $text;
+            display: block;
+            @include text-font(14px, 400);
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+    }
+}

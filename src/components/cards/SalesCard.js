@@ -1,22 +1,20 @@
 import React from "react";
-import Text from "../elements/Text";
-import Box from "../elements/Box";
-import Heading from "../elements/Heading";
-import DotsMenu from "../DotsMenu";
+import { CardHeader } from ".";
+import { SalesChart } from "../charts";
+import { Box, Text, Heading, Icon } from "../elements";
 
-export default function SalesCard ({ title, amount, dotsMenu, children }) {
+export default function SalesCard ({ chart, title, amount, percent, trendIcon, compare, dotsMenu }) {
     return (
-        <Box className="mc-card">
-            <Box className="mc-sales-card-head">
-                <Heading as="h3">
-                    <Text as="span">{ title }</Text>
-                    { amount }
-                </Heading>
-                <DotsMenu dots={ dotsMenu.dots } dropdown={ dotsMenu.dropdown } />
+        <Box className="mc-sales-card">
+            <Box className="mc-sales-card-group">
+                <CardHeader title={ title } dotsMenu={ dotsMenu } />
+                <Box className={`mc-sales-card-amount ${trendIcon === "trending_up" ? "green" : "red"}`}>
+                    <Heading as="h3">{ amount }</Heading>
+                    <Text>{ percent }<Icon type={ trendIcon }/></Text>
+                </Box>
+                <Text className="mc-sales-card-compare">{ compare }</Text>
             </Box>
-            <Box className="mc-sales-card-chart">
-                { children }
-            </Box>
+            <SalesChart chart={ chart } />
         </Box>
     );
 }

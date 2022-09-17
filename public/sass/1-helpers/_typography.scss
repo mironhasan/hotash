@@ -10,17 +10,16 @@ textarea {
 
     &::placeholder {
         @include text-font(14px, 400);
-        text-transform: capitalize;
     }
 }
 
 h1 { 
-    font-size: 50px; 
+    font-size: 36px; 
     font-weight: 700;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 700;
 }
 

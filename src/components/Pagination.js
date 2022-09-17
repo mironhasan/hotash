@@ -1,9 +1,5 @@
 import React from "react";
-import Box from "./elements/Box";
-import Icon from "./elements/Icon";
-import Item from "./elements/Item";
-import List from "./elements/List";
-import Text from "./elements/Text";
+import { Box, Icon, Item, List, Text } from "./elements";
 
 export default function Pagination() {
     return (

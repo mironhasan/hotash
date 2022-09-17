@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Anchor({ href, icon, text, badge, arrow, children, ...rest }) {
+export default function Anchor({ onClick, className, target, href, icon, iconClass, text, badge, arrow, children }) {
     return (
-        <Link to={ href } { ...rest }>
-            { icon && <i className="material-icons">{ icon }</i> }
+        <Link to={ href || "#" } target={ target } onClick={ onClick } className={ className }>
+            { icon || iconClass ? <i className={ iconClass || "material-icons" }>{ icon }</i> : <></> }
             { text && <span>{ text }</span> }
             { badge && <sup className={ badge.variant }>{ badge.text }</sup> }
             { arrow && <small className="material-icons">{ arrow }</small>}

@@ -1,13 +1,13 @@
 import React from "react";
 import Icon from "../components/elements/Icon"
 import Dropdown from 'react-bootstrap/Dropdown';
-import DotsDropdown from "./dropdowns/DotsDropdown";
+import DropdownMenu from "./DropdownMenu";
 
 export default function DotsMenu({ dots, dropdown }) {
     return (
-        <Dropdown bsPrefix="mc-dots">
-            <Dropdown.Toggle bsPrefix="mc-dots-icon"><Icon type={ dots } /></Dropdown.Toggle>
-            <DotsDropdown dropdown={ dropdown } />
+        <Dropdown bsPrefix="mc-dropdown">
+            <Dropdown.Toggle bsPrefix="mc-dropdown-toggle"><Icon type={ dots } /></Dropdown.Toggle>
+            <DropdownMenu className="mc-dropdown-paper" dropdown={ dropdown } />
         </Dropdown>
     )
 }

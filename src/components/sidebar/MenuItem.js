@@ -1,13 +1,10 @@
 import React from "react";
-import List from "../elements/List";
-import Item from "../elements/Item";
-import Anchor from "../elements/Anchor";
-import Button from "../elements/Button";
+import { List, Item, Anchor, Button } from "../elements";
 
-export default function MenuItem({ item, itemIndex, menuIndex }) {
-    const [open, setOpen] = React.useState(false);
+export default function MenuItem({ item }) {
+    const [active, setActive] = React.useState(false);
     return (
-        <Item className={`mc-sidebar-menu-item ${open ? "active" : ""} ${(itemIndex === 0 && menuIndex === 0) ? "focused" : ""}`}>
+        <Item className={`mc-sidebar-menu-item ${active ? "active" : ""}`} onClick = {()=> setActive(!active)}>
             {item.submenu ?
                 <>
                     <Button 
@@ -16,11 +13,10 @@ export default function MenuItem({ item, itemIndex, menuIndex }) {
                         badge = { item.badge }
                         arrow = "expand_more"
                         className = "mc-sidebar-menu-btn" 
-                        onClick={()=> setOpen(!open)}
                     />
                     <List className="mc-sidebar-dropdown-list">
                         {item.submenu.map((item, index) => (
-                            <Item key={ index } className="mc-sidebar-dropdown-item">
+                            <Item key={ index } className="mc-sidebar-dropdown-item" onClick = {()=> setActive(!active)}>
                                 <Anchor href={ item.href } className="mc-sidebar-dropdown-link">
                                     { item.text } 
                                 </Anchor>
@@ -30,12 +26,11 @@ export default function MenuItem({ item, itemIndex, menuIndex }) {
                 </>
             :
                 <Anchor 
-                    href={ item.href || "#" }
+                    href={ item.href }
                     icon = { item.icon } 
                     text = { item.text } 
                     badge = { item.badge }
                     className = "mc-sidebar-menu-btn" 
-                    onClick={()=> setOpen(!open)}
                 />
             }
         </Item>

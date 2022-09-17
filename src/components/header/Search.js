@@ -1,7 +1,5 @@
 import React from "react";
-import Form from "../elements/Form";
-import Button from "../elements/Button";
-import Input from "../elements/Input";
+import { Form, Button, Input } from "../elements";
 
 export default function Search({ icon, type, placeholder }) {
     return (

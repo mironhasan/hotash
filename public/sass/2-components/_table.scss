@@ -21,15 +21,30 @@
             }
         }
     }
+}
 
-    .primary {
+.mc-table-head {
+    border-top: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+
+    &.sticky {
+        @include position-top-left(sticky, 0px, 0px, 1);
+        width: 100%;
+    }
+
+    &.gray {
+        background-color: $gray-100;
+    }
+
+    &.primary {
+        border: none;
         color: $white;
-        background-color: $primary;
+        background: linear-gradient(to top, $primary, $blue-700);
 
         tr {
             th {
                 padding: 13px 15px;
-                border-#{$end-direction}: 1px solid $blue-800;
+                border-#{$end-direction}: 1px solid $blue-700;
 
                 &:last-child {
                     border-#{$end-direction}: none;
@@ -37,27 +52,6 @@
             }
         }
     }
-
-    .even {
-        tr {
-            &:nth-child(even) {
-                background-color: $gray-100;
-            }
-        }
-    }
-
-    .odd {
-        tr {
-            &:nth-child(odd) {
-                background-color: $gray-100;
-            }
-        }
-    }
-}
-
-.mc-table-head {
-    border-top: 1px solid $gray-200;
-    border-bottom: 1px solid $gray-200;
 
     tr {
         th {
@@ -79,6 +73,22 @@
 }
 
 .mc-table-body {
+    &.even {
+        tr {
+            &:nth-child(even) {
+                background-color: $gray-100;
+            }
+        }
+    }
+
+    &.odd {
+        tr {
+            &:nth-child(odd) {
+                background-color: $gray-100;
+            }
+        }
+    }
+    
     tr {
         td {
             max-width: 120px;
@@ -139,6 +149,20 @@
 .mc-table-product {
     @include flex-dimension(center, start, 0px 8px);
 
+    &.sm {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &.md {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     img {
         width: 45px;
         height: 45px;
@@ -149,10 +173,16 @@
         box-shadow: 0px 7px 15px 0px rgba($black, 0.06);
     }
 
-    p {
+    h6 {
+        @include text-font(14px, 500);
         margin-bottom: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    p {
         line-height: 18px;
-        font-weight: 500;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -201,6 +231,44 @@
     p {
         font-weight: 500;
         text-transform: capitalize;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    a {
+        font-weight: 500;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        @include transition-linear;
+        &:hover { color: $primary; }
+    }
+}
+
+.mc-table-price {
+    p {
+        color: $red-500;
+        font-weight: 500;
+    }
+}
+
+.mc-table-rating {
+    @include flex-dimension(center, start, 3px);
+
+    i {
+        font-size: 18px;
+        color: $yellow-600;
+    }
+
+    h3 { 
+        font-size: 14px; 
+        line-height: 18px;
+    }
+
+    p { 
+        font-size: 13px;
+        line-height: 18px;
     }
 }
 
@@ -209,6 +277,8 @@
     border-radius: 6px;
     padding: 0px 7px 1px;
     width: fit-content;
+    text-transform: capitalize;
+    @include text-font(13px, 500);
 
     &.purple { color: $purple-700; background: $purple-200; }
     &.blue { color: $blue-700; background: $blue-200; }
@@ -238,6 +308,11 @@
             background-color: $green-200;
         }
 
+        &.chat {
+            color: $green-700;
+            background-color: $green-200;
+        }
+
         &.delete {
             color: $red-700;
             background-color: $red-200;
@@ -246,6 +321,11 @@
         &.block {
             color: $red-700;
             background-color: $red-200;
+        }
+
+        &.download {
+            color: $blue-700;
+            background-color: $blue-200;
         }
     }
 }

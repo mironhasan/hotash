@@ -31,7 +31,8 @@
 }
 
 .mc-label-field-input,
-.mc-label-field-select {
+.mc-label-field-select,
+.mc-label-field-textarea {
     padding: 0px 15px;
     border-radius: 8px;
     @include text-font(14px, 500);
@@ -50,6 +51,19 @@
     &.h-md { height: 45px; }
     &.h-lg { height: 48px; }
     &.h-xl { height: 50px; }
+    &.h-text-sm { height: 120px; }
+    &.h-text-md { height: 150px; }
+    &.h-text-lg { height: 180px; }
+    &.h-text-xl { height: 210px; }
+    &.h-multiple {
+        height: 100px;
+        padding: 12px 15px;
+        background-image: none;
+    }
+}
+
+.mc-label-field-textarea {
+    padding: 10px 15px;
 }
 
 .mc-label-field-select {
@@ -68,12 +82,33 @@
     padding: 0px 12px;
     border-radius: 8px;
     margin-bottom: 20px;
-    background-color: $white;
-    border: 1px solid $white;
     @include transition-linear;
+
+    &.textarea {
+        align-items: start;
+
+        i { margin-top: 14px; }
+        textarea { padding: 12px; resize: none; }
+    }
+
+    &.gray {
+        background-color: $gray-200;
+        border: 1px solid $gray-300;
+    }
+
+    &.light {
+        background-color: $gray-100;
+        border: 1px solid $gray-200;
+    }
+
+    &.white {
+        background-color: $white;
+        border: 1px solid $gray-100;
+    }
 
     &:focus-within {
         border-color: $primary;
+
         i { color: $primary; }
         button { opacity: 1; }
     }
@@ -89,9 +124,14 @@
     &.h-md { height: 45px; }
     &.h-lg { height: 48px; }
     &.h-xl { height: 50px; }
+    &.h-text-sm { height: 120px; }
+    &.h-text-md { height: 150px; }
+    &.h-text-lg { height: 180px; }
+    &.h-text-xl { height: 210px; }
 
     input,
-    select {
+    select,
+    textarea {
         width: 100%;
         height: 100%;
         color: $text;

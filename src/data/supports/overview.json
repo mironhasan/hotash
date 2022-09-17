@@ -1,0 +1,90 @@
+{
+    "banner": {
+        "logo": "images/logo.png",
+        "title": "react admin dashboard",
+        "descrip": "This template built with powerful user interface and highly responsive experience with a versatile dashboard such as CRM, eCommerce, and analytics.",
+        "subtitle": "build with -"
+    },
+    "tools": [
+        "images/tools/react.png",
+        "images/tools/sass.png",
+        "images/tools/bs.png"
+    ],
+    "demos": [
+        { 
+            "image": "images/pages/ecommerce.jpg", 
+            "path": "/ecommerce", 
+            "title": "ecommerce" 
+        },
+        { 
+            "image": "images/pages/analytics.jpg", 
+            "path": "/analytics", 
+            "title": "analytics" 
+        },
+        { 
+            "image": "images/pages/crm.jpg", 
+            "path": "/crm", 
+            "title": "crms" 
+        },
+        { 
+            "image": "images/pages/user-list.jpg", 
+            "path": "/user-list", 
+            "title": "user list" 
+        },
+        { 
+            "image": "images/pages/user-profile.jpg", 
+            "path": "/user-profile", 
+            "title": "user profile" 
+        },
+        { 
+            "image": "images/pages/my-account.jpg", 
+            "path": "/my-account", 
+            "title": "my account" 
+        },
+        { 
+            "image": "images/pages/product-list.jpg", 
+            "path": "/product-list", 
+            "title": "product list" 
+        },
+        { 
+            "image": "images/pages/product-view.jpg", 
+            "path": "/product-view", 
+            "title": "product view" 
+        },
+        { 
+            "image": "images/pages/product-upload.jpg", 
+            "path": "/product-upload", 
+            "title": "product upload" 
+        },
+        { 
+            "image": "images/pages/invoice-list.jpg", 
+            "path": "/invoice-list", 
+            "title": "invoice list" 
+        },
+        { 
+            "image": "images/pages/invoice-details.jpg", 
+            "path": "/invoice-details", 
+            "title": "invoice details" 
+        },
+        { 
+            "image": "images/pages/settings.jpg", 
+            "path": "/settings", 
+            "title": "settings" 
+        },
+        { 
+            "image": "images/pages/order-list.jpg", 
+            "path": "/order-list", 
+            "title": "orders" 
+        },
+        { 
+            "image": "images/pages/message.jpg", 
+            "path": "/message", 
+            "title": "messages" 
+        },
+        { 
+            "image": "images/pages/notification.jpg", 
+            "path": "/notification", 
+            "title": "notifications" 
+        }
+    ]
+}

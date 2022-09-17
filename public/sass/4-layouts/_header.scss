@@ -59,7 +59,7 @@
 
         &.toggle {
             i {
-                font-size: 24px; 
+                font-size: 22px; 
 
                 @include mobile-breakpoint {
                     font-size: 20px; 
@@ -125,7 +125,7 @@
     position: relative;
 
     i {
-        font-size: 20px;
+        font-size: 18px;
         color: $gray-800;
         background-color: rgba($primary, .06);
         @include content-center(38px, 38px, 50%);
@@ -161,28 +161,34 @@
 
 .mc-header-user-group {
     position: relative;
+
+    .mc-dropdown-paper {
+        margin: 15px;
+    }
+
+    .mc-dropdown-menu {
+        padding: 6px 10px;
+        border-radius: 8px;
+        gap: 10px;
+
+        &:hover {
+            color: $primary;
+            background-color: $gray-100;
+        }
+
+        i { font-size: 20px; }
+    
+        span {
+            text-transform: capitalize;
+            @include text-font(15px, 500);
+        }
+
+        &:last-child {  color: $red-600; }
+    }
 }
 
-.mc-header-user-menu {
+.mc-header-user-toggle {
     @include flex-dimension(center, center, 0px 7px);
-
-    &.btn {
-        border: inherit;
-        padding: inherit;
-        color: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-        border-color: inherit;
-        letter-spacing: inherit;
-        text-transform: inherit;
-        background-color: inherit;
-        border-radius: inherit;
-        box-shadow: inherit;
-
-        &:focus {
-            box-shadow: none;
-        }
-    }
 
     &.dropdown-toggle {
         &::after {
@@ -235,31 +241,5 @@
     h4 {
         @include text-font(12px, 500);
         color: $text;
-    }
-}
-
-.mc-header-user-link {
-    padding: 6px 10px;
-    border-radius: 8px;
-    white-space: nowrap;
-    @include flex-dimension(center, start, 0px 10px);
-    @include transition-linear;
-
-    &:hover {
-        color: $primary;
-        background-color: $gray-100;
-    } 
-
-    i {
-        font-size: 20px;
-    }
-
-    span {
-        text-transform: capitalize;
-        @include text-font(15px, 500);
-    }
-
-    &:last-child {
-        color: $red-600;
     }
 }

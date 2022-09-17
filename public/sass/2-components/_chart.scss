@@ -1,7 +1,3 @@
-.recharts-text {
-    font-size: 14px;
-}
-
 .recharts-tooltip-wrapper {
     padding: 30px;
 }
@@ -11,12 +7,6 @@
     letter-spacing: 0.3px;
     color: $text;
     text-transform: uppercase;
-}
-
-.recharts-tooltip-item-name,
-.recharts-tooltip-item-value {
-    @include text-font(15px, 500);
-    color: $primary;
 }
 
 .recharts-legend-item-text {

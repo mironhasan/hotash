@@ -1,11 +1,9 @@
 import React from "react";
-import Box from "./elements/Box";
-import Heading from "./elements/Heading";
-import List from "./elements/List";
+import { Box, List, Heading } from "./elements";
 
-export default function Breadcrumb({ title, children }) {
+export default function Breadcrumb({ title, children, className }) {
     return (
-        <Box className="mc-card mc-breadcrumb">
+        <Box className={`mc-breadcrumb ${ className ? className : "" }`}>
             <Heading className="mc-breadcrumb-title">{ title }</Heading>
             <List className="mc-breadcrumb-list">{ children }</List>
         </Box>

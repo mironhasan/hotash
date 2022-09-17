@@ -1,12 +1,9 @@
 import React from 'react';
+import { Icons, Search, Profile } from "../components/header";
+import { Button, Section, Box } from "../components/elements";
+// import Languages from '../components/header/Languages';
 import Logo from '../components/Logo';
-import Button from '../components/elements/Button';
-import Section from '../components/elements/Section';
-import Search from '../components/header/Search';
-import Profile from "../components/header/Profile";
-import Icons from '../components/header/Icons';
-import Box from '../components/elements/Box';
-import header from "../data/header.json";
+import data from "../data/mastery/header.json";
 
 export default function Header({ onClick, toggle }) {
 
@@ -20,14 +17,14 @@ export default function Header({ onClick, toggle }) {
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
             <Logo 
-                src = { header.logo.src }
-                alt = { header.logo.alt }
-                name = { header.logo.name }
-                href = { header.logo.path } 
+                src = { data.logo.src }
+                alt = { data.logo.alt }
+                name = { data.logo.name }
+                href = { data.logo.path } 
             />
             <Box className="mc-header-left">
                 <Button 
-                    icon = { header.search.icon } 
+                    icon = { data.search.icon } 
                     className = "mc-header-icon search" 
                 />
                 <Button 
@@ -36,14 +33,23 @@ export default function Header({ onClick, toggle }) {
                     className = "mc-header-icon toggle" 
                 />
                 <Search 
-                    icon = { header.search.icon }
-                    type = { header.search.type } 
-                    placeholder = { header.search.placeholder } 
+                    icon = { data.search.icon }
+                    type = { data.search.type } 
+                    placeholder = { data.search.placeholder } 
                 />
             </Box>
             <Box className="mc-header-right">
-                <Icons data={ header.icons } />
-                <Profile data={ header.profile } />
+                <Icons data={ data.icons } />
+                {/* <Languages /> */}
+                {/* <Dropdown className="mc-dropdown">
+                    <Dropdown.Toggle className="mc-header-icon mc-dropdown-toggle">
+                        <Icon type="language" />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu align="end" className="mc-dropdown-paper">
+
+                    </Dropdown.Menu>
+                </Dropdown> */}
+                <Profile data={ data.profile } />
             </Box>
         </Section>
     );

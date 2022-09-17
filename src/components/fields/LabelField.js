@@ -1,9 +1,5 @@
 import React from "react";
-import Box from "../elements/Box";
-import Input from "../elements/Input";
-import Label from "../elements/Label";
-import Select from "../elements/Select";
-import Option from "../elements/Option";
+import { Box, Input, Label, Select, Option } from "../elements";
 
 export default function LabelField({ label, labelDir, fieldSize, option, type, placeholder, ...rest }) {
     return (
@@ -12,12 +8,12 @@ export default function LabelField({ label, labelDir, fieldSize, option, type, p
             {type ? 
                 <Input 
                     type = { type || "text" } 
-                    placeholder = { placeholder } 
+                    placeholder = { placeholder || "Type here..." } 
                     className = {`mc-label-field-input ${ fieldSize || "w-md h-sm" }`} 
                     { ...rest } 
                 />
-                :
-                <Select className={`mc-label-field-select ${ fieldSize || "w-md h-sm" }`}>
+            :
+                <Select className={`mc-label-field-select ${ fieldSize || "w-md h-sm" }`} { ...rest }>
                     {option.map((item, index) => (
                         <Option key={ index } value={ item }>{ item}</Option>
                     ))}

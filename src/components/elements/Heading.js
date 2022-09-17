@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Heading({ as, children, ...rest }) {
+export default function Heading({ as, children, className }) {
     const Component = as || "h3";
-    return <Component { ...rest }>{ children }</Component>
+    return <Component className={ className }>{ children }</Component>
 }

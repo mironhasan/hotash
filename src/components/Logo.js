@@ -1,7 +1,6 @@
 import React from "react";
-import Text from "./elements/Text";
-import Image from "./elements/Image";
 import { Link } from "react-router-dom";
+import { Text, Image } from "./elements";
 
 export default function Logo({ src, alt, name, href, className }) {
     return (

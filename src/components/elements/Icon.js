@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Icon({ as, className, type, children, ...rest }) {
+export default function Icon({ as, className, style, type, children }) {
     const Component = as || "i";
     return (
-        <Component className={ className ? className : "material-icons" } { ...rest }>
-            { type || children || "home" }
+        <Component style={ style } className={ className ? className : "material-icons" }>
+            { type || children }
         </Component>
     )
 }

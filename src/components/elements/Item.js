@@ -1,8 +1,5 @@
 import React from "react";
 
-function Item({ children, ...rest }, ref) {
-    return <li { ...rest } ref={ ref }>{ children }</li>
+export default function Item({ className, children, onClick }) {
+    return <li className={ className} onClick={ onClick }>{ children }</li>
 }
-
-const forwardItem = React.forwardRef(Item);
-export default forwardItem

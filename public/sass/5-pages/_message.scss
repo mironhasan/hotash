@@ -1,0 +1,320 @@
+.mc-message-user {
+    padding: 15px 0px;
+}
+
+.mc-message-user-filter {
+    padding: 5px 20px;
+    @include flex-dimension(center, center, 10px);
+
+    .mc-icon-field {
+        background-color: $gray-200;
+        margin-bottom: 0px;
+
+        &:focus-within {
+            background-color: $gray-100;
+        }
+    }
+
+    .mc-dots-icon {
+        i {
+            width: 35px;
+            height: 40px;
+            font-size: 18px;
+            line-height: 40px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: $gray-200;
+        }
+    }
+
+    .mc-dots-btn {
+        padding: 7px 10px;
+        gap: 10px;
+    }
+}
+
+.mc-message-user-list {
+    height: calc(100vh - 230px);
+    overflow-y: auto;
+    padding: 5px 7px 5px 10px ;
+
+    &:hover { 
+        &::-webkit-scrollbar-thumb { 
+            background-color: $primary; 
+        }
+    }
+
+    &::-webkit-scrollbar { 
+        width: 3px;
+    }
+    &::-webkit-scrollbar-thumb { 
+        border-radius: 15px;
+        background-color: transparent; 
+    }
+}
+
+.mc-message-user-item {
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    @include flex-dimension(center, start, 10px);
+    @include transition-linear;
+
+    &:hover {
+        background-color: $gray-100;
+    }
+
+    &.active {
+        background-color: rgba($primary, 0.1);
+    }
+
+    .mc-round-avatar {
+        position: relative;
+
+        &::before {
+            @include position-bottom-right(absolute, 0px, 0px, auto);
+            @include content-center(13px, 13px, 50%);
+            background-color: $gray-600;
+            border: 2px solid $white;
+            content: "";
+        }
+
+        &.online {
+            &::before {
+                background-color: $green-600;
+            }
+        }
+    }
+
+    .mc-duel-text {
+        flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &.unread {
+            .mc-duel-text-title { font-weight: 700; }
+            .mc-duel-text-descrip { font-weight: 600; color: $primary; }
+        }
+    }
+
+    .mc-duel-text-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        small {
+            font-weight: 400;
+            text-transform: capitalize;
+            color: $text;
+
+            &::before {
+                content: "~";
+                margin: 0px 2px;
+            }
+        }
+    }
+
+    .mc-duel-text-descrip {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    sup {
+        padding: 8px 4px 9px;
+        border-radius: 15px;
+        color: $white;
+        @include text-font(10px, 500);
+        background-color: $primary;
+    }
+
+    .mc-dots-icon {
+        i {
+            width: 28px;
+            height: 28px;
+            font-size: 18px;
+            line-height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $gray-200;
+        }
+    }
+
+    .mc-dots-btn {
+        padding: 7px 10px;
+        gap: 10px;
+    }
+
+    .mc-dots {
+        align-items: center;
+    }
+}
+
+
+// chat
+.mc-message-chat-header {
+    padding-bottom: 15px;
+    @include flex-dimension(center, start, 10px);
+    border-bottom: 1px solid $gray-200;
+
+    .mc-round-avatar {
+        position: relative;
+
+        &::before {
+            @include position-bottom-right(absolute, 0px, 0px, auto);
+            @include content-center(13px, 13px, 50%);
+            background-color: $green-600;
+            border: 2px solid $white;
+            content: "";
+        }
+    }
+
+    .mc-duel-text {
+        flex-grow: 1;
+    }
+
+    .mc-duel-text-title {
+        font-weight: 600 !important;
+    }
+}
+
+.mc-message-chat-action-group {
+    align-self: flex-start;
+    @include flex-dimension(center, end, 12px);
+
+    i {
+        @include content-center(32px, 32px, 50%);
+        background-color: $gray-200;
+        font-size: 18px;
+        cursor: pointer;
+        @include transition-linear;
+
+        &:hover {
+            color: $white;
+            background-color: $primary;
+        } 
+    }
+}
+
+.mc-message-chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px 0px;
+    overflow-y: auto;
+    height: calc(100vh - 300px);
+
+    &:hover { 
+        &::-webkit-scrollbar-thumb { 
+            background-color: $primary; 
+        }
+    }
+
+    &::-webkit-scrollbar { 
+        width: 3px;
+    }
+    &::-webkit-scrollbar-thumb { 
+        border-radius: 15px;
+        background-color: transparent; 
+    }
+}
+
+.mc-message-chat-item {
+    position: relative;
+    display: flex;
+    gap: 10px;
+
+    &:hover {
+        .mc-message-chat-text {
+            i {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: $end-direction;
+
+        .mc-message-chat-text {
+            flex-direction: row-reverse;
+
+            p {
+                background-color: $blue-100;
+                border-color: $blue-200;
+            }
+        }
+    }
+}
+
+.mc-message-chat-user {
+    align-self: flex-end;
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+.mc-message-chat-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mc-message-chat-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        max-width: 400px;
+        font-size: 14px;
+        padding: 7px 10px;
+        border-radius: 8px;
+        min-width: fit-content;
+        background-color: $gray-100;
+        border: 1px solid $gray-200;
+    }
+
+    i {
+        font-size: 18px;
+        color: $gray-500;
+        cursor: pointer;
+        transform: scale(0);
+        @include transition-linear;
+
+        &:hover {
+            color: $gray-700;
+        }
+    }
+}
+
+.mc-message-chat-datetime {
+    font-size: 12px;
+}
+
+.mc-message-chat-footer {
+    @include flex-dimension(center, start, 10px);
+    background-color: $gray-200;
+    border-radius: 30px;
+    padding: 5px 10px;
+
+    textarea {
+        width: 100%;
+        resize: none;
+
+        &::placeholder {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    button {
+        font-size: 15px;
+        @include content-center(35px, 35px, 50%);
+        background-color: $primary;
+        color: $white;
+        flex-shrink: 0;
+    }
+}

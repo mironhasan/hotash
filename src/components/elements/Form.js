@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Form({ children, ...rest }) {
-    return <form { ...rest }>{ children }</form>
+export default function Form({ children, className }) {
+    return <form className={ className }>{ children }</form>
 }

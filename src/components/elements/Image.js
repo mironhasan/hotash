@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Image({ src, alt, ...rest }) {
-    return <img src={ src } alt={ alt } { ...rest } />
+export default function Image({ src, alt, className }) {
+    return <img className={ className } src={ src } alt={ alt } />
 }

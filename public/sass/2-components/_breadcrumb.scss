@@ -12,18 +12,21 @@
 }
 
 .mc-breadcrumb-list {
-    @include flex-dimension(center, end, 0px);
+    @include flex-dimension(center, start, 0px);
 }
 
 .mc-breadcrumb-item {
     color: $gray-600;
-    @include text-font(15px, 500);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
     text-transform: capitalize;
 
     &::after {
-        content: "/";
-        margin: 0px 8px;
-        color: $text;
+        content: "~";
+        font-size: 16px;
+        margin: 0px 7px;
+        color: $gray-600;
     }
 
     &:last-child {

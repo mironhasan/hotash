@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Option({ children, ...rest }) {
-    return <option { ...rest }>{ children }</option>
+export default function Option({ children, value }) {
+    return <option value={ value }>{ children }</option>
 }

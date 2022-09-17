@@ -1,22 +1,17 @@
 import React from "react";
-import Box from "../elements/Box";
-import Input from "../elements/Input";
-import Select from "../elements/Select";
-import Option from "../elements/Option";
-import Icon from "../elements/Icon";
-import Button from "../elements/Button";
+import { Box, Input, Select, Option, Icon, Button } from "../elements";
 
-export default function IconField({ fieldSize, icon, option, type, placeholder, passwordVisible, ...rest }) {
+export default function IconField({ classes, icon, option, activeOption, type, placeholder, passwordVisible, ...rest }) {
     const [visible, setVisible] = React.useState(false);
     
     return (
-        <Box className={`mc-icon-field ${ fieldSize || "w-md h-sm" }`}>
-            <Icon type={ icon } />
+        <Box className={`mc-icon-field ${ classes || "w-md h-sm white" }`}>
+            <Icon type={ icon || "account_circle" } />
             {type ?
                 <>
                     <Input 
                         type={ visible ? "text" : type || "text" }  
-                        placeholder={ placeholder } 
+                        placeholder={ type ? placeholder || "Type here..." : "" } 
                         { ...rest } 
                     />
                     {passwordVisible && 
@@ -30,7 +25,8 @@ export default function IconField({ fieldSize, icon, option, type, placeholder, 
                     }
                 </>
                 :
-                <Select>
+                <Select { ...rest }>
+                    <Option>{ activeOption || "Select Option" }</Option>
                     {option.map((item, index) => (
                         <Option key={ index } value={ item }>{ item}</Option>
                     ))}

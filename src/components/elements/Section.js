@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Section({ as, children, ...rest }) {
+export default function Section({ as, children, className }) {
     const Component = as || "section";
-    return <Component { ...rest }>{ children }</Component>
+    return <Component className={ className }>{ children }</Component>
 }

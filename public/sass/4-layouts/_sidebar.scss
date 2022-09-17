@@ -35,11 +35,11 @@
 }
 
 .mc-sidebar-menu-title {
-    @include text-font(13px, 500);
+    @include text-font(13px, 600);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    color: $gray-600;
+    color: $gray-500;
 }
 
 .mc-sidebar-menu-item {

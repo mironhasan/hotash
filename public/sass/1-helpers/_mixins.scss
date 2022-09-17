@@ -6,12 +6,6 @@
     -o-transition: all linear .3s;
 }
 
-@mixin background-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 @mixin position-top-left ($position, $top, $left, $zindex) {
     position: $position;
     top: $top;

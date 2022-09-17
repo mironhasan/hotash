@@ -1,14 +1,13 @@
 import React from "react";
+import { MultipleMenu, Logout } from "../components/sidebar";
 import Section from "../components/elements/Section";
-import MultipleMenu from "../components/sidebar/MultipleMenu";
-import Logout from "../components/sidebar/Logout";
-import sidebar from "../data/sidebar.json";
+import data from "../data/mastery/sidebar.json";
 
 export default function Sidebar({ drawer }) {
     return (
         <Section as="aside" className={`mc-sidebar ${ drawer }`}>
-            <MultipleMenu data={ sidebar.navs }  />
-            <Logout data={ sidebar.button } />
+            <MultipleMenu data={ data.navs }  />
+            <Logout data={ data.button } />
         </Section>
     )
 }

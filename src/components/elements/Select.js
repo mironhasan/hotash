@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Select({ children, ...rest }) {
-    return <select { ...rest }>{ children }</select>
+export default function Select({ children, className }) {
+    return <select className={ className }>{ children }</select>
 }

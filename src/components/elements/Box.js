@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Box({ as, children, ...rest }) {
+export default function Box({ as, children, className, style }) {
     const Component = as || "div";
-    return <Component { ...rest }>{ children }</Component>
+    return <Component style={ style } className={ className }>{ children }</Component>
 }
