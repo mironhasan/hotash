@@ -1,7 +1,7 @@
 import React from "react";
 import { IconField } from "../fields";
 import { DevicesChart } from "../charts";
-import { Box, Icon, Text, Heading } from "../elements";
+import { Box, Heading } from "../elements";
 
 export default function DevicesCard({ title, icon, option, chart }) {
     return (
