@@ -2,15 +2,9 @@
     min-width: inherit;
     padding: 0px 15px;
     margin: 0px;
+    border: 1px solid;
     border-radius: 8px;
-    background-color: $gray-100;
-    border: 1px solid $gray-500;
     @include transition-linear;
-
-    &:focus-within {
-        border-color: $primary;
-        legend { color: $primary; }
-    }
 
     legend {
         float: inherit;
@@ -27,12 +21,10 @@
     input,
     select {
         padding: 0px 5px;
-        color: $heading;
         @include text-font(15px, 500);
     }
 
     textarea {
-        color: $heading;
         padding: 18px 5px;
         line-height: 20px;
         @include text-font(15px, 500);

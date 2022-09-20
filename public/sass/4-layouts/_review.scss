@@ -21,12 +21,10 @@
 .mc-review-analytics-graph {
     width: 100%;
     border-radius: 6px;
-    background: $gray-300;
 
     span {
         height: 6px;
         border-radius: 6px;
-        background: $yellow-600;
         display: block;
     }
 }
@@ -44,7 +42,6 @@
 }
 
 .mc-review-analytics-total {
-    color: $text;
     margin-bottom: 20px;
     text-transform: capitalize;
     @include text-font(20px, 500);
@@ -102,7 +99,6 @@
 .mc-review-data {
     padding: 35px;
     border-radius: 15px;
-    background-color: $gray-100;
 }
 
 .mc-review-head {
@@ -124,8 +120,6 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     display: inline-block;
-    color: $white;
-    background-color: $gray-900;
 }
 
 .mc-review-reply {
@@ -140,23 +134,15 @@
 
     i {
         font-size: 22px;
-        color: $yellow-600;
     }
 }
 
 .mc-review-dots {
-    .mc-dots-icon {
+    .mc-dropdown-toggle {
         i {
-            @include content-center(35px, 35px, 50%);
             font-size: 20px;
-            color: $text;
-            background: $gray-200;
+            @include content-center(35px, 35px, 50%);
             @include transition-linear;
-    
-            &:hover {
-                color: $white;
-                background: $primary;
-            }
         }
     }
 }

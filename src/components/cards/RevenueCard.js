@@ -8,7 +8,7 @@ export default function RevenueCard({ title, field, report, chart }) {
         <Box className="mc-card">
             <Box className="mc-revenue-card-header">
                 <Heading as="h5" className="mc-card-title">{title}</Heading>
-                <IconField icon={field.icon} option={field.option} fieldSize="w-sm h-sm" />
+                <IconField icon={field.icon} option={field.option} classes="w-sm h-sm" />
             </Box>
             <Box className="mc-revenue-card-group">
                 {report.map((item, index) => (

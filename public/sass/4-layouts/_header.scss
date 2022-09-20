@@ -5,7 +5,6 @@
     @include flex-dimension(center, space-between, 0px);
 
     &.sticky {
-        background-color: rgba($white, 0.95);
         backdrop-filter: blur(5px);
     }
 
@@ -73,14 +72,8 @@
     width: 280px;
     padding: 0px 12px;
     border-radius: 8px;
-    background-color: rgba($primary, .06);
     @include flex-dimension(center, flex-start, 0px);
     @include transition-linear;
-
-    &:hover {
-        background-color: rgba($primary, .1);
-        button { color: $primary; }
-    }
 
     @include tablet-breakpoint {
         display: none;
@@ -89,7 +82,7 @@
     button {
         margin-#{$end-direction}: 12px;
         padding-#{$end-direction}: 10px;
-        border-#{$end-direction}: 1px solid $gray-400;
+        border-#{$end-direction}: 1px solid;
         @include transition-linear;
     }
 
@@ -101,6 +94,10 @@
 
 .mc-header-right {
     @include flex-dimension(center, flex-end, 0px 18px);
+
+    .mc-dropdown-paper {
+        margin-top: 15px;
+    }
 
     @include laptop-breakpoint {
         .mc-header-icon {
@@ -126,15 +123,8 @@
 
     i {
         font-size: 18px;
-        color: $gray-800;
-        background-color: rgba($primary, .06);
         @include content-center(38px, 38px, 50%);
         @include transition-linear;
-
-        &:hover {
-            color: $primary;
-            background-color: rgba($primary, .1);
-        }
 
         @include mobile-breakpoint {
             width: 35px;
@@ -149,8 +139,7 @@
         @include text-font(10px, 500);
         padding: 8px 4px 9px;
         border-radius: 15px;
-        color: $white;
-        border: 3px solid $white;
+        border: 3px solid;
 
         &.red { background: $red-600; }
         &.blue { background: $blue-600; }
@@ -159,8 +148,63 @@
     }
 }
 
-.mc-header-user-group {
+.mc-header-language {
+    width: 180px;
+    padding: 12px 13px;
+    border-radius: 8px;
+    @include flex-dimension(center, start, 10px);
+    @include transition-linear;
     position: relative;
+
+    &:hover {
+        background-color: $gray-100;
+    }
+
+    &.active {
+        &::before {
+            content: "\e5ca";
+            font-weight: 900;
+            font-family: 'Material Icons';
+            @include position-top-right(absolute, 50%, 13px, 1);
+            transform: translateY(-50%);
+        }
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 10px 0px rgba($black, 15%)
+    }
+
+    span {
+        @include text-font(14px, 500);
+        text-transform: capitalize;
+    }
+}
+
+.mc-header-user {
+    position: relative;
+
+    .mc-dropdown-toggle {
+        @include flex-dimension(center, center, 0px 7px);
+    
+        &.dropdown-toggle {
+            &::after {
+                content: "";
+                display: inherit;
+                margin-left: inherit;
+                vertical-align: inherit;
+                align-self: flex-start;
+                margin-top: 7px;
+                border-radius: 5px;
+                border-bottom: 0;
+                border-top: 5px solid;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+            }
+        }
+    }
 
     .mc-dropdown-paper {
         margin: 15px;
@@ -170,11 +214,6 @@
         padding: 6px 10px;
         border-radius: 8px;
         gap: 10px;
-
-        &:hover {
-            color: $primary;
-            background-color: $gray-100;
-        }
 
         i { font-size: 20px; }
     
@@ -187,59 +226,4 @@
     }
 }
 
-.mc-header-user-toggle {
-    @include flex-dimension(center, center, 0px 7px);
 
-    &.dropdown-toggle {
-        &::after {
-            content: "";
-            display: inherit;
-            margin-left: inherit;
-            vertical-align: inherit;
-            align-self: flex-start;
-            margin-top: 8px;
-            border-radius: 5px;
-            border-bottom: 0;
-            border-top: 5px solid;
-            border-right: 5px solid transparent;
-            border-left: 5px solid transparent;
-        }
-    }
-}
-
-.mc-header-user-image {
-    border-radius: 50%;
-    display: inline-block;
-    border: 1px solid $primary;
-
-    img {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid transparent;
-
-        @include mobile-breakpoint {
-            width: 35px;
-            height: 35px;
-        }
-    }
-}
-
-.mc-header-user-meta {
-    text-align: $start-direction;
-    @include desktop-breakpoint {
-        display: none;
-    }
-
-    h3 {
-        @include text-font(14px, 600);
-        text-transform: capitalize;
-        margin-bottom: 3px;
-    }
-
-    h4 {
-        @include text-font(12px, 500);
-        color: $text;
-    }
-}

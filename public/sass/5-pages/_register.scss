@@ -6,7 +6,6 @@
     width: 65%;
     position: relative;
     z-index: 1;
-    background: linear-gradient(to right, $gray-200, $gray-100);
     @include flex-dimension(center, center, 0px);
 
     @include custom-breakpoint(768px, 1199px) {
@@ -34,7 +33,6 @@
     @include text-font(45px, 900);
     text-transform: uppercase;
     margin-bottom: 15px;
-    color: $gray-900;
 
     @include custom-breakpoint(768px, 991px) {
         font-size: 35px;
@@ -51,7 +49,6 @@
     height: 100%;
     text-align: center;
     padding: 30px 60px 50px;
-    background-color: $gray-200;
 
     @include custom-breakpoint(768px, 1199px) {
         width: 45%;
@@ -82,7 +79,6 @@
     @include flex-dimension(center, center, 5px);
 
     a {
-        color: $primary;
         font-weight: 500;
         text-transform: capitalize;
         @include transition-linear;

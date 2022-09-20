@@ -4,8 +4,8 @@
 
     &.xs {
         gap: 4px;
-        .mc-duel-text-title { @include text-font(13px, 500) }
-        .mc-duel-text-descrip { font-size: 13px; }
+        .mc-duel-text-title { font-size: 14px; }
+        .mc-duel-text-descrip { font-size: 12px; font-weight: 500; }
     }
 
     &.sm {
@@ -36,5 +36,6 @@
 .mc-duel-text-descrip {
     font-weight: 400;
     line-height: 1.2;
+    text-align: $start-direction;
     text-transform: lowercase;
 }

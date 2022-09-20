@@ -19,7 +19,6 @@
 
 .mc-paginate-item {
     cursor: pointer;
-    background-color: $gray-200;
     @include content-center(35px, 35px, 50%);
     @include text-font(12px, 500);
     @include transition-linear;
@@ -27,16 +26,5 @@
     i {
         line-height: 35px;
         font-size: 20px;
-    }
-
-    &:hover {
-        color: $white;
-        background: $primary;
-
-    }
-
-    &.active {
-        color: $white;
-        background: $primary;
     }
 }

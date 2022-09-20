@@ -5,7 +5,7 @@
 
 .mc-countries-card-item {
     @include flex-dimension(center, space-between, 0px);
-    border-top: 1px solid $gray-200;
+    border-top: 1px solid;
     padding: 18px 0px;
 
     div {
@@ -29,7 +29,6 @@
             @include text-font(11px, 500);
             text-transform: uppercase;
             margin-bottom: 5px;
-            color: $gray-700;
         }
     }
 }

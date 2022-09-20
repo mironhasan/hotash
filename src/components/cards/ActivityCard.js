@@ -22,7 +22,7 @@ export default function ActivityCard({ title, dotsMenu, items }) {
                                     <Heading as="h6">{ item.media.name }</Heading>
                                 </Box>
                             }
-                            { item.button && <Anchor href={ item.button.path } className="mc-btn sm">{ item.button.label }</Anchor> }
+                            { item.button && <Anchor href={ item.button.path } className="mc-btn primary sm">{ item.button.label }</Anchor> }
                         </Box>
                     </Item>
                 ))}

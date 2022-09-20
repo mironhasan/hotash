@@ -25,13 +25,11 @@
     position: relative;
 
     &:hover {
-        &::after { opacity: 1; color: $primary; }
-        img { border-color: $primary; }
+        &::after { opacity: 1; }
     }
 
     &.active {
         &::after { opacity: 1; }
-        img { border-color: $green-600; }
     }
 
     &::after {
@@ -40,7 +38,6 @@
         line-height: 22px;
         font-size: 22px;
         content: "\e86c";
-        color: $green-600;
         opacity: 0;
         @include transition-linear;
     }
@@ -48,7 +45,7 @@
     img {
         width: 100%;
         border-radius: 8px;
-        border: 2px dashed $gray-300;
+        border: 2px dashed;
         filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
         @include transition-linear;
     }
@@ -58,13 +55,9 @@
     width: 180px;
     position: relative;
     border-radius: 8px;
-    border: 2px dashed $gray-300;
+    border: 2px dashed;
     filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
     @include transition-linear;
-
-    &:hover {
-        border-color: $gray-500;
-    }
 
     input { 
         width: 100%;
@@ -104,5 +97,5 @@
     letter-spacing: 0.5px;
     gap: 10px;
 
-    i {font-size: 20px;  }
+    i { font-size: 20px; }
 }

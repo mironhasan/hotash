@@ -8,7 +8,7 @@ export default function DevicesCard({ title, icon, option, chart }) {
         <Box className="mc-card">
             <Box className="mc-devices-card-head">
                 <Heading as="h5">{ title }</Heading>
-                <IconField icon={ icon } option={ option } fieldSize="w-sm h-sm" />
+                <IconField icon={ icon } option={ option } classes="w-sm h-sm" />
             </Box>
             <DevicesChart chart={ chart } />
         </Box>

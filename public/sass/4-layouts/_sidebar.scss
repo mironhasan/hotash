@@ -8,22 +8,17 @@
 
     @include laptop-breakpoint {
         z-index: 5;
-        background: $white;
-        border-#{$end-direction}: 1px solid $gray-200;
+        border-#{$end-direction}: 1px solid;
     }
 
     &.active {
         #{$start-direction}: 0px;
     }
 
-    &:hover { 
-        &::-webkit-scrollbar-thumb { 
-            background-color: $primary; 
-        }
-    }
     &::-webkit-scrollbar { 
         width: 3px;
     }
+
     &::-webkit-scrollbar-thumb { 
         border-radius: 15px;
         background-color: transparent; 
@@ -39,27 +34,13 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    color: $gray-500;
 }
 
 .mc-sidebar-menu-item {
     margin-bottom: 3px;
-
-    &.focused {
-        .mc-sidebar-menu-btn  {
-            color: $primary;
-            background-color: rgba($primary, 0.1);
-
-            i { color: $primary; }
-        }
-    }
     
     &.active {
         .mc-sidebar-menu-btn  {
-            color: $primary;
-            background-color: rgba($primary, 0.1);
-
-            i { color: $primary; }
             small { transform: rotate(0deg); }
         }
 
@@ -78,13 +59,8 @@
     @include flex-dimension(center, start, 0px 12px);
     @include transition-linear;
 
-    &:hover {
-        background-color: $gray-200;
-    }
-
     i { 
         font-size: 22px; 
-        color: $gray-700;
         @include transition-linear;
     }
 
@@ -96,7 +72,6 @@
     }
 
     sup {
-        color: $white;
         line-height: 18px;
         letter-spacing: 0.3px;
         @include text-font(10px, 600);
@@ -131,15 +106,13 @@
     height: 0px;
     overflow: hidden;
     margin: 0px 20px;
-    border-#{$start-direction}: 1px solid $gray-300;
+    border-#{$start-direction}: 1px solid;
     @include transition-linear;
 }
 
 .mc-sidebar-dropdown-item {
     &.active {
         .mc-sidebar-dropdown-link {
-            color: $primary;
-
             &::before {
                 opacity: 1;
             }
@@ -161,14 +134,11 @@
         @include position-top-left(absolute, 0px, -1px, 1);
         width: 2px;
         height: 100%;
-        background-color: $primary;
         opacity: 0;
         @include transition-linear;
     }
 
     &:hover {
-        color: $primary;
-
         &::before { opacity: 1; }
     }
 }

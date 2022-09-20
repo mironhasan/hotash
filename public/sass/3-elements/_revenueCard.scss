@@ -3,8 +3,6 @@
     @include flex-dimension(start, space-between, 0px);
 
     .mc-icon-field {
-        background-color: $gray-100;
-        border-color: $gray-200;
         margin-bottom: 0px;
     }
 }
@@ -44,7 +42,6 @@
         font-size: 20px;
 
         span {
-            color: $text;
             display: block;
             @include text-font(14px, 400);
             text-transform: capitalize;

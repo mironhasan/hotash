@@ -1,5 +1,5 @@
 .mc-overview {
-    background-color: $dark;
+    background-color: $dark-600;
 }
 
 .mc-overview-banner {
@@ -23,7 +23,7 @@
         width: 100%;
         height: 100%;
         @include position-top-left(absolute, 0px, 0px, -1);
-        background: linear-gradient(to bottom, rgba($dark, 0.9), rgba($blue-900, 0.9));
+        background: linear-gradient(to bottom, rgba($dark-600, 0.9), rgba($blue-900, 0.9));
     }
 
     .mc-logo-group {

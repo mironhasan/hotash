@@ -24,16 +24,12 @@
 }
 
 .mc-table-head {
-    border-top: 1px solid $gray-200;
-    border-bottom: 1px solid $gray-200;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 
     &.sticky {
         @include position-top-left(sticky, 0px, 0px, 1);
         width: 100%;
-    }
-
-    &.gray {
-        background-color: $gray-100;
     }
 
     &.primary {
@@ -63,7 +59,7 @@
             text-transform: uppercase;
             white-space: nowrap;
             overflow: hidden;
-            border-#{$end-direction}: 1px solid $gray-200;
+            border-#{$end-direction}: 1px solid;
 
             &:last-child {
                 border-#{$end-direction}: none;
@@ -73,22 +69,6 @@
 }
 
 .mc-table-body {
-    &.even {
-        tr {
-            &:nth-child(even) {
-                background-color: $gray-100;
-            }
-        }
-    }
-
-    &.odd {
-        tr {
-            &:nth-child(odd) {
-                background-color: $gray-100;
-            }
-        }
-    }
-    
     tr {
         td {
             max-width: 120px;
@@ -98,9 +78,8 @@
             text-overflow: ellipsis;
             padding: 15px 15px;
             @include text-font(14px, 400);
-            border-#{$end-direction}: 1px solid $gray-200;
-            border-bottom: 1px solid $gray-200;
-            color: $text;
+            border-#{$end-direction}: 1px solid;
+            border-bottom: 1px solid;
 
             &:last-child {
                 border-#{$end-direction}: none;
@@ -116,7 +95,7 @@
         width: 15px;
         height: 15px;
         flex-shrink: 0;
-        outline: 2px solid $gray-200;
+        outline: 2px solid;
     }
 
     p { 
@@ -169,7 +148,7 @@
         flex-shrink: 0;
         border-radius: 8px;
         object-fit: cover;
-        border: 1px solid $gray-200;
+        border: 1px solid;
         box-shadow: 0px 7px 15px 0px rgba($black, 0.06);
     }
 
@@ -182,6 +161,7 @@
     }
 
     p {
+        font-size: 13px;
         line-height: 18px;
         overflow: hidden;
         white-space: nowrap;
@@ -206,7 +186,6 @@
 
     span {
         font-size: 12px;
-        color: $gray-600;
     }
 }
 
@@ -296,36 +275,5 @@
         font-size: 16px;
         padding: 6px 6px;
         border-radius: 6px;
-        background-color: $gray-200;
-
-        &.view {
-            color: $purple-700;
-            background-color: $purple-200;
-        }
-
-        &.edit {
-            color: $green-700;
-            background-color: $green-200;
-        }
-
-        &.chat {
-            color: $green-700;
-            background-color: $green-200;
-        }
-
-        &.delete {
-            color: $red-700;
-            background-color: $red-200;
-        }
-
-        &.block {
-            color: $red-700;
-            background-color: $red-200;
-        }
-
-        &.download {
-            color: $blue-700;
-            background-color: $blue-200;
-        }
     }
 }

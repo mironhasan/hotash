@@ -8,17 +8,9 @@
         border-radius: 8px;
         @include text-font(15px, 500);
         text-transform: capitalize;
-        color: $heading;
-
-        &:hover {
-            color: $primary;
-            background-color: rgba($primary, 0.1);
-        }
 
         &.active {
             border: none;
-            color: $white;
-            background-color: $primary;
         }
     }
 }
@@ -27,11 +19,7 @@
     padding: 0px 30px 30px;
 
     .mc-icon-field {
-        background-color: $gray-200;
-        border-color: $gray-400;
         margin-bottom: 0px;
-
-        &:focus-within { border-color: $primary; }
     }
 
     &.settings {
@@ -39,5 +27,4 @@
             margin-bottom: 15px;
         }
     }
-
 }

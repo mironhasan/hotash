@@ -3,13 +3,13 @@ import { Overview, Documentation, ChangeLog } from "./pages/supports";
 import { Avatars, Alerts, Buttons, Charts, Tables, Fields, Headings, Colors } from "./pages/blocks";
 import { Ecommerce, Analytics, CRM, ForgotPassword, Register, Login, UserList, UserProfile, MyAccount, 
     ProductList, ProductView, ProductUpload, InvoiceList, InvoiceDetails, OrderList, Message, 
-    Notification, BlankPage, Settings } from "./pages/mastery";
+    Notification, BlankPage, Settings } from "./pages/master";
 
 export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                {/* Mastery Pages */}
+                {/* master Pages */}
                 <Route path="/ecommerce" element={<Ecommerce /> } />
                 <Route path="/analytics" element={<Analytics /> } />
                 <Route path="/crm" element={<CRM /> } />

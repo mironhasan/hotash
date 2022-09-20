@@ -5,7 +5,7 @@
 .mc-user-avatar {
     width: fit-content;
     border-radius: 50%;
-    border: 2px solid $primary;
+    border: 2px solid;
     margin: 0px auto 15px;
 
     img {
@@ -47,7 +47,7 @@
         display: flex;
         gap: 15px;
 
-        i { font-size: 20px; color: $primary; }
+        i { font-size: 20px; }
         span { font-size: 15px; }
     }
 }
@@ -63,10 +63,8 @@
 
     a {
         @include flex-dimension(center, center, 5px);
-        background-color: $gray-200;
         border-radius: 8px;
         padding: 8px 15px;
-        color: $white;
 
         i {
             font-size: 15px;
@@ -89,23 +87,14 @@
     position: relative;
     margin: 15px 0px;
     padding-#{$start-direction}: 20px;
-    border-#{$start-direction}: 1px solid $gray-300;
+    border-#{$start-direction}: 1px solid;
     @include transition-linear;
-
-    &:hover {
-        border-color: $primary;
-
-        &::before {
-            background-color: $primary;
-        }
-    }
 
     &::before {
         content: "";
         @include position-top-left(absolute, 0px, -10px, 1);
         @include content-center(20px, 20px, 50%);
-        background-color: $gray-500;
-        border: 6px solid $white;
+        border: 6px solid;
         @include transition-linear;
     }
 }

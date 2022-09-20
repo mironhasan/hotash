@@ -34,8 +34,7 @@
     padding: 35px;
     margin-bottom: 20px;
     border-radius: 8px;
-    background: $gray-200;
-    border: 1px solid $gray-300;
+    border: 1px solid;
 }
 
 .mc-auth-forgot {
@@ -44,7 +43,6 @@
     @include transition-linear;
 
     &:hover {
-        color: $primary;
         text-decoration: underline;
     }
 }
@@ -76,8 +74,6 @@
     letter-spacing: 2px;
     border-radius: 8px;
     margin-bottom: 8px;
-    color: $white;
-    background-color: $primary;
 
     &.h-sm { height: 42px; }
     &.h-md { height: 45px; }
@@ -105,10 +101,8 @@
     span {
         @include content-center(36px, 32px, 50%);
         display: inline-block;
+        border: 1px solid;
         font-size: 15px;
-        color: $text;
-        background: $gray-200;
-        border: 1px solid $gray-400;
     }
 }
 
@@ -140,8 +134,7 @@
     padding: 20px;
     font-size: 15px;
     border-radius: 8px;
-    background: $gray-200;
-    border: 1px solid $gray-300;
+    border: 1px solid;
 
     a {
         color: $primary;

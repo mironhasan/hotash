@@ -2,15 +2,8 @@
     position: relative;
     width: fit-content;
     margin: 0 auto;
-    color: $heading;
     border-radius: 8px;
-    background-color: $gray-300;
     @include transition-linear;
-
-    &:hover {
-        color: $white;
-        background-color: $primary;
-    }
 
     &.button {
         label {

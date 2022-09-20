@@ -1,4 +1,5 @@
 .mc-round-avatar {
+    border-style: solid;
     width: fit-content;
     border-radius: 50%;
 
@@ -8,17 +9,17 @@
     }
 
     &.xs {
-        border: 1px solid $primary;
+        border-width: 1px;
 
         img {
-            width: 38px;
-            height: 38px;
+            width: 37px;
+            height: 37px;
             border: 2px solid transparent;
         }
     }
 
     &.sm {
-        border: 2px solid $primary;
+        border-width: 2px;
 
         img {
             width: 55px;
@@ -28,7 +29,7 @@
     }
 
     &.md {
-        border: 2px solid $primary;
+        border-width: 2px;
 
         img {
             width: 85px;
@@ -38,7 +39,7 @@
     }
 
     &.lg {
-        border: 2px solid $primary;
+        border-width: 2px;
 
         img {
             width: 115px;
@@ -48,7 +49,7 @@
     }
 
     &.xl {
-        border: 2px solid $primary;
+        border-width: 2px;
 
         img {
             width: 145px;

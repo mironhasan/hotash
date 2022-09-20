@@ -77,7 +77,6 @@
     position: relative;
     z-index: 1;
     @include text-font(32px, 700);
-    color: $white;
 
     span {
         color: $white;

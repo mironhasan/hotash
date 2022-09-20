@@ -1,12 +1,6 @@
 .thin-scrolling {
     overflow-y: auto;
 
-    &:hover { 
-        &::-webkit-scrollbar-thumb { 
-            background-color: $primary; 
-        }
-    }
-
     &::-webkit-scrollbar { 
         width: 3px;
     }

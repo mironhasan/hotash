@@ -21,6 +21,20 @@
             ]
         },
         {
+            "title": "dark variants",
+            "colors": [
+                { "name": "dark-100", "code": "#39496b" },
+                { "name": "dark-200", "code": "#2f3f61" },
+                { "name": "dark-300", "code": "#253557" },
+                { "name": "dark-400", "code": "#1b2b4d" },
+                { "name": "dark-500", "code": "#112143" },
+                { "name": "dark-600", "code": "#071739" },
+                { "name": "dark-700", "code": "#010c2c" },
+                { "name": "dark-800", "code": "#00031f" },
+                { "name": "dark-900", "code": "#000015" }
+            ]
+        },
+        {
             "title": "gray variants",
             "colors": [
                 { "name": "gray-100", "code": "#f8f8f8" },

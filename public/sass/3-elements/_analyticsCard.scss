@@ -1,8 +1,7 @@
 .mc-analytics-card {
     padding: 22px;
+    border: 1px solid;
     border-radius: 8px;
-    background-color: $white;
-    border: 1px solid $gray-200;
     @include transition-linear;
 
     &:hover {
@@ -19,19 +18,15 @@
 .mc-analytics-card-group {
     margin-bottom: 10px;
     @include flex-dimension(start, space-between, 0px);
-
-    .mc-dots-icon i { color: $gray-100; }
 }
 
 .mc-analytics-card-content {
     h3 {
         margin-bottom: 3px;
-        color: $white;
     }
 
     p {
         font-size: 15px;
         text-transform: capitalize;
-        color: $gray-200;
     }
 }

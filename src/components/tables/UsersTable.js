@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, Form } from "react-bootstrap";
 import { Table, Thead, Tbody, Th, Tr, Td } from "../elements/Table";
 import { Button, Image, Input, Text, Box, Icon, Anchor, Option, Heading } from "../elements";
-import data from "../../data/mastery/userList.json";
+import data from "../../data/master/userList.json";
 
 
 export default function UsersTable({ thead, tbody }) {

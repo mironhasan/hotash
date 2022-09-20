@@ -10,7 +10,6 @@ img {
 }
 
 a {
-    color: $text;
     text-decoration: none;
     display: inline-block;
 
@@ -41,7 +40,6 @@ h5,
 h6 {
     margin: 0px;
     padding: 0px;
-    color: $heading;
 }
 
 p {
@@ -50,8 +48,6 @@ p {
 
 html,
 body {
-    color: $text;
-    background: $white;
     direction: $direction;
     scroll-behavior: smooth;
 }
@@ -70,6 +66,5 @@ textarea {
 button {
     cursor: pointer;
     line-height: 0px;
-    color: $text;
 }
 

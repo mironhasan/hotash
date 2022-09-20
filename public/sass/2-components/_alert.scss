@@ -122,6 +122,6 @@
         @include position-top-right(absolute, -15px, 20px, 1);
         @include content-center(35px, 30px, 50%);
         @include text-font(18px, 700);
-        border: 3px solid $white;
+        border: 3px solid;
     }
 }
