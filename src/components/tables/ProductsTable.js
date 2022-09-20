@@ -33,7 +33,7 @@ export default function ProductsTable({ thead, tbody }) {
                                 </Box>
                             </Td>
                             <Td>
-                                <Box className="mc-table-product">
+                                <Box className="mc-table-product md">
                                     <Image src={ item.src } alt={ item.alt } />
                                     <Box className="mc-table-group">
                                         <Heading as="h6">{ item.heading }</Heading>
