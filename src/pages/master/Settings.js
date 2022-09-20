@@ -32,7 +32,7 @@ export default function Settings() {
                                 <Col xl={6}><LabelField label="tagline" type="text" fieldSize="w-100 h-md" /></Col>
                                 <Col xl={6}><LabelField label="email address" type="email" fieldSize="w-100 h-md" /></Col>
                                 <Col xl={6}><LabelField label="website url" type="url" fieldSize="w-100 h-md" /></Col>
-                                <Col xl={12}><LabelTextarea label="description" fieldSize="w-100 h-text" /></Col>
+                                <Col xl={12}><LabelTextarea label="description" fieldSize="w-100 h-text-md" /></Col>
                             </Row>
                         </Col>
                     </Row>
@@ -51,7 +51,7 @@ export default function Settings() {
                         </Col>
                     </Row>
                 </Box>
-                <Button className="mc-btn" icon="verified" text="save all changes" />
+                <Button className="mc-btn primary" icon="verified" text="save all changes" />
             </CardLayout>
         </PageLayout>
     )

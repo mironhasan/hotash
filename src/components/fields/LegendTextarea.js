@@ -7,7 +7,7 @@ export default function LagendTextarea({ title, longText, placeholder, fieldSize
             <Legend>{ title || "legend" }</Legend>
             <Textarea 
                 defaultValue = { longText }
-                className={`${ fieldSize || "w-100 h-text" }`}
+                className={`${ fieldSize || "w-100 h-text-md" }`}
                 placeholder={ placeholder || "Long textarea..." }
                 { ...rest }
             >

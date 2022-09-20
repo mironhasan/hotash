@@ -29,14 +29,14 @@ export default function ProductUpload() {
                         <CardHeader title="basic information" dotsMenu={ data.dotsMenu }  />
                         <Row>
                             <Col xl={12}><LabelField type="text" label="title" fieldSize="w-100 h-md" /></Col>
-                            <Col xl={12}><LabelTextarea label="description" fieldSize="w-100 h-text" /></Col>
+                            <Col xl={12}><LabelTextarea label="description" fieldSize="w-100 h-text-md" /></Col>
                             <Col xl={6}><LabelField label="category" option={['mans', 'womans', 'accessory']} fieldSize="w-100 h-md" /></Col>
                             <Col xl={6}><LabelField label="brand" option={['richman', 'lubana', 'ecstasy']} fieldSize="w-100 h-md" /></Col>
                             <Col xl={6}><LabelField type="text" label="regular price" fieldSize="w-100 h-md" /></Col>
                             <Col xl={6}><LabelField type="text" label="discount price" fieldSize="w-100 h-md" /></Col>
                             <Col xl={6}><LabelField type="text" label="shipping fee" fieldSize="w-100 h-md" /></Col>
                             <Col xl={6}><LabelField type="text" label="tax rate" fieldSize="w-100 h-md" /></Col>
-                            <Col xl={12}><LabelTextarea label="tags" fieldSize="w-100 h-text" /></Col>
+                            <Col xl={12}><LabelTextarea label="tags" fieldSize="w-100 h-text-md" /></Col>
                         </Row>
                     </CardLayout>
                 </Col>
@@ -47,19 +47,19 @@ export default function ProductUpload() {
                             <Col xl={12}>
                                 <Box className="mc-product-upload-organize mb-4">
                                     <LabelField type="text" label="add category" fieldSize="w-100 h-sm" />
-                                    <Button className="mc-btn">add</Button>
+                                    <Button className="mc-btn primary">add</Button>
                                 </Box>
                                 <Box className="mc-product-upload-organize mb-4">
                                     <LabelField type="text" label="add brand" fieldSize="w-100 h-sm" />
-                                    <Button className="mc-btn">add</Button>
+                                    <Button className="mc-btn primary">add</Button>
                                 </Box>
                                 <Box className="mc-product-upload-organize mb-4">
                                     <LabelField type="text" label="add color" fieldSize="w-100 h-sm" />
-                                    <Button className="mc-btn">add</Button>
+                                    <Button className="mc-btn primary">add</Button>
                                 </Box>
                                 <Box className="mc-product-upload-organize">
                                     <LabelField type="text" label="add size" fieldSize="w-100 h-sm" />
-                                    <Button className="mc-btn">add</Button>
+                                    <Button className="mc-btn primary">add</Button>
                                 </Box>
                             </Col>
                         </Row>
@@ -88,7 +88,7 @@ export default function ProductUpload() {
                             </Box>
                         </Box>
                         <Anchor 
-                            className="mc-btn mc-product-upload-btn" 
+                            className="mc-btn form-btn primary mt-5" 
                             text="publish &amp; view" 
                             icon="cloud_upload" 
                             href="#"

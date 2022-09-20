@@ -13,7 +13,6 @@
             { "label": "button", "classes": "btn btn-danger m-2" },
             { "label": "button", "classes": "btn btn-warning m-2" },
             { "label": "button", "classes": "btn btn-info m-2" },
-            { "label": "button", "classes": "btn btn-light m-2" },
             { "label": "button", "classes": "btn btn-dark m-2" }
         ],
         "small": [
@@ -23,7 +22,6 @@
             { "label": "button", "classes": "btn btn-danger btn-sm m-2" },
             { "label": "button", "classes": "btn btn-warning btn-sm m-2" },
             { "label": "button", "classes": "btn btn-info btn-sm m-2" },
-            { "label": "button", "classes": "btn btn-light btn-sm m-2" },
             { "label": "button", "classes": "btn btn-dark btn-sm m-2" }
         ]
     },

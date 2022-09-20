@@ -75,7 +75,7 @@ export default function ProductView() {
                     <Col xl={12}>
                         <DivideTitle title="review reply form" className="mt-3 mb-4" />
                         <LabelTextarea placeholder="Write here..." fieldSize="w-100 h-text-xl" />
-                        <Button className="mc-btn mc-review-form-btn">drop your replies</Button>
+                        <Button className="mc-btn mc-review-form-btn primary">drop your replies</Button>
                     </Col>
                 </Row>
             </CardLayout>

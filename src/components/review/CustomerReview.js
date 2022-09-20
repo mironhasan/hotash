@@ -22,7 +22,7 @@ export default function CustomerReview({ data }) {
                                         href = { item.button.path } 
                                         icon = { item.button.icon } 
                                         text = { item.button.text } 
-                                        className = "mc-btn" 
+                                        className = "mc-btn primary" 
                                     />
                                 </Box>
                             </Box>
@@ -57,7 +57,7 @@ export default function CustomerReview({ data }) {
                                                         href = { item.button.path } 
                                                         icon = { item.button.icon } 
                                                         text = { item.button.text } 
-                                                        className = "mc-btn" 
+                                                        className = "mc-btn primary" 
                                                     />
                                                 </Box>
                                             </Box>

@@ -6,7 +6,7 @@ export default function BlankPage() {
     return (
         <PageLayout>
             <Box className="mc-card mc-blank">
-                <Image src="images/blank.jpg" alt="blank" />
+                <Image src="images/blank.png" alt="blank" />
             </Box>
         </PageLayout>
     )

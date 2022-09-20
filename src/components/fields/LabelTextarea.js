@@ -6,7 +6,7 @@ export default function LabelTextarea({ label, labelDir, fieldSize, placeholder,
         <Box className={`mc-label-field-group ${ label ? labelDir || "label-col" : "" }`}>
             {label && <Label className="mc-label-field-title">{ label }</Label>}
             <Textarea 
-                className={`mc-label-field-textarea ${ fieldSize || "w-md h-text" }`} 
+                className={`mc-label-field-textarea ${ fieldSize || "w-md h-text-md" }`} 
                 placeholder={ placeholder || "Type here..." }
                 { ...rest } 
             ></Textarea>

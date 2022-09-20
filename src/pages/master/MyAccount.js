@@ -75,7 +75,7 @@ export default function MyAccount() {
                                         <Col xs={6}><IconField icon="verified_user" type="password" placeholder="confirm password" fieldSize="w-100 h-lg" passwordVisible /></Col>
                                     </Row>
                                 </TabCard>
-                                <Button className="mc-btn" icon="verified" text="save changes" />
+                                <Button className="mc-btn primary" icon="verified" text="save changes" />
                             </Tab>
                             <Tab eventKey="settings" title="other settings" className="mc-tabpane settings">
                                 <Row xs={2}>
@@ -98,7 +98,7 @@ export default function MyAccount() {
                                         </TabCard>
                                     </Col>
                                 </Row>
-                                <Button className="mc-btn" icon="verified" text="update changes" />
+                                <Button className="mc-btn primary" icon="verified" text="update changes" />
                             </Tab>
                         </Tabs>
                     </CardLayout>

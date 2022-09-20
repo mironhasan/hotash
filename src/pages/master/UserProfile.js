@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { List, Item, Icon, Text, Box, Image, Heading, Anchor } from "../../components/elements";
 import { Breadcrumb, RoundAvatar, DivideTitle, DuelText } from "../../components";
-import { CardLayout, CardHeader, FloatCard } from "../../components/cards";
+import { CardLayout, CardHeader, FloatCard, ActivityCard } from "../../components/cards";
 import PageLayout from "../../layouts/PageLayout";
 import data from "../../data/master/userProfile.json";
 
@@ -82,27 +82,12 @@ export default function UserProfile() {
                             </Col>
                         ))}
                         <Col xl={12}>
-                            <CardLayout>
-                                <CardHeader title="activity timeline" dotsMenu={ data.dotsMenu } />
-                                <List className="mc-user-activity-list">
-                                    {data.activity.map((item, index)=> (
-                                        <Item key={ index } className="mc-user-activity-item">
-                                            <Box className="mc-user-activity-title">
-                                                <DivideTitle as="h6" title={ item.title } />
-                                                <Text as="small">{ item.time }</Text>
-                                            </Box>
-                                            <Box className="mc-user-activity-body">
-                                                <Text>{ item.text }</Text>
-                                                <Box className="mc-user-activity-media">
-                                                    <Image src={ item.src } alt={ item.alt } />
-                                                    <Heading as="h6">{ item.name }</Heading>
-                                                </Box>
-                                                { item.button && <Anchor href={ item.button.path } className="mc-btn sm">{ item.button.label }</Anchor> }
-                                            </Box>
-                                        </Item>
-                                    ))}
-                                </List>
-                            </CardLayout>
+                            <ActivityCard 
+                                style={{ height: "540px" }}
+                                title={ data.activity.title }
+                                dotsMenu={ data.activity.dotsMenu }
+                                items={ data.activity.items }
+                            />
                         </Col>
                     </Row>
                 </Col>

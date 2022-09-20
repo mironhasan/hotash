@@ -3,11 +3,11 @@ import CardHeader from "./CardHeader";
 import DivideTitle from "../DivideTitle";
 import { Box, List, Item, Text, Image, Heading, Anchor } from "../elements";
 
-export default function ActivityCard({ title, dotsMenu, items }) {
+export default function ActivityCard({ title, dotsMenu, items, style }) {
     return (
         <Box className="mc-card">
             <CardHeader title={ title } dotsMenu={ dotsMenu } />
-            <List className="mc-activity-card-list thin-scrolling">
+            <List className="mc-activity-card-list thin-scrolling" style={ style }>
                 {items.map((item, index)=> (
                     <Item key={ index } className="mc-activity-card-item">
                         <Box className="mc-activity-card-title">

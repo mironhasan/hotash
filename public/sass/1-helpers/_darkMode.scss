@@ -17,10 +17,17 @@
         background: $dark-500; 
     }
 
+    input,
+    textarea {
+        &::placeholder {
+           color: $gray-500;
+        }
+    }
+
     //=======================================
     //        COMPONENTS THEME COLOR 
     //=======================================
-    .mc-alert button { border-color: $white; }
+    .mc-alert button { border-color: $dark-400; }
 
     .mc-breadcrumb-item {
         color: $gray-600;
@@ -33,6 +40,11 @@
     }
 
     .mc-btn {
+        color: $white;
+        &:hover { color: $white; }
+    }
+
+    .btn {
         color: $white;
         &:hover { color: $white; }
     }
@@ -67,6 +79,17 @@
             i { color: $blue-600; }
         }
 
+        &.gray {
+            color: $gray-500;
+            border-color: $dark-200;
+            background-color: $dark-500;
+
+            &:focus-within {
+                border-color: $blue-600;
+                i { color: $blue-600; }
+            }
+        }
+
         &.white {
             color: $gray-500;
             border-color: $dark-300;
@@ -90,8 +113,8 @@
     }
     
     .mc-fieldset {
-        background-color: $gray-100;
-        border-color: $gray-500;
+        background-color: $dark-400;
+        border-color: $gray-800;
 
         &:focus-within {
             border-color: $blue-600;
@@ -99,15 +122,18 @@
         }
 
         input,
-        select
+        select,
         textarea {
-            color: $heading;
+            color: $gray-300;
+            background-color: transparent;
         }
+
+        select { background-color: $dark-400; }
     }
 
     .mc-file-upload {
-        color: $heading;
-        background-color: $gray-300;
+        color: $gray-300;
+        background-color: $dark-300;
 
         &:hover {
             color: $white;
@@ -116,18 +142,18 @@
     }
 
     .form-label {
-        color: $heading;
+        color: $gray-300;
     }
 
     .form-select,
     .form-control {
         color: $gray-500;
-        border-color: $gray-300;
-        background-color: $gray-200;
+        border-color: $dark-200;
+        background-color: $dark-400;
 
         &:focus-within {
-            border-color: $blue-600;
-            background-color: $gray-100;
+            border-color: $dark-200;
+            background-color: $dark-400;
         }
     }
 
@@ -154,6 +180,10 @@
         background-color: rgba($black, 0.5);
     }
 
+    .modal-content {
+        background-color: $dark-500;
+    }
+
     .modal-close {
         i {
             color: $black;
@@ -166,16 +196,16 @@
         }
     }
 
-    .modal-title { color: $heading; }
+    .modal-title { color: $gray-300; }
 
     .mc-user-modal {
-        img { border-color: $white; }
+        img { border-color: $dark-500; }
     }
 
     .mc-alert-modal {
         i {
             color: $red-700;
-            background-color: $white;
+            background-color: $dark-500;
         }
     }
 
@@ -255,7 +285,7 @@
 
     .mc-tabs {
         .nav-link {
-            color: $heading;
+            color: $gray-300;
 
             &:hover {
                 color: $blue-600;
@@ -272,8 +302,8 @@
 
     .mc-tabpane {
         .mc-icon-field {
-            border-color: $gray-400;
-            background-color: $gray-200;
+            border-color: $dark-200;
+            background-color: $dark-500;
             &:focus-within { border-color: $blue-600; }
         }
     }
@@ -398,7 +428,7 @@
     }
 
     .mc-tab-card-title {
-        &::after { background-color: $gray-300; }
+        &::after { background-color: $dark-200; }
     }
 
     //=======================================
@@ -455,16 +485,16 @@
     }
 
     .mc-invoice-list-group {
-        border-color: $gray-200;
+        border-color: $dark-200;
     }
 
     .mc-invoice-list {
         li {
             &:last-child {
-                border-color: $gray-200;
+                border-color: $dark-200;
             }
 
-            .digit { color: $heading; }
+            .digit { color: $gray-300; }
         }
     }
 
@@ -473,7 +503,7 @@
     }
 
     .mc-review-analytics-graph {
-        background: $gray-300;
+        background: $dark-200;
         span { background: $yellow-600; }
     }
 
@@ -489,12 +519,12 @@
     }
 
     .mc-review-data {
-        background-color: $gray-100;
+        background-color: $dark-400;
     }
 
     .mc-review-admin {
         color: $white;
-        background-color: $gray-900;
+        background-color: $dark-600;
     }
 
     .mc-review-star {
@@ -505,7 +535,7 @@
         .mc-dropdown-toggle {
             i {
                 color: $gray-500;
-                background: $gray-200;
+                background: $dark-400;
         
                 &:hover {
                     color: $white;
@@ -619,12 +649,12 @@
 
     .mc-message-user-filter {
         .mc-icon-field {
-            background-color: $gray-200;
-            &:focus-within { background-color: $gray-100; }
+            background-color: $dark-500;
+            &:focus-within { background-color: $dark-500; }
         }
 
         .mc-dropdown-toggle {
-            i { background-color: $gray-200; }
+            i { background-color: $dark-400; }
         }
     }
 
@@ -637,12 +667,12 @@
     }
 
     .mc-message-user-item {
-        &:hover { background-color: $gray-100; }
+        &:hover { background-color: $dark-300; }
         &.active { background-color: rgba($blue-600, 0.1); }
 
         .mc-round-avatar {
             &::before {
-                border-color: $white;
+                border-color: $dark-500;
                 background-color: $gray-600;
             }
 
@@ -669,16 +699,16 @@
         }
 
         .mc-dropdown-toggle {
-            i { background-color: $gray-200; }
+            i { background-color: $dark-300; }
         }
     }
 
     .mc-message-chat-header {
-        border-color: $gray-200;
+        border-color: $dark-300;
 
         .mc-round-avatar {
             &::before {
-                border-color: $white;
+                border-color: $dark-500;
                 background-color: $green-600;
             }
         }
@@ -686,7 +716,7 @@
 
     .mc-message-chat-action-group {
         i {
-            background-color: $gray-200;
+            background-color: $dark-300;
     
             &:hover {
                 color: $white;
@@ -707,8 +737,9 @@
         &:nth-child(even) {
             .mc-message-chat-text {
                 p {
-                    background-color: $blue-100;
-                    border-color: $blue-200;
+                    background-color: $primary;
+                    border-color: $dark-200;
+                    color: $white;
                 }
             }
         }
@@ -716,8 +747,8 @@
 
     .mc-message-chat-text {
         p {
-            border-color: $gray-200;
-            background-color: $gray-100;
+            border-color: $dark-200;
+            background-color: $dark-400;
         }
 
         i {
@@ -727,7 +758,7 @@
     }
 
     .mc-message-chat-footer {
-        background-color: $gray-200;
+        background-color: $dark-300;
 
         button {
             background-color: $blue-600;
@@ -736,7 +767,7 @@
     }
 
     .mc-notify-item {
-        border-color: $gray-200;
+        border-color: $dark-300;
     }
 
     .mc-notify-content {
@@ -747,11 +778,11 @@
     .mc-notify-media {
         i {
             color: $white;
-            border-color: $white;
+            border-color: $dark-500;
         }
     }
     .mc-notify-close {
-        color: $heading;
+        color: $gray-700;
         &:hover { color: $blue-600; }
     }
 
@@ -766,21 +797,21 @@
         }
 
         &::after { color: $green-600; }
-        img { border-color: $gray-300; }
+        img { border-color: $dark-300; }
     }
 
     .mc-product-upload-file {
-        border-color: $gray-300;
+        border-color: $dark-100;
         &:hover { border-color: $gray-500; }
     }
 
     .mc-product-view-gallery {
-        img { border-color: $gray-300; }
+        img { border-color: $dark-300; }
     }
 
     .mc-product-view-meta {
         ul {
-            li { background-color: $gray-200; }
+            li { background-color: $dark-300; }
         }
     }
 

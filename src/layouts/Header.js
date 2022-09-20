@@ -19,13 +19,13 @@ export default function Header() {
 
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
-            <Logo 
-                src = { data.logo.src }
-                alt = { data.logo.alt }
-                name = { data.logo.name }
-                href = { data.logo.path } 
-            />
             <Box className="mc-header-left">
+                <Logo 
+                    src = { data.logo.src }
+                    alt = { data.logo.alt }
+                    name = { data.logo.name }
+                    href = { data.logo.path } 
+                />
                 <Button icon={ data.search.icon } className="mc-header-icon search" />
                 <Button 
                     icon={ drawer ? "menu_open" : "menu" } 

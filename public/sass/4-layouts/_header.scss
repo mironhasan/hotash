@@ -28,8 +28,11 @@
 }
 
 .mc-header-left {
-    @include flex-dimension(center, flex-start, 0px 50px);
-    margin-#{$start-direction}: -150px;
+    @include flex-dimension(center, flex-start, 0px);
+
+    .mc-logo-group {
+        margin-#{$end-direction}: 105px;
+    }
 
     @include desktop-breakpoint {
         margin-#{$start-direction}: 0px;
@@ -57,6 +60,8 @@
         }
 
         &.toggle {
+            margin-#{$end-direction}: 50px;
+
             i {
                 font-size: 22px; 
 
