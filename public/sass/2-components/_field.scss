@@ -35,7 +35,8 @@
     padding: 0px 15px;
     border-radius: 8px;
     @include text-font(14px, 500);
-    border: 1px solid;
+    border-width: 1px;
+    border-style: solid;
 
     &.w-sm { width: 200px; }
     &.w-md { width: 300px; }

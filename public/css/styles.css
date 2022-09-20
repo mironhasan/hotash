@@ -858,15 +858,16 @@ p {
 .dark_mode .mc-dropdown-menu:hover {
   background-color: #39496b;
 }
-.dark_mode .mc-label-field-title {
-  color: #403e57;
-}
 .dark_mode .mc-label-field-input,
 .dark_mode .mc-label-field-select,
 .dark_mode .mc-label-field-textarea {
   color: #b4b4b4;
-  border-color: #e4e4e4;
-  background-color: #f0f0f0;
+  border-color: #253557;
+  background-color: #1b2b4d;
+}
+.dark_mode .mc-icon-field {
+  background-color: #112143;
+  border-color: #253557;
 }
 .dark_mode .mc-icon-field:focus-within {
   border-color: #4094f1;
@@ -874,11 +875,22 @@ p {
 .dark_mode .mc-icon-field:focus-within i {
   color: #4094f1;
 }
+.dark_mode .mc-icon-field.white {
+  color: #b4b4b4;
+  border-color: #253557;
+  background-color: #112143;
+}
+.dark_mode .mc-icon-field.white:focus-within {
+  border-color: #4094f1;
+}
+.dark_mode .mc-icon-field.white:focus-within i {
+  color: #4094f1;
+}
 .dark_mode .mc-icon-field input,
 .dark_mode .mc-icon-field select,
 .dark_mode .mc-icon-field textarea {
   color: #b4b4b4;
-  background-color: #1b2b4d;
+  background-color: #112143;
 }
 .dark_mode .mc-icon-field i,
 .dark_mode .mc-icon-field button {
@@ -1065,8 +1077,7 @@ p {
   background-color: #112143;
 }
 .dark_mode .mc-analytics-card {
-  background-color: #ffffff;
-  border-color: transparent;
+  background-color: #112143;
 }
 .dark_mode .mc-analytics-card-group .mc-dropdown-toggle i {
   color: #f8f8f8;
@@ -1079,7 +1090,7 @@ p {
 }
 .dark_mode .mc-card {
   background-color: #112143;
-  border-color: #112143;
+  border-color: #1b2b4d;
 }
 .dark_mode .mc-countries-card-item {
   border-color: #253557;
@@ -1088,12 +1099,17 @@ p {
   color: #9a9a9a;
 }
 .dark_mode .mc-crm-card {
-  background-color: #ffffff;
-  border-color: #f0f0f0;
+  background-color: #112143;
+  border-color: #1b2b4d;
 }
 .dark_mode .mc-devices-card-head .mc-icon-field {
   background-color: #1b2b4d;
   border-color: #253557;
+}
+.dark_mode .mc-devices-card-head .mc-icon-field input,
+.dark_mode .mc-devices-card-head .mc-icon-field select,
+.dark_mode .mc-devices-card-head .mc-icon-field textarea {
+  background-color: #1b2b4d;
 }
 .dark_mode .mc-ecommerce-card-meta {
   color: #ffffff;
@@ -1129,6 +1145,11 @@ p {
 .dark_mode .mc-revenue-card-header .mc-icon-field {
   background-color: #1b2b4d;
   border-color: #253557;
+}
+.dark_mode .mc-revenue-card-header .mc-icon-field input,
+.dark_mode .mc-revenue-card-header .mc-icon-field select,
+.dark_mode .mc-revenue-card-header .mc-icon-field textarea {
+  background-color: #1b2b4d;
 }
 .dark_mode .mc-revenue-card-report h3 span {
   color: #b4b4b4;
@@ -1279,27 +1300,27 @@ p {
   border-color: #f0f0f0;
 }
 .dark_mode .mc-auth-form {
-  background: #f0f0f0;
-  border-color: #e4e4e4;
+  background: #1b2b4d;
+  border-color: #2f3f61;
 }
 .dark_mode .mc-auth-forgot:hover {
   color: #4094f1;
 }
 .dark_mode .mc-auth-btn {
   color: #ffffff;
-  background-color: #4094f1;
+  background-color: #0857f5;
 }
 .dark_mode .mc-auth-divide::after {
-  background: #d1d1d1;
+  background: #39496b;
 }
 .dark_mode .mc-auth-divide span {
   color: #b4b4b4;
-  background: #f0f0f0;
-  border-color: #d1d1d1;
+  background: #112143;
+  border-color: #39496b;
 }
 .dark_mode .mc-auth-navigate {
-  background: #f0f0f0;
-  border-color: #e4e4e4;
+  background: #1b2b4d;
+  border-color: #2f3f61;
 }
 .dark_mode .mc-auth-navigate a {
   color: #4094f1;
@@ -1430,14 +1451,11 @@ p {
   background-color: #f0f0f0;
 }
 .dark_mode .mc-register-banner {
-  background: -webkit-gradient(linear, left top, right top, from(#f0f0f0), to(#f8f8f8));
-  background: linear-gradient(to right, #f0f0f0, #f8f8f8);
-}
-.dark_mode .mc-register-banner-title {
-  color: #5a5a5a;
+  background: -webkit-gradient(linear, left top, right top, from(#071739), to(#112143));
+  background: linear-gradient(to right, #071739, #112143);
 }
 .dark_mode .mc-register-form {
-  background-color: #f0f0f0;
+  background-color: #1b2b4d;
 }
 .dark_mode .mc-register-navigate a {
   color: #4094f1;
@@ -2187,7 +2205,8 @@ textarea.form-control {
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
-  border: 1px solid;
+  border-width: 1px;
+  border-style: solid;
 }
 .mc-label-field-input.w-sm,
 .mc-label-field-select.w-sm,
@@ -3120,9 +3139,6 @@ textarea.form-control {
   -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.06);
 }
-.mc-sales-card .mc-card-header {
-  margin-bottom: 20px;
-}
 
 .mc-sales-card-group {
   padding: 22px;
@@ -3420,7 +3436,6 @@ textarea.form-control {
 
 .mc-analytics-card {
   padding: 22px;
-  border: 1px solid;
   border-radius: 8px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;

@@ -49,30 +49,40 @@
     .mc-dropdown-menu {
         &:hover { background-color: $dark-100; }
     }
-    
-    .mc-label-field-title {
-        color: $heading;
-    }
 
     .mc-label-field-input,
     .mc-label-field-select,
     .mc-label-field-textarea {
         color: $gray-500;
-        border-color: $gray-300;
-        background-color: $gray-200;
+        border-color: $dark-300;
+        background-color: $dark-400;
     }
 
     .mc-icon-field {
+        background-color: $dark-500;
+        border-color: $dark-300;
+
         &:focus-within {
             border-color: $blue-600;
             i { color: $blue-600; }
+        }
+
+        &.white {
+            color: $gray-500;
+            border-color: $dark-300;
+            background-color: $dark-500;
+
+            &:focus-within {
+                border-color: $blue-600;
+                i { color: $blue-600; }
+            }
         }
 
         input,
         select,
         textarea {
             color: $gray-500;
-            background-color: $dark-400;
+            background-color: $dark-500;
         }
 
         i,
@@ -297,8 +307,7 @@
     }
 
     .mc-analytics-card  {
-        background-color: $white;
-        border-color: transparent;
+        background-color: $dark-500;
     }
 
     .mc-analytics-card-group {
@@ -312,7 +321,7 @@
 
     .mc-card {
         background-color: $dark-500;
-        border-color: $dark-500;
+        border-color: $dark-400;
     }
 
     .mc-countries-card-item {
@@ -321,14 +330,18 @@
     }
 
     .mc-crm-card {
-        background-color: $white;
-        border-color: $gray-200;
+        background-color: $dark-500;
+        border-color: $dark-400;
     }
 
     .mc-devices-card-head  {
         .mc-icon-field {
             background-color: $dark-400;
             border-color: $dark-300;
+
+            input,
+            select,
+            textarea { background-color: $dark-400; }
         }
     }
 
@@ -368,6 +381,10 @@
         .mc-icon-field {
             background-color: $dark-400;
             border-color: $dark-300;
+
+            input,
+            select,
+            textarea { background-color: $dark-400; }
         }
     }
 
@@ -567,8 +584,8 @@
     }
 
     .mc-auth-form {
-        background: $gray-200;
-        border-color: $gray-300;
+        background: $dark-400;
+        border-color: $dark-200;
     }
 
     .mc-auth-forgot {
@@ -577,22 +594,22 @@
 
     .mc-auth-btn {
         color: $white;
-        background-color: $blue-600;
+        background-color: $primary;
     }
 
     .mc-auth-divide {
-        &::after { background: $gray-400; }
+        &::after { background: $dark-100; }
 
         span {
             color: $gray-500;
-            background: $gray-200;
-            border-color: $gray-400;
+            background: $dark-500;
+            border-color: $dark-100;
         }
     }
 
     .mc-auth-navigate {
-        background: $gray-200;
-        border-color: $gray-300;
+        background: $dark-400;
+        border-color: $dark-200;
         a { color: $blue-600; }
     }
 
@@ -768,15 +785,11 @@
     }
 
     .mc-register-banner {
-        background: linear-gradient(to right, $gray-200, $gray-100);
-    }
-
-    .mc-register-banner-title {
-        color: $gray-900;
+        background: linear-gradient(to right, $dark-600, $dark-500);
     }
 
     .mc-register-form {
-        background-color: $gray-200;
+        background-color: $dark-400;
     }
 
     .mc-register-navigate {

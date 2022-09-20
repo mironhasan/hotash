@@ -27,7 +27,7 @@ export default function Login() {
                             icon = { item.icon }
                             type = { item.type }
                             option = { item.option }
-                            fieldSize = { item.fieldSize }
+                            classes = { item.fieldSize }
                             placeholder = { item.placeholder }
                             passwordVisible = { item.passwordVisible }
                         />
