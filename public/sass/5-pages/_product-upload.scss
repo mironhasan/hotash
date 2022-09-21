@@ -14,10 +14,11 @@
 }
 
 .mc-product-upload-media {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    @include grid-minmax(20px, 150px);
+
+    @include mobile-breakpoint {
+        @include grid-minmax(20px, 115px);
+    }
 }
 
 .mc-product-upload-image {
@@ -52,7 +53,6 @@
 }
 
 .mc-product-upload-file {
-    width: 180px;
     position: relative;
     border-radius: 8px;
     border: 2px dashed;
@@ -63,12 +63,13 @@
         width: 100%;
         height: 100%;
         visibility: hidden; 
+        position: absolute;
     }
 
     label {
-        @include position-top-left(absolute, 0px, 0px, 1);
         @include flex-dimension(center, center, 0px);
         flex-direction: column;
+        padding: 20px 0px;
         width: 100%;
         height: 100%;
         cursor: pointer;
@@ -77,6 +78,10 @@
         i {
             font-size: 90px;
             opacity: 0.1;
+
+            @include mobile-breakpoint {
+                font-size: 60px;
+            }
         }
 
         p {

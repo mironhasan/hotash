@@ -28,11 +28,12 @@
 
 .mc-product-view-info-title {
     @include text-font(22px, 500);
+    margin-bottom: 15px;
     line-height: 30px;
 }
 
 .mc-product-view-meta {
-    @include flex-dimension(center, start, 0px);
+    @include flex-dimension(start, start, 0px);
 
     i { 
         font-size: 20px;
@@ -45,10 +46,14 @@
         text-transform: capitalize;
     }
 
-    span { margin-#{$end-direction}: 20px; }
+    span { 
+        line-height: 16px;
+        margin-#{$end-direction}: 20px; 
+    }
 
     p {
         font-size: 15px;
+        line-height: 18px;
         text-transform: capitalize;
 
         del {
@@ -59,6 +64,7 @@
 
     ul {
         @include flex-dimension(center, start, 8px);
+        flex-wrap: wrap;
         
         li {
             @include text-font(11px, 500);

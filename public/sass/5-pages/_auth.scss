@@ -16,6 +16,10 @@
     margin: 0px auto;
     padding: 30px 0px 50px;
     text-align: center;
+
+    @include mobile-breakpoint {
+        padding: 30px 15px 50px;
+    }
 }
 
 .mc-auth-logo {
@@ -35,6 +39,10 @@
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid;
+
+    @include mobile-breakpoint {
+        padding: 25px
+    }
 }
 
 .mc-auth-forgot {
@@ -62,6 +70,7 @@
 
     label {
         font-size: 15px;
+        text-align: $start-direction;
         cursor: pointer;
     }
 }

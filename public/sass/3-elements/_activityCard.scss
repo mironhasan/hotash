@@ -23,6 +23,10 @@
     display: flex;
     gap: 10px;
 
+    @include mobile-breakpoint {
+        flex-wrap: wrap;
+    }
+
     h6 {
         font-size: 14px;
         text-transform: inherit;

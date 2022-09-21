@@ -24,7 +24,7 @@ export default function InvoiceList() {
                     </CardLayout>
                 </Col>
                 {data.float.map((item, index) => (
-                    <Col key={ index } xl={4}>
+                    <Col key={ index } md={6} lg={4}>
                         <FloatCard 
                             variant = { item.variant }
                             digit = { item.digit }
@@ -36,7 +36,7 @@ export default function InvoiceList() {
                 <Col xl={12}>
                     <CardLayout>
                         <CardHeader title="shopping invoices" dotsMenu={ data.dotsMenu } />
-                        <Row xs={1} sm={4} className="mb-4">
+                        <Row xs={1} sm={2} lg={4} className="mb-4">
                             {data.filter.map((item, index)=> (
                                 <Col key={index}>
                                     <LabelField 

@@ -11,17 +11,13 @@
         border-#{$end-direction}: 1px solid;
     }
 
+    @include mobile-breakpoint {
+        top: 62px;
+        height: calc(100vh - 62px);
+    }
+
     &.active {
         #{$start-direction}: 0px;
-    }
-
-    &::-webkit-scrollbar { 
-        width: 3px;
-    }
-
-    &::-webkit-scrollbar-thumb { 
-        border-radius: 15px;
-        background-color: transparent; 
     }
 }
 

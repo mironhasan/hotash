@@ -23,7 +23,7 @@ export default function InvoiceDetails() {
                     </CardLayout>
                 </Col>
                 <Col xl={12}>
-                    <CardLayout className="p-5">
+                    <CardLayout className="p-md-5">
                         <Box className="mc-invoice-head">
                             <Image src={ data.logo.src } alt={ data.logo.alt } />
                             <Heading as="h2">{ data.title }</Heading>

@@ -20,7 +20,7 @@ export default function ProductView() {
                     ))}
                 </Breadcrumb>
             </CardLayout>
-            <CardLayout className="p-5">
+            <CardLayout className="p-lg-5">
                 <Row>
                     <Col xl={5}>
                         <DivideTitle title="product gallery" className="mb-4" />

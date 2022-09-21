@@ -6,6 +6,12 @@
     @include padding(30px, 10px, 15px, 28px);
     @include transition-linear;
 
+    @include mobile-breakpoint {
+        @include padding(30px, 10px, 15px, 10px);
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
     &:hover {
         box-shadow: 0px 15px 25px 0px rgba($black, 0.06);
     }
@@ -13,6 +19,10 @@
 
 .mc-crm-card-group {
     width: 250px;
+
+    @include mobile-breakpoint {
+        margin-#{$start-direction}: 20px;
+    }
 
     i {
         @include content-center(45px, 45px, 50%);
@@ -56,6 +66,10 @@
         white-space: nowrap;
         text-transform: capitalize;
         margin-bottom: 40px;
+
+        @include mobile-breakpoint {
+            margin-bottom: 10px;
+        }
     }
 
     .arrow_upward {

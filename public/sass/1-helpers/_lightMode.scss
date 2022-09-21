@@ -32,6 +32,11 @@
         &:hover { color: $primary; }
     }
 
+    .btn {
+        color: $white;
+        &:hover { color: $white; }
+    }
+
     .mc-btn {
         color: $white;
         &:hover { color: $white; }
@@ -63,6 +68,9 @@
     }
 
     .mc-icon-field {
+        background-color: $white;
+        border-color: $gray-300;
+        
         &:focus-within {
             border-color: $primary;
             i { color: $primary; }

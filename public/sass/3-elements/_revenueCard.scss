@@ -1,6 +1,7 @@
 .mc-revenue-card-header {
     margin-bottom: 28px;
-    @include flex-dimension(start, space-between, 0px);
+    @include flex-dimension(start, space-between, 15px);
+    flex-wrap: wrap;
 
     .mc-icon-field {
         margin-bottom: 0px;
@@ -8,8 +9,9 @@
 }
 
 .mc-revenue-card-group {
-    @include flex-dimension(start, space-between, 0px);
     margin-bottom: 25px;
+    @include flex-dimension(start, space-between, 25px);
+    flex-wrap: wrap;
 }
 
 .mc-revenue-card-report {

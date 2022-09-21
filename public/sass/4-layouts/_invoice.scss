@@ -1,7 +1,11 @@
 .mc-invoice-head {
     @include flex-dimension(center, center, 10px);
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+
+    @include mobile-breakpoint {
+        align-items: start;
+    }
 
     img {
         height: 60px;
@@ -14,13 +18,21 @@
 }
 
 .mc-invoice-group {
-    @include flex-dimension(center, space-between, 0px);
+    @include flex-dimension(center, space-between, 20px);
     margin-bottom: 30px;
+
+    @include mobile-breakpoint {
+        flex-wrap: wrap;
+    }
 }
 
 .mc-invoice-recieved,
 .mc-invoice-shipment {
     max-width: 250px;
+
+    @include mobile-breakpoint {
+        max-width: 100%;
+    }
 
     h6 {
         font-weight: 600;
@@ -35,6 +47,10 @@
 
 .mc-invoice-shipment {
     text-align: $end-direction;
+
+    @include mobile-breakpoint {
+        text-align: $start-direction;
+    }
 }
 
 .mc-invoice-list-group {
@@ -113,6 +129,7 @@
 
 .mc-invoice-btns {
     @include flex-dimension(center, center, 15px);
+    flex-wrap: wrap;
 
     .btn {
         width: fit-content;

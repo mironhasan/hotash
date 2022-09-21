@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { List, Item, Icon, Text, Box, Image, Heading, Anchor } from "../../components/elements";
+import { List, Item, Icon, Text, Box, Anchor } from "../../components/elements";
 import { Breadcrumb, RoundAvatar, DivideTitle, DuelText } from "../../components";
 import { CardLayout, CardHeader, FloatCard, ActivityCard } from "../../components/cards";
 import PageLayout from "../../layouts/PageLayout";
@@ -72,7 +72,7 @@ export default function UserProfile() {
                 <Col xl={7}>
                     <Row>
                         {data.float.map((item, index) => (
-                            <Col xl={4} key={ index }>
+                            <Col md={4} lg={4} key={ index }>
                                 <FloatCard 
                                     variant={ item.variant }
                                     digit={ item.digit }

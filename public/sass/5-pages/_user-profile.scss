@@ -23,7 +23,8 @@
 
 .mc-user-profile {
     margin-bottom: 20px;
-    @include flex-dimension(center, start, 20px);
+    @include flex-dimension(center, start, 10px 20px);
+    flex-wrap: wrap;
 
     h4 {
         text-transform: capitalize;

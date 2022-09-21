@@ -53,7 +53,7 @@ export default function MyAccount() {
                                     </Row>
                                 </TabCard>
                                 <TabCard title="social information">
-                                    <Row xs={2}>
+                                    <Row xs={1} md={2}>
                                         {data.social.map((item, index)=> (
                                             <Col key={ index }>
                                                 <LegendField 
@@ -70,15 +70,15 @@ export default function MyAccount() {
                             <Tab eventKey="password" title="Change Password" className="mc-tabpane password">
                                 <TabCard title="generate password">
                                     <Row>
-                                        <Col xs={12}><IconField icon="lock" type="password" placeholder="current password" fieldSize="w-100 h-lg" passwordVisible /></Col>
-                                        <Col xs={6}><IconField icon="add_moderator" type="password" placeholder="new password" fieldSize="w-100 h-lg" passwordVisible /></Col>
-                                        <Col xs={6}><IconField icon="verified_user" type="password" placeholder="confirm password" fieldSize="w-100 h-lg" passwordVisible /></Col>
+                                        <Col xs={12} md={12}><IconField icon="lock" type="password" placeholder="current password" classes="w-100 h-lg" passwordVisible /></Col>
+                                        <Col xs={12} md={6}><IconField icon="add_moderator" type="password" placeholder="new password" classes="w-100 h-lg" passwordVisible /></Col>
+                                        <Col xs={12} md={6}><IconField icon="verified_user" type="password" placeholder="confirm password" classes="w-100 h-lg" passwordVisible /></Col>
                                     </Row>
                                 </TabCard>
                                 <Button className="mc-btn primary" icon="verified" text="save changes" />
                             </Tab>
                             <Tab eventKey="settings" title="other settings" className="mc-tabpane settings">
-                                <Row xs={2}>
+                                <Row xs={1} md={2}>
                                     <Col>
                                         <TabCard title="activity email settings">
                                             <Form.Check type="switch" id="switch1" label="Someone adds you as a connection" />

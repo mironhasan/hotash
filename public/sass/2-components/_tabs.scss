@@ -2,6 +2,11 @@
     border: none;
     margin-bottom: 50px;
 
+    @include mobile-breakpoint {
+        justify-content: center;
+        gap: 5px;
+    }
+
     .nav-link {
         border: none;
         padding: 20px 25px;
@@ -17,6 +22,10 @@
 
 .mc-tabpane {
     padding: 0px 30px 30px;
+
+    @include mobile-breakpoint {
+        padding: 0px;
+    }
 
     .mc-icon-field {
         margin-bottom: 0px;

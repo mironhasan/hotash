@@ -9,7 +9,7 @@ export default function Sidebar() {
     const { drawer } = useContext(DrawerContext);
     
     return (
-        <Section as="aside" className={`mc-sidebar ${ drawer ? "active" : "" }`}>
+        <Section as="aside" className={`mc-sidebar thin-scrolling ${ drawer ? "active" : "" }`}>
             <MultipleMenu data={ data.navs }  />
             <Logout data={ data.button } />
         </Section>

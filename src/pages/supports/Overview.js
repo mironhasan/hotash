@@ -26,8 +26,8 @@ export default function Overview() {
                     <Heading as="h2" className="mc-overview-title">unique demo</Heading>
                     <Row xs={1} sm={2} xl={3}>
                         {data.demos.map((demo, index) => (
-                            <Col>
-                                <Box key={index} className="mc-overview-card">
+                            <Col key={index} >
+                                <Box className="mc-overview-card">
                                     <Box className="mc-overview-media">
                                         <Image src={demo.image} alt="demo" />
                                         <Box className="mc-overview-overlay">

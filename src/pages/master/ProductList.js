@@ -24,7 +24,7 @@ export default function ProductList() {
                     </CardLayout>
                 </Col>
                 {data.float.map((item, index) => (
-                    <Col key={ index } xl={4}>
+                    <Col key={ index } sm={6} lg={4}>
                         <FloatCard 
                             variant = { item.variant }
                             digit = { item.digit }
@@ -37,7 +37,7 @@ export default function ProductList() {
                     <CardLayout>
                         <Row>
                             {data.product.filter.map((item, index)=> (
-                                <Col xs={1} sm={3} key={ index }>
+                                <Col xs={12} sm={6} md={4} lg={3} key={ index }>
                                     <LabelField
                                         type = { item.type }
                                         label = { item.label }

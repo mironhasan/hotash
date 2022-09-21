@@ -1,66 +1,78 @@
 .mc-header {
     width: 100%;
     padding: 15px 20px;
+    @include flex-dimension(center, start, 0px);
     @include position-top-left(fixed, 0px, 0px, 5);
-    @include flex-dimension(center, space-between, 0px);
+    @include mobile-breakpoint { padding: 12px 15px; }
 
     &.sticky {
         backdrop-filter: blur(5px);
     }
+}
 
-    @include laptop-breakpoint {
-        gap: 0px 18px;
+.mc-logo-group {
+    margin-#{$end-direction}: 105px;
+
+    @include desktop-breakpoint {
+        margin: 0px;
+    }
+
+    img {
+        @include mobile-breakpoint {
+            height: 38px;
+        }
+    }
+
+    span {
+        @include mobile-breakpoint {
+            font-size: 22px;
+        }
+        @include custom-breakpoint(0px, 450px) {
+            display: none;
+        }
+    }
+}
+
+.mc-header-group {
+    flex-grow: 1;
+    @include flex-dimension(center, space-between, 18px);
+
+    @include desktop-breakpoint {
+        justify-content: end;
     }
 
     @include tablet-breakpoint {
-        gap: 0px 15px;
+        gap: 15px;
     }
 
     @include mobile-breakpoint {
-        gap: 0px 10px;
-    }
-
-    .mc-logo {
-        @include laptop-breakpoint { flex-grow: 1; }
-        img { @include custom-breakpoint(0px, 500px) { height: 38px; } }
-        span { @include custom-breakpoint(0px, 500px) { display: none; } }
+        gap: 10px;
     }
 }
 
 .mc-header-left {
-    @include flex-dimension(center, flex-start, 0px);
-
-    .mc-logo-group {
-        margin-#{$end-direction}: 105px;
-    }
-
-    @include desktop-breakpoint {
-        margin-#{$start-direction}: 0px;
-    }
-
-    @include laptop-breakpoint {
-        gap: 0px 18px;
-    }
+    @include flex-dimension(center, flex-start, 18px);
 
     @include tablet-breakpoint {
-        gap: 0px 15px;
+        gap: 15px;
     }
 
     @include mobile-breakpoint {
-        gap: 0px 10px;
+        gap: 10px;
     }
 
     .mc-header-icon { 
         &.search {
             display: none;
 
-            @include tablet-breakpoint {
+            @include laptop-breakpoint {
                 display: block;
             }
         }
 
         &.toggle {
-            margin-#{$end-direction}: 50px;
+            margin-#{$end-direction}: 32px;
+            @include desktop-breakpoint { margin: 0px; }
 
             i {
                 font-size: 22px; 
@@ -80,7 +92,7 @@
     @include flex-dimension(center, flex-start, 0px);
     @include transition-linear;
 
-    @include tablet-breakpoint {
+    @include laptop-breakpoint {
         display: none;
     }
 
@@ -100,11 +112,7 @@
 .mc-header-right {
     @include flex-dimension(center, flex-end, 0px 18px);
 
-    .mc-dropdown-paper {
-        margin-top: 15px;
-    }
-
-    @include laptop-breakpoint {
+    @include desktop-breakpoint {
         .mc-header-icon {
             &.cart,
             &.message,
@@ -115,11 +123,15 @@
     }
 
     @include tablet-breakpoint {
-        gap: 0px 15px;
+        gap: 15px;
     }
 
     @include mobile-breakpoint {
-        gap: 0px 10px;
+        gap: 10px;
+    }
+
+    .mc-dropdown-paper {
+        margin-top: 15px;
     }
 }
 
@@ -207,6 +219,23 @@
                 border-top: 5px solid;
                 border-right: 5px solid transparent;
                 border-left: 5px solid transparent;
+
+                @include mobile-breakpoint() {
+                    display: none;
+                }
+            }
+        }
+
+        .mc-round-avatar.xs img {
+            @include mobile-breakpoint() {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        .mc-duel-text {
+            @include mobile-breakpoint() {
+                display: none;
             }
         }
     }

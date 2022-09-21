@@ -26,7 +26,7 @@ export default function ForgotPassword() {
                             key = { index }
                             icon = { item.icon }
                             type = { item.type }
-                            fieldSize = { item.fieldSize }
+                            classes = { item.fieldSize }
                             placeholder = { item.placeholder }
                             passwordVisible = { item.passwordVisible }
                         />
