@@ -40,7 +40,7 @@ export default function Charts() {
                 </Col>
                 <Col xs={12} xl={8}>
                     <DivideTitle title="arrow icon chart" className="mb-4 mt-4" />
-                    <Row xs={1} sm={2}>
+                    <Row xs={1} md={2}>
                         {data.heros.map((item, index) => (
                             <Col key={ index }>
                                 <EcommerceCard 
@@ -83,7 +83,7 @@ export default function Charts() {
                 ))}
                 <DivideTitle title="gradient line chart" className="pt-4" />
                 {data.analytics.map((item, index) => (
-                    <Col xl={3} key={ index }>
+                    <Col xs={12} md={6} xl={3} key={ index }>
                         <AnalyticsCard
                             digit={ item.digit }
                             label={ item.label }

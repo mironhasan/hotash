@@ -162,6 +162,16 @@
         color: $gray-500;
     }
 
+    input[type=datetime-local]::-webkit-calendar-picker-indicator {
+        filter: invert(0.8);
+        cursor: pointer;
+    }
+
+    input[type=search]::-webkit-search-cancel-button {
+        filter: invert(0.8);
+        cursor: pointer;
+    }
+
     .form-btn {
         color: $white;
         background-color: $blue-600;
@@ -314,6 +324,16 @@
                 background-color: $blue-600; 
             }
         }
+    }
+
+    .mc-blank {
+        i {
+            background: -webkit-linear-gradient($dark-200, $dark-400);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        p { color: $gray-800; }
     }
 
     //=======================================
@@ -547,8 +567,8 @@
 
     .mc-sidebar {
         @include laptop-breakpoint {
-            background: $white;
-            border-color: $gray-200;
+            background: $dark-500;
+            border-color: $dark-300;
         }
 
         &:hover { 
@@ -759,6 +779,9 @@
 
     .mc-message-chat-footer {
         background-color: $dark-300;
+        border-color: $dark-100;
+
+        input { color: $gray-300; }
 
         button {
             background-color: $blue-600;
@@ -781,6 +804,17 @@
             border-color: $dark-500;
         }
     }
+
+    .mc-notify-meta {
+        span {
+            color: $gray-400;
+
+            b {
+                color: $gray-300;
+            }
+        }
+    }
+
     .mc-notify-close {
         color: $gray-700;
         &:hover { color: $blue-600; }
@@ -856,5 +890,9 @@
             background-color: $gray-500;
             border-color: $white;
         }
+    }
+
+    .mc-error {
+        h3 { color: $gray-400; }
     }
 }

@@ -18,7 +18,13 @@ export default function Overview() {
                             <Image key={ index } src={ tool } alt="tools" />
                         ))}
                     </Box>
-                    <Anchor href="/ecommerce" icon="launch" text="explore now" className="mc-btn primary" />
+                    <Anchor 
+                        href="/ecommerce" 
+                        target="_blank" 
+                        icon="launch" 
+                        text="explore now" 
+                        className="mc-btn primary" 
+                    />
                 </Container>
             </Section>
             <Section className="mc-overview-demo">

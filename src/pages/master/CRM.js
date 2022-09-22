@@ -34,8 +34,7 @@ export default function CRM() {
                     <DealsCard 
                         title={ data.deals.title }
                         dotsMenu={ data.deals.dotsMenu }
-                        thead={ data.deals.table.thead }
-                        tbody={ data.deals.table.tbody }
+                        table={ data.deals.table }
                     />
                 </Col>
                 <Col xl={6}>

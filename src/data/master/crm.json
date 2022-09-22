@@ -84,6 +84,12 @@
             ]
         },
         "table":{
+            "filter":[
+                { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
+                { "label": "status by", "option": ["won leads", "new leads", "open leads", "lost leads"] },
+                { "label": "brand by", "type": "datetime-local" },
+                { "label": "search by", "type": "search", "placeholder": "id / name / email" }
+            ],
             "thead": ["representer", "email", "amount", "status", "issue date", "action"],
             "tbody": [
                 {

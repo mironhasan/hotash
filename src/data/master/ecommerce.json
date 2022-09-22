@@ -114,6 +114,12 @@
             ]
         },
         "table": {
+            "filter":[
+                { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
+                { "label": "category by", "option": ["mans", "womans", "kids", "accessory"] },
+                { "label": "brand by", "option": ["ecstasy", "freeland", "rongdhonu"] },
+                { "label": "search by", "type": "search", "placeholder": "brand / product / category" }
+            ],
             "thead": ["product", "category", "brand", "price", "stock", "rating", "order", "sales", "action"],
             "tbody": [
                 {

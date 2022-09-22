@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Text, Button, Anchor } from "../elements";
+import { Box, Image, Text, Anchor } from "../elements";
 import { Table, Thead, Tbody, Th, Tr, Td } from "../elements/Table";
 
 export default function ClientsTable({ thead, tbody }) {
@@ -26,7 +26,7 @@ export default function ClientsTable({ thead, tbody }) {
                             <Td>{ item.amount }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Button title="Chat" className="material-icons chat">{ item.action.chat }</Button>
+                                    <Anchor href="/message" title="Chat" className="material-icons chat">{ item.action.chat }</Anchor>
                                     <Anchor href="/user-profile" title="View" className="material-icons view">{ item.action.view }</Anchor>
                                 </Box>
                             </Td>

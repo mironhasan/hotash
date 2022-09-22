@@ -19,8 +19,8 @@ export default function Buttons() {
                     </Breadcrumb>
                 </Col>
                 <Col xl={12}>
-                    <Box className="mc-card p-5">
-                        <Row xl={2}>
+                    <Box className="mc-card p-md-5">
+                        <Row xs={1} md={2}>
                             <Col>
                                 <DivideTitle title="Bootstrap buttons" className="mb-4" />
                                 <Box className="mb-4">

@@ -26,16 +26,12 @@
 }
 
 .mc-message-user-list {
-    height: calc(100vh - 230px);
     overflow-y: auto;
+    height: calc(100vh - 230px);
     padding: 5px 7px 5px 10px ;
 
-    &::-webkit-scrollbar { 
-        width: 3px;
-    }
-    &::-webkit-scrollbar-thumb { 
-        border-radius: 15px;
-        background-color: transparent; 
+    @include tablet-breakpoint {
+        height: 400px;
     }
 }
 
@@ -105,15 +101,6 @@
             text-align: center;
         }
     }
-
-    .mc-dots-btn {
-        padding: 7px 10px;
-        gap: 10px;
-    }
-
-    .mc-dots {
-        align-items: center;
-    }
 }
 
 
@@ -122,6 +109,10 @@
     padding-bottom: 15px;
     @include flex-dimension(center, start, 10px);
     border-bottom: 1px solid;
+
+    @include mobile-breakpoint {
+        justify-content: space-between;
+    }
 
     .mc-round-avatar {
         position: relative;
@@ -136,6 +127,10 @@
 
     .mc-duel-text {
         flex-grow: 1;
+
+        @include custom-breakpoint(0px, 400px) {
+            display: none;
+        }
     }
 
     .mc-duel-text-title {
@@ -163,12 +158,8 @@
     overflow-y: auto;
     height: calc(100vh - 300px);
 
-    &::-webkit-scrollbar { 
-        width: 3px;
-    }
-    &::-webkit-scrollbar-thumb { 
-        border-radius: 15px;
-        background-color: transparent; 
+    @include tablet-breakpoint {
+        height: 500px;
     }
 }
 
@@ -240,12 +231,14 @@
 
 .mc-message-chat-footer {
     @include flex-dimension(center, start, 10px);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 30px;
-    padding: 5px 10px;
+    padding: 8px;
 
-    textarea {
+    input {
         width: 100%;
-        resize: none;
+        padding-#{$start-direction}: 7px;
 
         &::placeholder {
             font-size: 14px;

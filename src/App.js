@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Overview, Documentation, ChangeLog } from "./pages/supports";
+import { Overview, Documentation, ChangeLog, Error } from "./pages/supports";
 import { Avatars, Alerts, Buttons, Charts, Tables, Fields, Headings, Colors } from "./pages/blocks";
 import { Ecommerce, Analytics, CRM, ForgotPassword, Register, Login, UserList, UserProfile, MyAccount, 
     ProductList, ProductView, ProductUpload, InvoiceList, InvoiceDetails, OrderList, Message, 
@@ -41,6 +41,7 @@ export default function App() {
                 <Route path="/alerts" element={<Alerts />} />
 
                 {/* Supports Pages */}
+                <Route path="*" element={<Error />} />
                 <Route path="/" element={<Overview />} />
                 <Route path="/documentation" element={<Documentation />} />
                 <Route path="/changelog" element={<ChangeLog />} />

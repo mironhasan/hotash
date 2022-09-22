@@ -31,6 +31,8 @@
         flex-direction: column;
         margin: 0 auto 42px;
 
+        img { height: 70px; } 
+
         span {
             background: -webkit-linear-gradient($purple-200, $blue-300);
             -webkit-background-clip: text;

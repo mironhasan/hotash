@@ -308,6 +308,18 @@
         }
     }
 
+    .mc-blank {
+        i {
+            background: -webkit-linear-gradient($gray-400, $gray-300);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        p {
+            color: $gray-600;
+        }
+    }
+
     //=======================================
     //          ELEMENTS THEME COLOR 
     //=======================================
@@ -752,6 +764,9 @@
 
     .mc-message-chat-footer {
         background-color: $gray-200;
+        border-color: $gray-300;
+
+        input { color: $heading; }
 
         button {
             background-color: $primary;

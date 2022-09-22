@@ -1,5 +1,5 @@
 .mc-notify-item {
-    @include flex-dimension(center, space-between, 15px);
+    @include flex-dimension(start, space-between, 15px);
     padding: 20px 10px;
     border-bottom: 1px solid;
 
@@ -10,6 +10,11 @@
 .mc-notify-content {
     display: flex;
     gap: 25px;
+
+    @include custom-breakpoint(0px, 450px) {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 }
 
 .mc-notify-media {
@@ -54,5 +59,6 @@
 }
 
 .mc-notify-close {
+    margin-top: 5px;
     @include transition-linear;
 }

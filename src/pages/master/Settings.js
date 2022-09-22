@@ -19,14 +19,14 @@ export default function Settings() {
                     ))}
                 </Breadcrumb>
             </CardLayout>
-            <CardLayout className="p-5">
+            <CardLayout className="p-sm-5">
                 <Box className="mb-5">
                     <DivideTitle title="informations" className="mb-4" />
                     <Row>
                         <Col xl={4}>
                             <Text className="mc-setting-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Text>
                         </Col>
-                        <Col xl={8} className="ps-5">
+                        <Col xl={8} className="ps-xl-5">
                             <Row>
                                 <Col xl={6}><LabelField label="site title" type="text" fieldSize="w-100 h-md" /></Col>
                                 <Col xl={6}><LabelField label="tagline" type="text" fieldSize="w-100 h-md" /></Col>
@@ -43,7 +43,7 @@ export default function Settings() {
                         <Col xl={4}>
                             <Text className="mc-setting-descrip">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text ever since when an unknown printer took a galley of type and scrambled it to make a type specimen book.</Text>
                         </Col>
-                        <Col xl={8} className="ps-5">
+                        <Col xl={8} className="ps-xl-5">
                             <Form.Check type="checkbox" id="checkbox4" className="mb-3" label="Send notification on each user registration" defaultChecked/>
                             <Form.Check type="checkbox" id="checkbox1" className="mb-3" label="All registration is enabled on this site" defaultChecked/>
                             <Form.Check type="checkbox" id="checkbox2" className="mb-3" label="You're sent a direct message" />

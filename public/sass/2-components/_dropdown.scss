@@ -13,6 +13,10 @@
         line-height: 0px;
         box-shadow: inherit;
 
+        &:hover {
+            color: inherit;
+        }
+
         &:focus {
             box-shadow: none;
         }

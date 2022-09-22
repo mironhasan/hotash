@@ -75,21 +75,17 @@
     .arrow_upward {
         &::before {
             content: "\e5d8";
-            font-weight: 600; 
-            font-family: 'Material Icons';
-            color: $green-700;
+            color: $green-600;
         }
-        small:first-child { color: $green-700; }
+        small:first-child { color: $green-600; }
     }
 
     .arrow_downward {
         &::before {
             content: "\e5db";
-            font-weight: 600; 
-            font-family: 'Material Icons';
-            color: $red-700;
+            color: $red-600;
         }
-        small:first-child { color: $red-700; }
+        small:first-child { color: $red-600; }
     }
 
     span {
@@ -97,5 +93,10 @@
         @include flex-dimension(center, start, 1px);
         small:first-child { font-weight: 500;  }
         small:last-child { margin-#{$start-direction}: 5px; }
+
+        &::before {
+            font-weight: 600; 
+            font-family: 'Material Icons';
+        }
     }
 }

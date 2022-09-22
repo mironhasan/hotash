@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Box, List, Item, Icon, Text, Form, Button, Textarea } from "../../components/elements";
+import { Box, List, Item, Icon, Text, Form, Button, Input } from "../../components/elements";
 import { DotsMenu, DuelText, RoundAvatar } from "../../components";
 import CardLayout from "../../components/cards/CardLayout";
 import IconField from "../../components/fields/IconField"
@@ -11,14 +11,14 @@ export default function Message() {
     return (
         <PageLayout>
             <Row>
-                <Col xl={4}>
+                <Col md={5} xl={4}>
                     <CardLayout className="p-0">
                         <Box className="mc-message-user">
                             <Box className="mc-message-user-filter">
                                 <IconField 
                                     type={ data.search.type }
                                     icon={ data.search.icon }
-                                    fieldSize={ data.search.fieldSize }
+                                    classes={ data.search.fieldSize }
                                     placeholder={ data.search.placeholder }
                                 />
                                 <DotsMenu 
@@ -26,7 +26,7 @@ export default function Message() {
                                     dropdown={ data.dots.menu } 
                                 />
                             </Box>
-                            <List className="mc-message-user-list">
+                            <List className="mc-message-user-list thin-scrolling">
                                 {data.users.map((item, index) => (
                                     <Item key={ index } className={`mc-message-user-item ${ item.active ? item.active : "" }`}>
                                         <RoundAvatar 
@@ -49,7 +49,7 @@ export default function Message() {
                         </Box>
                     </CardLayout>
                 </Col>
-                <Col xl={8}>
+                <Col md={7} xl={8}>
                     <CardLayout>
                         <Box className="mc-message-chat">
                             <Box className="mc-message-chat-header">
@@ -66,7 +66,7 @@ export default function Message() {
                                     ))}
                                 </Box>
                             </Box>
-                            <List className="mc-message-chat-list">
+                            <List className="mc-message-chat-list thin-scrolling">
                                 {data.chats.map((chat, index) => (
                                     <Item key={ index } className="mc-message-chat-item">
                                         <RoundAvatar src={ chat.src } alt="avatar" size="mc-message-chat-user" />
@@ -85,7 +85,7 @@ export default function Message() {
                                 ))}
                             </List>
                             <Form className="mc-message-chat-footer">
-                                <Textarea placeholder="Type a message"></Textarea>
+                                <Input type="text" placeholder="Type a message"></Input>
                                 <Button type="button" className="material-icons">send</Button>
                             </Form>
                         </Box>

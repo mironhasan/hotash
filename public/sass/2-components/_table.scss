@@ -259,11 +259,11 @@
     text-transform: capitalize;
     @include text-font(13px, 500);
 
-    &.purple { color: $purple-700; background: $purple-200; }
-    &.blue { color: $blue-700; background: $blue-200; }
-    &.green { color: $green-700; background: $green-200; }
-    &.yellow { color: $yellow-700; background: $yellow-200; }
-    &.red { color: $red-700; background: $red-200; }
+    &.purple { color: $purple-800; background: $purple-300; }
+    &.blue { color: $blue-800; background: $blue-300; }
+    &.green { color: $green-800; background: $green-300; }
+    &.yellow { color: $yellow-800; background: $yellow-300; }
+    &.red { color: $red-800; background: $red-300; }
 }
 
 .mc-table-action {

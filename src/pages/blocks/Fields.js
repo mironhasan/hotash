@@ -23,7 +23,7 @@ export default function Forms() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader title="icon fields" />
-                        <Row xl={3}>
+                        <Row xs={1} md={2} xl={3}>
                             <Col>
                                 <DivideTitle title="small size" className="mb-3 mt-3" />
                                 <IconField icon="email" type="text" classes="w-100 h-sm gray" />
@@ -48,7 +48,7 @@ export default function Forms() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader title="legend fields" />
-                        <Row xl={3}>
+                        <Row xs={1} md={2} xl={3}>
                             <Col>
                                 <DivideTitle title="small size" className="mb-4 mt-3" />
                                 <LegendField type="text" fieldSize="w-100 h-sm" className="mb-4" />
@@ -73,7 +73,7 @@ export default function Forms() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader title="label fields" />
-                        <Row xl={3}>
+                        <Row xs={1} md={2} xl={3}>
                             <Col>
                                 <DivideTitle title="small size" className="mb-4 mt-3" />
                                 <LabelField label="text field" type="text" fieldSize="w-100 h-sm" labelDir="label-col mb-4" />
