@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover { 
+        text-decoration: none; 
+        color: inherit;
+    }
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+sup, 
+sub {
+    top: inherit;
+    bottom: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+html,
+body {
+    direction: $direction;
+    scroll-behavior: smooth;
+}
+
+input,
+select,
+button,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+
+    &:focus { outline: none; }
+}
+
+button {
+    cursor: pointer;
+    line-height: 0px;
+}
+
+

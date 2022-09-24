@@ -1,0 +1,20 @@
+.mc-logo {
+    img { height: 45px; }
+}
+
+.mc-logo-group {
+    width: fit-content;
+    @include flex-dimension(center, start, 0px 2px);
+
+    img { height: 45px; }
+
+    span {
+        @include text-font(24px, 900);
+        text-transform: uppercase;
+    }
+
+    &.lg {
+        img { height: 60px; }
+        span { font-size: 34px; }
+    }
+}
