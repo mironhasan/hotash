@@ -118,11 +118,12 @@
                 { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
                 { "label": "category by", "option": ["mans", "womans", "kids", "accessory"] },
                 { "label": "brand by", "option": ["ecstasy", "freeland", "rongdhonu"] },
-                { "label": "search by", "type": "search", "placeholder": "brand / product / category" }
+                { "label": "search by", "type": "search", "placeholder": "id / name / category / brand" }
             ],
             "thead": ["product", "category", "brand", "price", "stock", "rating", "order", "sales", "action"],
             "tbody": [
-                {
+                { 
+                    "name":"check0",
                     "src": "images/product/01.jpg",
                     "alt": "scart",
                     "heading": "Tops and skirt set for Female", 
@@ -137,6 +138,7 @@
                     "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
                 },
                 {
+                    "name":"check1",
                     "src": "images/product/02.jpg",
                     "alt": "scart",
                     "heading": "Leather belt steve madden men's", 
@@ -151,6 +153,7 @@
                     "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
                 },
                 {
+                    "name":"check2",
                     "src": "images/product/03.jpg",
                     "alt": "scart",
                     "heading": "Existing product name", 
@@ -165,6 +168,7 @@
                     "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
                 },
                 {
+                    "name":"check3",
                     "src": "images/product/04.jpg",
                     "alt": "scart",
                     "heading": "Existing product name", 
@@ -179,6 +183,7 @@
                     "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
                 },
                 {
+                    "name":"check4",
                     "src": "images/product/05.jpg",
                     "alt": "scart",
                     "heading": "Existing product name", 
@@ -193,6 +198,7 @@
                     "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
                 },
                 {
+                    "name":"check5",
                     "src": "images/product/06.jpg",
                     "alt": "scart",
                     "heading": "Existing product name", 

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { DrawerContext } from "../context/DrawerContext";
+import { DrawerContext } from "../context/Drawer";
 import Box from "../components/elements/Box";
 
 export default function Main({ children }) {

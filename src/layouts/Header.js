@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { Logo, DropdownMenu, RoundAvatar, DuelText } from '../components';
 import { Button, Section, Box, Icon, Anchor, Form, Input, Text, Image } from "../components/elements";
-import { DrawerContext } from '../context/DrawerContext';
-import { ThemeContext } from '../context/ThemeContext';
+import { DrawerContext } from '../context/Drawer';
+import { ThemeContext } from '../context/Themes';
 import data from "../data/master/header.json";
 
 export default function Header() {
@@ -20,26 +20,26 @@ export default function Header() {
     return (
         <Section as="header" className={`mc-header ${ scroll }`}>
             <Logo 
-                src = { data.logo.src }
-                alt = { data.logo.alt }
-                name = { data.logo.name }
-                href = { data.logo.path } 
+                src = { data?.logo.src }
+                alt = { data?.logo.alt }
+                name = { data?.logo.name }
+                href = { data?.logo.path } 
             />
             <Box className="mc-header-group">
                 <Box className="mc-header-left">
-                    <Button icon={ data.search.icon } className="mc-header-icon search" />
+                    <Button icon={ data?.search.icon } className="mc-header-icon search" />
                     <Button 
                         icon={ drawer ? "menu_open" : "menu" } 
                         className="mc-header-icon toggle" 
                         onClick={ toggleDrawer } 
                     />
                     <Form className="mc-header-search">
-                        <Button className="material-icons">{ data.search.icon }</Button>
-                        <Input type="type" placeholder={ data.search.placeholder } />
+                        <Button className="material-icons">{ data?.search.icon }</Button>
+                        <Input type="search" placeholder={ data?.search.placeholder } />
                     </Form>
                 </Box>
                 <Box className="mc-header-right">
-                    {data.widgets.map((widget, index) => (
+                    {data?.widgets.map((widget, index) => (
                         widget.dropdown ?
                             <Dropdown key={ index }>
                                 <Dropdown.Toggle className={`mc-dropdown-toggle mc-header-icon ${ widget.addClass }`}>
@@ -74,10 +74,10 @@ export default function Header() {
                     ))}
                     <Dropdown className="mc-header-user">
                         <Dropdown.Toggle className="mc-dropdown-toggle">
-                            <RoundAvatar src={ data.profile.src } alt={ data.profile.alt } size="xs" />
-                            <DuelText title={ data.profile.name } descrip={ data.profile.username } size="xs" />
+                            <RoundAvatar src={ data?.profile.src } alt={ data?.profile.alt } size="xs" />
+                            <DuelText title={ data?.profile.name } descrip={ data?.profile.username } size="xs" />
                         </Dropdown.Toggle>
-                        <DropdownMenu dropdown={ data.profile.dropdown } />
+                        <DropdownMenu dropdown={ data?.profile.dropdown } />
                     </Dropdown>
                 </Box>
             </Box>

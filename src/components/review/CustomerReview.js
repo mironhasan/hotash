@@ -7,7 +7,7 @@ import { Box, List, Item, Icon, Text, Anchor } from "../elements";
 export default function CustomerReview({ data }) {
     return (
         <List className="mc-review-list">
-            {data.map((item, index) => (
+            {data?.map((item, index) => (
                 <Item key={ index } className="mc-review-item">
                     <Box className="mc-review-group">
                         <Box className="mc-review-data">

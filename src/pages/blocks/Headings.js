@@ -11,8 +11,8 @@ export default function Headings() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.pageTitle }>
-                        {data.breadcrumb.map((item, index) => (
+                    <Breadcrumb title={ data?.pageTitle }>
+                        {data?.breadcrumb.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>

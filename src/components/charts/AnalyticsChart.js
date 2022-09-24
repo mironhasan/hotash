@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/Themes";
 import { LineChart, Line, Tooltip, ResponsiveContainer } from "recharts";
 
 export default function AnalyticsChart({ variant, dataSet, dataKey }) {

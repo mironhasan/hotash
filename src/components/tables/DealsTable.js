@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { Table, Thead, Tbody, Th, Tr, Td } from "../elements/Table";
 import { Heading, Anchor, Icon, Box, Text, Input, Image, Button } from "../elements";
 
 export default function DealsTable({ thead, tbody }) {
-    const [alertModal, setAlertModal] = React.useState(false);
+    const [alertModal, setAlertModal] = useState(false);
+    const [data, setData] = useState([]);
+
+    useEffect(()=> { setData(tbody) }, [tbody]);
+
+    const handleCheckbox = (event) => {
+        const { name, checked } = event.target;
+
+        if(name === "allCheck") {
+            const checkData = data?.map((item)=> {
+                return { ...item, isChecked: checked };
+            });
+            setData(checkData);
+        }
+        else {
+            const checkData = data?.map((item) => 
+                item.name === name ? {...item, isChecked: checked} : item
+            );
+            setData(checkData);
+        }
+    }
+
     return (
         <Box className="mc-table-responsive">
             <Table className="mc-table">
@@ -12,7 +33,12 @@ export default function DealsTable({ thead, tbody }) {
                     <Tr>
                         <Th>
                             <Box className="mc-table-check">
-                                <Input type="checkbox" />
+                                <Input 
+                                    type="checkbox" 
+                                    name="allCheck"
+                                    checked={ data?.filter((item)=> item.isChecked !== true).length < 1 } 
+                                    onChange={ handleCheckbox } 
+                                />
                                 <Text>s.l</Text>
                             </Box>
                         </Th>
@@ -22,11 +48,16 @@ export default function DealsTable({ thead, tbody }) {
                     </Tr>
                 </Thead>
                 <Tbody className="mc-table-body even">
-                    {tbody.map((item, index) => (
+                    {data?.map((item, index) => (
                         <Tr key={ index }> 
                             <Td>
                                 <Box className="mc-table-check">
-                                    <Input type="checkbox" />
+                                    <Input 
+                                        type="checkbox" 
+                                        name={item.name} 
+                                        checked={ item?.isChecked || false }
+                                        onChange={ handleCheckbox } 
+                                    />
                                     <Text>{ index + 1 }</Text>
                                 </Box>
                             </Td>
@@ -42,7 +73,7 @@ export default function DealsTable({ thead, tbody }) {
                             <Td>{ item.date }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Anchor title="View" href="#" className="material-icons view">{ item.action.view }</Anchor>
+                                    <Anchor title="View" href="/user-profile" className="material-icons view">{ item.action.view }</Anchor>
                                     <Anchor title="Download" href="#" className="material-icons download" download>{ item.action.download }</Anchor>
                                     <Button title="Delete" className="material-icons delete" onClick={()=> setAlertModal(true)}>{ item.action.delete }</Button>
                                 </Box>

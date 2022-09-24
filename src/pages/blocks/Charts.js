@@ -12,8 +12,8 @@ export default function Charts() {
             <Row>
                 <Col xl={12}>
                     <Box className="mc-card">
-                        <Breadcrumb title={ data.pageTitle }>
-                            {data.breadcrumb.map((item, index) => (
+                        <Breadcrumb title={ data?.pageTitle }>
+                            {data?.breadcrumb.map((item, index) => (
                                 <Item key={ index } className="mc-breadcrumb-item">
                                     {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                                 </Item>
@@ -24,24 +24,24 @@ export default function Charts() {
                 <Col xl={8}>
                     <DivideTitle title="step area chart" className="mb-4 mt-3" />
                     <RevenueCard 
-                        title={ data.revenue.title }
-                        field={ data.revenue.field }
-                        report={ data.revenue.report }
-                        chart={ data.revenue.chart }
+                        title={ data?.revenue.title }
+                        field={ data?.revenue.field }
+                        report={ data?.revenue.report }
+                        chart={ data?.revenue.chart }
                     />
                 </Col>
                 <Col xl={4}>
                     <DivideTitle title="Round pie chart" className="mb-4 mt-3" />
                     <OrdersCard 
-                        title={ data.orders.title }
-                        dotsMenu={ data.orders.dotsMenu }
-                        items={ data.orders.items }
+                        title={ data?.orders.title }
+                        dotsMenu={ data?.orders.dotsMenu }
+                        items={ data?.orders.items }
                     />
                 </Col>
                 <Col xs={12} xl={8}>
                     <DivideTitle title="arrow icon chart" className="mb-4 mt-4" />
                     <Row xs={1} md={2}>
-                        {data.heros.map((item, index) => (
+                        {data?.heros.map((item, index) => (
                             <Col key={ index }>
                                 <EcommerceCard 
                                     icon = { item.icon }
@@ -60,17 +60,17 @@ export default function Charts() {
                 <Col xs={12} xl={4}>
                     <DivideTitle title="natural area chart" className="mb-4 mt-4" />
                     <SalesCard 
-                        title={ data.sales.title } 
-                        amount={ data.sales.amount } 
-                        percent={ data.sales.percent }
-                        trendIcon={ data.sales.trendIcon }
-                        dotsMenu = { data.sales.dotsMenu }
-                        compare={ data.sales.compare }
-                        chart={ data.sales.chart }
+                        title={ data?.sales.title } 
+                        amount={ data?.sales.amount } 
+                        percent={ data?.sales.percent }
+                        trendIcon={ data?.sales.trendIcon }
+                        dotsMenu = { data?.sales.dotsMenu }
+                        compare={ data?.sales.compare }
+                        chart={ data?.sales.chart }
                     />
                 </Col>
                 <DivideTitle title="gradient bar chart" className="pt-4" />
-                {data.crms.map((item, index) => (
+                {data?.crms.map((item, index) => (
                     <Col xl={6} key={ index }>
                         <CRMCard 
                             variant={ item.variant }
@@ -82,7 +82,7 @@ export default function Charts() {
                     </Col>
                 ))}
                 <DivideTitle title="gradient line chart" className="pt-4" />
-                {data.analytics.map((item, index) => (
+                {data?.analytics.map((item, index) => (
                     <Col xs={12} md={6} xl={3} key={ index }>
                         <AnalyticsCard
                             digit={ item.digit }
@@ -97,10 +97,10 @@ export default function Charts() {
                 <Col xl={12}>
                     <DivideTitle title="double bar chart" className="mb-4 mt-4" />
                     <DevicesCard 
-                        title={ data.device.title }
-                        icon={ data.device.icon }
-                        option={ data.device.option }
-                        chart={ data.device.chart }
+                        title={ data?.device.title }
+                        icon={ data?.device.icon }
+                        option={ data?.device.option }
+                        chart={ data?.device.chart }
                     />
                 </Col>
             </Row>

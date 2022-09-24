@@ -13,8 +13,8 @@ export default function InvoiceDetails() {
             <Row>
                 <Col xl={12}>
                     <CardLayout>
-                        <Breadcrumb title={ data.pageTitle }>
-                            {data.breadcrumb.map((item, index) => (
+                        <Breadcrumb title={ data?.pageTitle }>
+                            {data?.breadcrumb.map((item, index) => (
                                 <Item key={ index } className="mc-breadcrumb-item">
                                     {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                                 </Item>
@@ -25,30 +25,30 @@ export default function InvoiceDetails() {
                 <Col xl={12}>
                     <CardLayout className="p-md-5">
                         <Box className="mc-invoice-head">
-                            <Image src={ data.logo.src } alt={ data.logo.alt } />
-                            <Heading as="h2">{ data.title }</Heading>
+                            <Image src={ data?.logo.src } alt={ data?.logo.alt } />
+                            <Heading as="h2">{ data?.title }</Heading>
                         </Box>
                         <Box className="mc-invoice-group">
                             <Box className="mc-invoice-recieved">
-                                <Heading as="h6">{ data.recieved.title }</Heading>
-                                <Text>{ data.recieved.text }</Text>
+                                <Heading as="h6">{ data?.recieved.title }</Heading>
+                                <Text>{ data?.recieved.text }</Text>
                             </Box>
                             <Box className="mc-invoice-shipment">
-                                <Heading as="h6">{ data.shipment.title }</Heading>
-                                <Text>{ data.shipment.text }</Text>
+                                <Heading as="h6">{ data?.shipment.title }</Heading>
+                                <Text>{ data?.shipment.text }</Text>
                             </Box>
                         </Box>
                         <Box className="mc-table-responsive">
                             <Table className="mc-table">
                                 <Thead className="mc-table-head">
                                     <Tr>
-                                        {data.table.thead.map((item, index) => (
+                                        {data?.table.thead.map((item, index) => (
                                             <Th key={ index }>{ item }</Th>
                                         ))}
                                     </Tr>
                                 </Thead>
                                 <Tbody className="mc-table-body">
-                                    {data.table.tbody.map((item, index) => (
+                                    {data?.table.tbody.map((item, index) => (
                                         <Tr key={ index }>
                                             <Td>{ item.id }</Td>
                                             <Td>
@@ -68,7 +68,7 @@ export default function InvoiceDetails() {
                         </Box>
                         <Box className="mc-invoice-list-group">
                             <List className="mc-invoice-list">
-                                {data.list.map((item, index) => (
+                                {data?.list.map((item, index) => (
                                     <Item key={ index }>
                                         <Text as="span" className="title">{ item.title }</Text>
                                         <Text as="span" className="clone">:</Text>
@@ -78,9 +78,9 @@ export default function InvoiceDetails() {
                                 ))}
                             </List>
                         </Box>
-                        <Text className="mc-invoice-note">{ data.note }</Text>
+                        <Text className="mc-invoice-note">{ data?.note }</Text>
                         <Box className="mc-invoice-btns">
-                            {data.button.map((item, index) => (
+                            {data?.button.map((item, index) => (
                                 <Anchor 
                                     key={ index }
                                     href={ item.path }

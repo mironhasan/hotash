@@ -10,8 +10,8 @@ export default function Buttons() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.pageTitle }>
-                        {data.breadcrumb.map((item, index) => (
+                    <Breadcrumb title={ data?.pageTitle }>
+                        {data?.breadcrumb.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
@@ -24,12 +24,12 @@ export default function Buttons() {
                             <Col>
                                 <DivideTitle title="Bootstrap buttons" className="mb-4" />
                                 <Box className="mb-4">
-                                    {data.bootstrap.btns.map((item, index) => (
+                                    {data?.bootstrap.btns.map((item, index) => (
                                         <Button key={ index } className={ item.classes }>{ item.label }</Button>
                                     ))}
                                 </Box>
                                 <Box>
-                                    {data.bootstrap.small.map((item, index) => (
+                                    {data?.bootstrap.small.map((item, index) => (
                                         <Button key={ index } className={ item.classes }>{ item.label }</Button>
                                     ))}
                                 </Box>
@@ -37,12 +37,12 @@ export default function Buttons() {
                             <Col>
                                 <DivideTitle title="custom buttons" className="mb-4" />
                                 <Box className="mb-4">
-                                    {data.custom.btns.map((item, index) => (
+                                    {data?.custom.btns.map((item, index) => (
                                         <Button key={ index } icon={ item.icon } text={ item.label } className={ item.classes } />
                                     ))}
                                 </Box>
                                 <Box>
-                                    {data.custom.small.map((item, index) => (
+                                    {data?.custom.small.map((item, index) => (
                                         <Button key={ index } icon={ item.icon } text={ item.label } className={ item.classes } />
                                     ))}
                                 </Box>

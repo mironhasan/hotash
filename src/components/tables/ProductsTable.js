@@ -8,21 +8,19 @@ export default function ProductsTable({ thead, tbody }) {
     const [alertModal, setAlertModal] = useState(false);
     const [data, setData] = useState([]);
 
-    useEffect(()=> {
-        setData(tbody);
-    }, [tbody]);
+    useEffect(()=> { setData(tbody) }, [tbody]);
 
     const handleCheckbox = (event) => {
         const { name, checked } = event.target;
 
         if(name === "allCheck") {
-            const checkData = data.map((item)=> {
+            const checkData = data?.map((item)=> {
                 return { ...item, isChecked: checked };
             });
             setData(checkData);
         }
         else {
-            const checkData = data.map((item) => 
+            const checkData = data?.map((item) => 
                 item.name === name ? {...item, isChecked: checked} : item
             );
             setData(checkData);
@@ -39,7 +37,7 @@ export default function ProductsTable({ thead, tbody }) {
                                 <Input 
                                     type="checkbox" 
                                     name="allCheck"
-                                    checked={ data.filter((item)=> item.isChecked !== true).length < 1 } 
+                                    checked={ data?.filter((item)=> item.isChecked !== true).length < 1 } 
                                     onChange={ handleCheckbox } 
                                 />
                                 <Text>uid</Text>
@@ -51,13 +49,13 @@ export default function ProductsTable({ thead, tbody }) {
                     </Tr>
                 </Thead>
                 <Tbody className="mc-table-body even">
-                    {data.map((item, index) => (
+                    {data?.map((item, index) => (
                         <Tr key={ index }> 
                             <Td title={ index + 1 }>
                                 <Box className="mc-table-check">
                                     <Input 
                                         type="checkbox" 
-                                        name={`check${index}`} 
+                                        name={item.name} 
                                         checked={ item?.isChecked || false }
                                         onChange={ handleCheckbox } 
                                     />

@@ -6,7 +6,7 @@ export default function MultipleMenu({ data }) {
 
     return (
         <>
-            {data.map((item, index) => (
+            {data?.map((item, index) => (
                 <Menu key={ index }  className="mc-sidebar-menu">
                     <Heading as="h5" className="mc-sidebar-menu-title">{ item.title }</Heading>
                     <List className="mc-sidebar-menu-list">

@@ -12,8 +12,8 @@ export default function Tables() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.pageTitle }>
-                        {data.breadcrumb.map((item, index) => (
+                    <Breadcrumb title={ data?.pageTitle }>
+                        {data?.breadcrumb.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
@@ -23,48 +23,48 @@ export default function Tables() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.products.title } 
-                            dotsMenu={ data.products.dotsMenu } 
+                            title={ data?.products.title } 
+                            dotsMenu={ data?.products.dotsMenu } 
                         />
                         <ProductsTable 
-                            thead={ data.products.thead } 
-                            tbody={ data.products.tbody } 
+                            thead={ data?.products.thead } 
+                            tbody={ data?.products.tbody } 
                         />
                     </Box>
                 </Col>
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.users.title } 
-                            dotsMenu={ data.users.dotsMenu } 
+                            title={ data?.users.title } 
+                            dotsMenu={ data?.users.dotsMenu } 
                         />
                         <UsersTable 
-                            thead={ data.users.thead } 
-                            tbody={ data.users.tbody } 
+                            thead={ data?.users.thead } 
+                            tbody={ data?.users.tbody } 
                         />
                     </Box>
                 </Col>
                 <Col xl={5}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.pages.title } 
-                            dotsMenu={ data.pages.dotsMenu } 
+                            title={ data?.pages.title } 
+                            dotsMenu={ data?.pages.dotsMenu } 
                         />
                         <PagesTable 
-                            thead={ data.pages.thead }
-                            tbody={ data.pages.tbody }
+                            thead={ data?.pages.thead }
+                            tbody={ data?.pages.tbody }
                         />
                     </Box>
                 </Col>
                 <Col xs={12} xl={7}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.traffics.title } 
-                            dotsMenu={ data.traffics.dotsMenu } 
+                            title={ data?.traffics.title } 
+                            dotsMenu={ data?.traffics.dotsMenu } 
                         />
                         <TrafficsTable 
-                            thead = { data.traffics.thead } 
-                            tbody = { data.traffics.tbody }
+                            thead = { data?.traffics.thead } 
+                            tbody = { data?.traffics.tbody }
                         />
                     </Box>
                 </Col>

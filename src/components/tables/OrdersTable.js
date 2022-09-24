@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { Table, Thead, Tbody, Th, Tr, Td } from "../elements/Table";
 import { Image, Input, Text, Box, Icon, Button, Heading, Anchor } from "../elements";
 
 export default function OrderTable({ thead, tbody }) {
     const [alertModal, setAlertModal] = React.useState(false);
+    const [data, setData] = useState([]);
+
+    useEffect(()=> { setData(tbody) }, [tbody]);
+
+    const handleCheckbox = (event) => {
+        const { name, checked } = event.target;
+
+        if(name === "allCheck") {
+            const checkData = data?.map((item)=> {
+                return { ...item, isChecked: checked };
+            });
+            setData(checkData);
+        }
+        else {
+            const checkData = data?.map((item) => 
+                item.name === name ? {...item, isChecked: checked} : item
+            );
+            setData(checkData);
+        }
+    }
+
     return (
         <Box className="mc-table-responsive">
             <Table className="mc-table">
@@ -12,7 +33,12 @@ export default function OrderTable({ thead, tbody }) {
                     <Tr>
                         <Th>
                             <Box className="mc-table-check">
-                                <Input type="checkbox" />
+                                <Input 
+                                    type="checkbox" 
+                                    name="allCheck"
+                                    checked={ data?.filter((item)=> item.isChecked !== true).length < 1 } 
+                                    onChange={ handleCheckbox } 
+                                />
                                 <Text>uid</Text>
                             </Box>
                         </Th>
@@ -22,11 +48,16 @@ export default function OrderTable({ thead, tbody }) {
                     </Tr>
                 </Thead>
                 <Tbody className="mc-table-body even">
-                    {tbody.map((item, index) => (
+                    {data?.map((item, index) => (
                         <Tr key={ index }> 
                             <Td>
                                 <Box className="mc-table-check">
-                                    <Input type="checkbox" />
+                                    <Input 
+                                        type="checkbox" 
+                                        name={item.name} 
+                                        checked={ item?.isChecked || false }
+                                        onChange={ handleCheckbox } 
+                                    />
                                     <Text>{ item.id }</Text>
                                 </Box>
                             </Td>

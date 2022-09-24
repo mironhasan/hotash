@@ -23,8 +23,8 @@
         },
         {
             "heading": "04. How do I change my primary brand color?",
-            "describe": "Open your project in the <b>vscode</b> editor. If the <b>live sass compiler</b> extension is not installed then install it. Once the installation is complete, click on <b>watch sass</b> under the code editor. Then change your brand color or any other color from public > sass > 1-helpers > _colors.scss file.",
-            "images": ["images/docs/sass.jpg", "images/docs/watch.jpg", "images/docs/color.jpg"]
+            "describe": "Open your project in the <b>vscode</b> editor. If the <b>live sass compiler</b> extension is not installed then install it. Once the installation is complete, click on <b>watch sass</b> under the code editor. Then change your brand color or any other color from public > sass > 1-helpers > _colors.scss file. But if you don't have good knowledge about sass then you can change from public > css > style.css file.",
+            "images": ["images/docs/sass.jpg", "images/docs/watch.jpg", "images/docs/color.jpg", "images/docs/css.jpg"]
         },
         {
             "heading": "05. How to change my content like text, images, icon?",

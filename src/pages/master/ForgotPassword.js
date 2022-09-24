@@ -9,19 +9,19 @@ export default function ForgotPassword() {
         <Box className="mc-auth">
             <Image 
                 className="mc-auth-pattern" 
-                src={ data.pattern.src } 
-                alt={ data.pattern.alt } 
+                src={ data?.pattern.src } 
+                alt={ data?.pattern.alt } 
             />
             <Box className="mc-auth-group">
                 <Logo 
-                    src = { data.logo.src }
-                    alt = { data.logo.alt }
-                    href = { data.logo.path }
+                    src = { data?.logo.src }
+                    alt = { data?.logo.alt }
+                    href = { data?.logo.path }
                     className = "mc-auth-logo"
                 />
-                <Heading as="h4" className="mc-auth-title">{ data.title }</Heading>
+                <Heading as="h4" className="mc-auth-title">{ data?.title }</Heading>
                 <Form className="mc-auth-form">
-                    {data.input.map((item, index) => (
+                    {data?.input.map((item, index) => (
                         <IconField 
                             key = { index }
                             icon = { item.icon }
@@ -31,11 +31,11 @@ export default function ForgotPassword() {
                             passwordVisible = { item.passwordVisible }
                         />
                     ))}
-                    <Button className={`mc-auth-btn ${data.button.fieldSize}`} type={ data.button.type }>{ data.button.text }</Button>
+                    <Button className={`mc-auth-btn ${data?.button.fieldSize}`} type={ data?.button.type }>{ data?.button.text }</Button>
                 </Form>
                 <Box className="mc-auth-navigate">
-                    <Text as="span">{ data.navigate.title }</Text>
-                    <Anchor href={ data.navigate.path }>{ data.navigate.text }</Anchor>
+                    <Text as="span">{ data?.navigate.title }</Text>
+                    <Anchor href={ data?.navigate.path }>{ data?.navigate.text }</Anchor>
                 </Box>
             </Box>
         </Box>

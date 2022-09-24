@@ -13,8 +13,8 @@ export default function Analytics() {
             <Row>
                 <Col xl={12}>
                     <Box className="mc-card">
-                        <Breadcrumb title={ data.pageTitle }>
-                            {data.breadcrumb.map((item, index) => (
+                        <Breadcrumb title={ data?.pageTitle }>
+                            {data?.breadcrumb.map((item, index) => (
                                 <Item key={ index } className="mc-breadcrumb-item">
                                     {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                                 </Item>
@@ -22,7 +22,7 @@ export default function Analytics() {
                         </Breadcrumb>
                     </Box>
                 </Col>
-                {data.mixed.map((item, index) => (
+                {data?.mixed.map((item, index) => (
                     <Col xl={3} key={ index }>
                         <AnalyticsCard
                             digit={ item.digit }
@@ -36,40 +36,40 @@ export default function Analytics() {
                 ))}
                 <Col xl={7}>
                     <DevicesCard 
-                        title={ data.device.title }
-                        icon={ data.device.icon }
-                        option={ data.device.option }
-                        chart={ data.device.chart }
+                        title={ data?.device.title }
+                        icon={ data?.device.icon }
+                        option={ data?.device.option }
+                        chart={ data?.device.chart }
                     />
                 </Col>
                 <Col xs={12} xl={5}>
                     <CountriesCard 
-                        title={ data.country.title }
-                        dotsMenu={ data.country.dotsMenu }
-                        items={ data.country.items }
+                        title={ data?.country.title }
+                        dotsMenu={ data?.country.dotsMenu }
+                        items={ data?.country.items }
                     />
                 </Col>
                 <Col xl={5}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.pages.title } 
-                            dotsMenu={ data.dotsMenu } 
+                            title={ data?.pages.title } 
+                            dotsMenu={ data?.dotsMenu } 
                         />
                         <PagesTable 
-                            thead={ data.pages.thead }
-                            tbody={ data.pages.tbody }
+                            thead={ data?.pages.thead }
+                            tbody={ data?.pages.tbody }
                         />
                     </Box>
                 </Col>
                 <Col xs={12} xl={7}>
                     <Box className="mc-card">
                         <CardHeader 
-                            title={ data.traffic.title } 
-                            dotsMenu={ data.dotsMenu } 
+                            title={ data?.traffic.title } 
+                            dotsMenu={ data?.dotsMenu } 
                         />
                         <TrafficsTable 
-                            thead = { data.traffic.thead } 
-                            tbody = { data.traffic.tbody }
+                            thead = { data?.traffic.thead } 
+                            tbody = { data?.traffic.tbody }
                         />
                     </Box>
                 </Col>

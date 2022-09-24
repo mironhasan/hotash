@@ -4,7 +4,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
-import { DrawerProvider } from "../context/DrawerContext";
+import { DrawerProvider } from "../context/Drawer";
 
 export default function PageLayout({ children }) {
 

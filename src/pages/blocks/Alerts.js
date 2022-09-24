@@ -11,8 +11,8 @@ export default function Alerts() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.pageTitle }>
-                        {data.breadcrumb.map((item, index) => (
+                    <Breadcrumb title={ data?.pageTitle }>
+                        {data?.breadcrumb.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
@@ -22,7 +22,7 @@ export default function Alerts() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader title="bootstrap alerts" />
-                        {data.bootstrap.map((item, index) => (
+                        {data?.bootstrap.map((item, index) => (
                             <Alert key={ index } variant={ item.variant } dismissible>{ item.label }</Alert>
                         ))}
                     </Box>
@@ -30,7 +30,7 @@ export default function Alerts() {
                 <Col xl={12}>
                     <Box className="mc-card">
                         <CardHeader title="custom alerts" />
-                        {data.custom.map((item, index) => (
+                        {data?.custom.map((item, index) => (
                             <IconAlert 
                                 key={ index }
                                 classes={ item.classes } 

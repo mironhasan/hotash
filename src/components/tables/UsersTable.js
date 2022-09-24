@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Modal, Form } from "react-bootstrap";
 import { Table, Thead, Tbody, Th, Tr, Td } from "../elements/Table";
 import { Button, Image, Input, Text, Box, Icon, Anchor, Option, Heading } from "../elements";
-import data from "../../data/master/userList.json";
+import userInfo from "../../data/master/userList.json";
 
 
 export default function UsersTable({ thead, tbody }) {
 
+    const [data, setData] = useState([]);
+    const [userData, setUserData] = React.useState("");
     const [editModal, setEditModal] = React.useState(false);
     const [blockModal, setBlockModal] = React.useState(false);
-    const [userData, setUserData] = React.useState("");
+
+    useEffect(()=> { setData(tbody) }, [tbody]);
+
+    const handleCheckbox = (event) => {
+        const { name, checked } = event.target;
+
+        if(name === "allCheck") {
+            const checkData = data?.map((item)=> {
+                return { ...item, isChecked: checked };
+            });
+            setData(checkData);
+        }
+        else {
+            const checkData = data?.map((item) => 
+                item.name === name ? {...item, isChecked: checked} : item
+            );
+            setData(checkData);
+        }
+    }
 
     return (
         <Box className="mc-table-responsive">
@@ -18,7 +38,12 @@ export default function UsersTable({ thead, tbody }) {
                     <Tr>
                         <Th>
                             <Box className="mc-table-check">
-                                <Input type="checkbox" />
+                                <Input 
+                                    type="checkbox" 
+                                    name="allCheck"
+                                    checked={ data?.filter((item)=> item.isChecked !== true).length < 1 } 
+                                    onChange={ handleCheckbox } 
+                                />
                                 <Text>uid</Text>
                             </Box>
                         </Th>
@@ -28,11 +53,16 @@ export default function UsersTable({ thead, tbody }) {
                     </Tr>
                 </Thead>
                 <Tbody className="mc-table-body even">
-                    {tbody.map((item, index) => (
+                    {data?.map((item, index) => (
                         <Tr key={ index }> 
                             <Td title="id">
                                 <Box className="mc-table-check">
-                                    <Input type="checkbox" />
+                                    <Input 
+                                        type="checkbox" 
+                                        name={item.name} 
+                                        checked={ item?.isChecked || false }
+                                        onChange={ handleCheckbox } 
+                                    />
                                     <Text>#{ index + 1 }</Text>
                                 </Box>
                             </Td>
@@ -74,14 +104,14 @@ export default function UsersTable({ thead, tbody }) {
 
             <Modal show={ editModal } onHide={()=> setEditModal(false, setUserData(""))}>
                 <Box className="mc-user-modal">
-                    <Image src={ userData.src } alt={ userData.alt } />
-                    <Heading as="h4">{ userData.name }</Heading>
-                    <Text as="p">{ userData.email }</Text>
+                    <Image src={ userData.src } alt={ userData?.alt } />
+                    <Heading as="h4">{ userData?.name }</Heading>
+                    <Text as="p">{ userData?.email }</Text>
                     <Form.Group className="form-group inline mb-4">
                         <Form.Label>role</Form.Label>
                         <Form.Select>
-                            <Option>{ userData.role ? userData.role.text : "" }</Option>
-                            {data.role.map((item, index)=> (
+                            <Option>{ userData?.role ? userData?.role.text : "" }</Option>
+                            {userInfo.role.map((item, index)=> (
                                 <Option key={ index } value={ item }>{ item }</Option>
                             ))}
                         </Form.Select>
@@ -89,8 +119,8 @@ export default function UsersTable({ thead, tbody }) {
                     <Form.Group className="form-group inline">
                         <Form.Label>status</Form.Label>
                         <Form.Select>
-                            <Option>{ userData.status }</Option>
-                            {data.status.map((item, index)=> (
+                            <Option>{ userData?.status }</Option>
+                            {userInfo.status.map((item, index)=> (
                                 <Option key={ index } value={ item }>{ item }</Option>
                             ))}
                         </Form.Select>

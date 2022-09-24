@@ -13,7 +13,7 @@ export default function UserProfile() {
                 <Col xl={12}>
                     <CardLayout>
                         <Breadcrumb title="user profile">
-                            {data.breadcrumb.map((item, index) => (
+                            {data?.breadcrumb.map((item, index) => (
                                 <Item key={ index } className="mc-breadcrumb-item">
                                     {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                                 </Item>
@@ -23,24 +23,24 @@ export default function UserProfile() {
                 </Col>
                 <Col xl={5}>
                     <CardLayout>
-                        <CardHeader title="user information" dotsMenu={ data.dotsMenu } />
+                        <CardHeader title="user information" dotsMenu={ data?.dotsMenu } />
                         <Box className="mc-user-group">
                             <Box className="mc-user-profile">
                                 <RoundAvatar 
-                                    src={ data.profile.src } 
-                                    alt={ data.profile.alt } 
-                                    size={ data.profile.size } 
+                                    src={ data?.profile.src } 
+                                    alt={ data?.profile.alt } 
+                                    size={ data?.profile.size } 
                                 />
                                 <DuelText 
-                                    title={ data.profile.fullname }
-                                    descrip={ data.profile.username } 
-                                    size={ data.profile.size }
+                                    title={ data?.profile.fullname }
+                                    descrip={ data?.profile.username } 
+                                    size={ data?.profile.size }
                                 />
                             </Box>
                             <Box className="mb-4">
                                 <DivideTitle title="communication" className="mb-4" />
                                 <List className="mc-user-metalist">
-                                    {data.contact.map((item, index)=> (
+                                    {data?.contact.map((item, index)=> (
                                         <Item key={ index }>
                                             <Icon>{ item.icon }</Icon>
                                             <Text as="span">{ item.text }</Text>
@@ -49,13 +49,13 @@ export default function UserProfile() {
                                 </List>
                             </Box>
                             <Box className="mb-4">
-                                <DivideTitle title={ data.bio.title } className="mb-3" />
-                                <Text className="mc-user-bio mb-4">{ data.bio.descrip }</Text>
+                                <DivideTitle title={ data?.bio.title } className="mb-3" />
+                                <Text className="mc-user-bio mb-4">{ data?.bio.descrip }</Text>
                             </Box>
                             <Box>
                                 <DivideTitle title="elsewhere" className="mb-4" />
                                 <Box className="mc-user-social">
-                                    {data.social.map((item, index)=> (
+                                    {data?.social.map((item, index)=> (
                                         <Anchor 
                                             key = { index } 
                                             href = { item.path }
@@ -71,7 +71,7 @@ export default function UserProfile() {
                 </Col>
                 <Col xl={7}>
                     <Row>
-                        {data.float.map((item, index) => (
+                        {data?.float.map((item, index) => (
                             <Col md={4} lg={4} key={ index }>
                                 <FloatCard 
                                     variant={ item.variant }
@@ -84,9 +84,9 @@ export default function UserProfile() {
                         <Col xl={12}>
                             <ActivityCard 
                                 style={{ height: "540px" }}
-                                title={ data.activity.title }
-                                dotsMenu={ data.activity.dotsMenu }
-                                items={ data.activity.items }
+                                title={ data?.activity.title }
+                                dotsMenu={ data?.activity.dotsMenu }
+                                items={ data?.activity.items }
                             />
                         </Col>
                     </Row>

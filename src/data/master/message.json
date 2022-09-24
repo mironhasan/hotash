@@ -1,6 +1,6 @@
 {
     "search": {
-        "type": "text",
+        "type": "search",
         "icon": "search",
         "fieldSize": "w-100 h-sm",
         "placeholder": "Search username"

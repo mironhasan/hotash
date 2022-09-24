@@ -12,8 +12,8 @@ export default function MyAccount() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.pageTitle }>
-                        {data.breadcrumb.map((item, index) => (
+                    <Breadcrumb title={ data?.pageTitle }>
+                        {data?.breadcrumb.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
@@ -28,33 +28,33 @@ export default function MyAccount() {
                                     <Row>
                                         <Col xl={4}>
                                             <Box className="mc-user-avatar-upload">
-                                                <Box className="mc-user-avatar"><Image src={ data.avatar.src } alt={ data.avatar.alt } /></Box>
+                                                <Box className="mc-user-avatar"><Image src={ data?.avatar.src } alt={ data?.avatar.alt } /></Box>
                                                 <FileUpload icon="cloud_upload" text="upload" />
                                             </Box>
                                         </Col>
                                         <Col xl={8}>
                                             <Row>
-                                                <Col xl={6}><LegendField title={ data.name.title } value={ data.name.value } /></Col>
-                                                <Col xl={6}><LegendField title={ data.username.title } value={ data.username.value } /></Col>
-                                                <Col xl={12}><LegendTextarea title={ data.bio.title } longText={ data.bio.longText } /></Col>
+                                                <Col xl={6}><LegendField title={ data?.name.title } value={ data?.name.value } /></Col>
+                                                <Col xl={6}><LegendField title={ data?.username.title } value={ data?.username.value } /></Col>
+                                                <Col xl={12}><LegendTextarea title={ data?.bio.title } longText={ data?.bio.longText } /></Col>
                                             </Row>
                                         </Col>
                                     </Row>
                                 </TabCard>
                                 <TabCard title="private information">
                                     <Row>
-                                        <Col xl={4}><LegendField title={ data.id.title } value={ data.id.value } /></Col>
-                                        <Col xl={4}><LegendField title={ data.role.title } option={ data.role.option } activeOption={ data.role.activeOption } /></Col>
-                                        <Col xl={4}><LegendField title={ data.status.title } option={ data.status.option } activeOption={ data.status.activeOption } /></Col>
-                                        <Col xl={4}><LegendField title={ data.email.title } value={ data.email.value } /></Col>
-                                        <Col xl={4}><LegendField title={ data.phone.title } value={ data.phone.value } /></Col>
-                                        <Col xl={4}><LegendField title={ data.website.title } value={ data.website.value } /></Col>
-                                        <Col xl={12}><LegendTextarea title={ data.address.title } longText={ data.address.longText } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.id.title } value={ data?.id.value } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.role.title } option={ data?.role.option } activeOption={ data?.role.activeOption } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.status.title } option={ data?.status.option } activeOption={ data?.status.activeOption } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.email.title } value={ data?.email.value } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.phone.title } value={ data?.phone.value } /></Col>
+                                        <Col xl={4}><LegendField title={ data?.website.title } value={ data?.website.value } /></Col>
+                                        <Col xl={12}><LegendTextarea title={ data?.address.title } longText={ data?.address.longText } /></Col>
                                     </Row>
                                 </TabCard>
                                 <TabCard title="social information">
                                     <Row xs={1} md={2}>
-                                        {data.social.map((item, index)=> (
+                                        {data?.social.map((item, index)=> (
                                             <Col key={ index }>
                                                 <LegendField 
                                                     type = { item.type }

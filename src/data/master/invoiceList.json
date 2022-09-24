@@ -22,7 +22,7 @@
         { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
         { "label": "status by", "option": ["recieved", "drafts", "pending"] },
         { "label": "issued by", "type": "date" },
-        { "label": "search by", "type": "text", "placeholder": "id / name / email" }
+        { "label": "search by", "type": "search", "placeholder": "id / name / email" }
     ],
     "table":{
         "thead": ["client", "email", "amount", "status", "issue date", "action"],

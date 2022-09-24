@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../components/Logo";
 import data from "../../data/supports/overview.json";
-import { Anchor, Box, Image, Heading, Section, Text } from "../../components/elements";
+import { Anchor, Box, Image, Heading, Section, Text, Icon } from "../../components/elements";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Overview() {
@@ -9,12 +9,12 @@ export default function Overview() {
         <Box className="mc-overview">
             <Section className="mc-overview-banner">
                 <Container>
-                    <Logo href="/" src={ data.banner.logo } alt="logo" name="hotash" className="lg" />
-                    <Heading as="h1">{ data.banner.title }</Heading>
-                    <Text>{ data.banner.descrip }</Text>
+                    <Logo href="/" src={ data?.banner.logo } alt="logo" name="hotash" className="lg" />
+                    <Heading as="h1">{ data?.banner.title }</Heading>
+                    <Text>{ data?.banner.descrip }</Text>
                     <Box className="tools">
-                        <Heading>{ data.banner.subtitle }</Heading>
-                        {data.tools.map((tool, index) => (
+                        <Heading>{ data?.banner.subtitle }</Heading>
+                        {data?.tools.map((tool, index) => (
                             <Image key={ index } src={ tool } alt="tools" />
                         ))}
                     </Box>
@@ -23,15 +23,15 @@ export default function Overview() {
                         target="_blank" 
                         icon="launch" 
                         text="explore now" 
-                        className="mc-btn primary" 
+                        className="mc-btn primary"
                     />
                 </Container>
             </Section>
             <Section className="mc-overview-demo">
                 <Container fluid>
-                    <Heading as="h2" className="mc-overview-title">unique demo</Heading>
+                    <Heading as="h2" className="mc-overview-title">unique pages</Heading>
                     <Row xs={1} sm={2} xl={3}>
-                        {data.demos.map((demo, index) => (
+                        {data?.demos.map((demo, index) => (
                             <Col key={index} >
                                 <Box className="mc-overview-card">
                                     <Box className="mc-overview-media">
@@ -49,7 +49,10 @@ export default function Overview() {
             </Section>
             <Section className="mc-overview-footer">
                 <Heading as="h2">Do you want to inquiry about hotash template?</Heading>
-                <Anchor href="/" icon="forum" text="contact us" className="mc-btn primary" />
+                <a href="https://themeforest.net/user/mironcoder" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
+                    <Icon type="forum" />
+                    <Text as="span">contact us</Text>
+                </a>
                 <Text>Hotash | © Copyrights by <Text as="span">Mironcoder</Text></Text>
             </Section>
         </Box>

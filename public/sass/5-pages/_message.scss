@@ -188,6 +188,7 @@
 
 .mc-message-chat-user {
     align-self: flex-end;
+    border: none;
 
     img {
         width: 30px;
@@ -211,7 +212,7 @@
         max-width: 400px;
         font-size: 14px;
         padding: 7px 10px;
-        border-radius: 8px;
+        border-radius: 15px;
         min-width: fit-content;
         background-color: $gray-100;
         border-color: $gray-200;

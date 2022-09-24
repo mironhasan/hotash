@@ -999,7 +999,7 @@ p {
 .dark_mode .form-control[type=file]::file-selector-button {
   color: #b4b4b4;
 }
-.dark_mode input[type=datetime-local]::-webkit-calendar-picker-indicator {
+.dark_mode input[type=date]::-webkit-calendar-picker-indicator {
   -webkit-filter: invert(0.8);
           filter: invert(0.8);
   cursor: pointer;
@@ -2652,8 +2652,8 @@ textarea.form-control {
 }
 
 .mc-btn {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
   white-space: nowrap;
   padding: 14px 22px;
@@ -6310,8 +6310,8 @@ textarea.form-control {
   top: 0px;
   left: 0px;
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 23, 57, 0.9)), to(rgba(35, 81, 175, 0.9)));
-  background: linear-gradient(to bottom, rgba(7, 23, 57, 0.9), rgba(35, 81, 175, 0.9));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 23, 57, 0.85)), to(rgba(35, 81, 175, 0.85)));
+  background: linear-gradient(to bottom, rgba(7, 23, 57, 0.85), rgba(35, 81, 175, 0.85));
 }
 .mc-overview-banner .mc-logo-group {
   -webkit-box-pack: center;
@@ -6423,7 +6423,8 @@ textarea.form-control {
   text-align: center;
   margin-bottom: 35px;
   letter-spacing: -1px;
-  font-size: 66px;
+  text-transform: capitalize;
+  font-size: 62px;
   font-weight: 800;
   background: -webkit-linear-gradient(#fbe5ff, #c1e1fc);
   -webkit-background-clip: text;
@@ -6717,6 +6718,7 @@ textarea.form-control {
 .mc-message-chat-user {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  border: none;
 }
 .mc-message-chat-user img {
   width: 30px;
@@ -6748,7 +6750,7 @@ textarea.form-control {
   max-width: 400px;
   font-size: 14px;
   padding: 7px 10px;
-  border-radius: 8px;
+  border-radius: 15px;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -6914,6 +6916,28 @@ textarea.form-control {
   .mc-docs img {
     width: 90%;
     height: auto;
+  }
+}
+
+.mc-docs-footer {
+  max-width: 300px;
+  text-align: center;
+  margin: 60px auto 50px;
+}
+@media (min-width: 0px) and (max-width: 350px) {
+  .mc-docs-footer {
+    max-width: 100%;
+  }
+}
+.mc-docs-footer h3 {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+@media (max-width: 575px) {
+  .mc-docs-footer h3 {
+    font-size: 28px;
   }
 }
 

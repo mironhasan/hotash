@@ -9,8 +9,8 @@ export default function Notification() {
     return (
         <PageLayout>
             <CardLayout className="mb-4">
-                <Breadcrumb title={ data.pageTitle }>
-                    {data.breadcrumb.map((item, index) => (
+                <Breadcrumb title={ data?.pageTitle }>
+                    {data?.breadcrumb.map((item, index) => (
                         <Item key={ index } className="mc-breadcrumb-item">
                             {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                         </Item>
@@ -18,9 +18,9 @@ export default function Notification() {
                 </Breadcrumb>
             </CardLayout>
             <CardLayout>
-                <CardHeader title="all notification" dotsMenu={ data.dotsMenu } />
+                <CardHeader title="all notification" dotsMenu={ data?.dotsMenu } />
                 <List className="mc-notify-list">
-                    {data.notify.map((item, index) => (
+                    {data?.notify.map((item, index) => (
                         <Item className="mc-notify-item" key={ index }>
                             <Anchor className="mc-notify-content" href={ item.path }>
                                 <Box className="mc-notify-media">

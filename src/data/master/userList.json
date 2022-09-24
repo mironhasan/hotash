@@ -23,7 +23,7 @@
         { "label": "show by", "option": ["12 row", "24 row", "36 row"] },
         { "label": "role by", "option": ["admin", "member", "client", "manager", "vendor"] },
         { "label": "status by", "option": ["approved", "pending", "blocked"] },
-        { "label": "search by", "type": "text", "placeholder": "id / name / email / number" }
+        { "label": "search by", "type": "search", "placeholder": "id / name / email / number" }
     ],
     "table":{
         "thead": ["name", "role", "email", "password", "phone", "status", "created", "action"],

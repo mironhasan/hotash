@@ -6,9 +6,9 @@ export const ThemeProvider = ({ children }) => {
 
     const themeGet = localStorage.getItem("theme");
     const themeTag = document.querySelector("html");
-    const [theme, setTheme] = useState(themeGet ? themeGet : "dark_mode");
+    const [theme, setTheme] = useState(themeGet ? themeGet : "light_mode");
 
-    if(themeGet !== "light_mode") themeTag.classList.replace("light_mode", "dark_mode");
+    if(theme !== "light_mode") themeTag.classList.replace("light_mode", "dark_mode");
     else themeTag.classList.replace("dark_mode", "light_mode");
 
     const lightTheme = () => {
@@ -24,7 +24,7 @@ export const ThemeProvider = ({ children }) => {
     }
 
     const toggleTheme = () => {
-        if(themeGet !== "light_mode") lightTheme();
+        if(theme !== "light_mode") lightTheme();
         else darkTheme();
     }
 

@@ -15,8 +15,8 @@ export default function ProductUpload() {
             <Row>
                 <Col xl={12}>
                     <CardLayout>
-                        <Breadcrumb title={ data.pageTitle }>
-                            {data.breadcrumb.map((item, index) => (
+                        <Breadcrumb title={ data?.pageTitle }>
+                            {data?.breadcrumb.map((item, index) => (
                                 <li key={ index } className="mc-breadcrumb-item">
                                     {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                                 </li>
@@ -26,7 +26,7 @@ export default function ProductUpload() {
                 </Col>
                 <Col xl={7}>
                     <CardLayout>
-                        <CardHeader title="basic information" dotsMenu={ data.dotsMenu }  />
+                        <CardHeader title="basic information" dotsMenu={ data?.dotsMenu }  />
                         <Row>
                             <Col xl={12}><LabelField type="text" label="title" fieldSize="w-100 h-md" /></Col>
                             <Col xl={12}><LabelTextarea label="description" fieldSize="w-100 h-text-md" /></Col>
@@ -42,7 +42,7 @@ export default function ProductUpload() {
                 </Col>
                 <Col xl={5}>
                     <CardLayout className="mb-4">
-                        <CardHeader title="organization" dotsMenu={ data.dotsMenu }  />
+                        <CardHeader title="organization" dotsMenu={ data?.dotsMenu }  />
                         <Row>
                             <Col xl={12}>
                                 <Box className="mc-product-upload-organize mb-4">
@@ -65,7 +65,7 @@ export default function ProductUpload() {
                         </Row>
                     </CardLayout>
                     <CardLayout>
-                        <CardHeader title="specification" dotsMenu={ data.dotsMenu }  />
+                        <CardHeader title="specification" dotsMenu={ data?.dotsMenu }  />
                         <Row>
                             <Col xl={6}><LabelField label="size" option={['sm', 'md', 'lg', 'xl', 'xxl']} fieldSize="w-100 h-multiple" multiple/></Col>
                             <Col xl={6}><LabelField label="color" option={['red', 'green', 'blue', 'pink', 'black']} fieldSize="w-100 h-multiple" multiple/></Col>
@@ -76,7 +76,7 @@ export default function ProductUpload() {
                 </Col>
                 <Col xl={12}>
                     <CardLayout>
-                        <CardHeader title="media &amp; published" dotsMenu={ data.dotsMenu }  />
+                        <CardHeader title="media &amp; published" dotsMenu={ data?.dotsMenu }  />
                         <Box className="mc-product-upload-media">
                             <Box className="mc-product-upload-image"><Image src="images/product/single/01.jpg" alt="product" /></Box>
                             <Box className="mc-product-upload-image"><Image src="images/product/single/02.jpg" alt="product" /></Box>

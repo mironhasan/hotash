@@ -16,18 +16,18 @@ export default function Message() {
                         <Box className="mc-message-user">
                             <Box className="mc-message-user-filter">
                                 <IconField 
-                                    type={ data.search.type }
-                                    icon={ data.search.icon }
-                                    classes={ data.search.fieldSize }
-                                    placeholder={ data.search.placeholder }
+                                    type={ data?.search.type }
+                                    icon={ data?.search.icon }
+                                    classes={ data?.search.fieldSize }
+                                    placeholder={ data?.search.placeholder }
                                 />
                                 <DotsMenu 
-                                    dots={ data.dots.icon }
-                                    dropdown={ data.dots.menu } 
+                                    dots={ data?.dots.icon }
+                                    dropdown={ data?.dots.menu } 
                                 />
                             </Box>
                             <List className="mc-message-user-list thin-scrolling">
-                                {data.users.map((item, index) => (
+                                {data?.users.map((item, index) => (
                                     <Item key={ index } className={`mc-message-user-item ${ item.active ? item.active : "" }`}>
                                         <RoundAvatar 
                                             src={ item.src }
@@ -56,7 +56,7 @@ export default function Message() {
                                 <RoundAvatar src="images/avatar/01.jpg" alt="avatar" size="xs" />
                                 <DuelText title="miron mahmud" descrip="active now" size="xs" gap="4px" />
                                 <Box className="mc-message-chat-action-group">
-                                    {data.actions.map((item, index) => (
+                                    {data?.actions.map((item, index) => (
                                         <Icon 
                                             key={ index } 
                                             type={ item.icon } 
@@ -67,7 +67,7 @@ export default function Message() {
                                 </Box>
                             </Box>
                             <List className="mc-message-chat-list thin-scrolling">
-                                {data.chats.map((chat, index) => (
+                                {data?.chats.map((chat, index) => (
                                     <Item key={ index } className="mc-message-chat-item">
                                         <RoundAvatar src={ chat.src } alt="avatar" size="mc-message-chat-user" />
                                         <Box className="mc-message-chat-group">

@@ -85,6 +85,36 @@
             "image": "images/pages/notification.jpg", 
             "path": "/notification", 
             "title": "notifications" 
+        },
+        { 
+            "image": "images/pages/login.jpg", 
+            "path": "/login", 
+            "title": "login" 
+        },
+        { 
+            "image": "images/pages/registration.jpg", 
+            "path": "/register", 
+            "title": "registration" 
+        },
+        { 
+            "image": "images/pages/forgot-password.jpg", 
+            "path": "/forgot-password", 
+            "title": "forgot password" 
+        },
+        { 
+            "image": "images/pages/error.jpg", 
+            "path": "*", 
+            "title": "404 error" 
+        },
+        { 
+            "image": "images/pages/blank.jpg", 
+            "path": "/blank-page", 
+            "title": "blank page" 
+        },
+        { 
+            "image": "images/pages/docs.jpg", 
+            "path": "/documentation", 
+            "title": "documentation" 
         }
     ]
 }

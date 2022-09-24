@@ -11,15 +11,15 @@ export default function CRM() {
         <PageLayout>
             <Row>
                 <Col xl={12}>
-                    <Breadcrumb title={ data.breadcrumb.title }>
-                        {data.breadcrumb.items.map((item, index) => (
+                    <Breadcrumb title={ data?.breadcrumb.title }>
+                        {data?.breadcrumb.items.map((item, index) => (
                             <Item key={ index } className="mc-breadcrumb-item">
                                 {item.path ? <Anchor className="mc-breadcrumb-link" href={ item.path }>{ item.text }</Anchor> : item.text }
                             </Item>
                         ))}
                     </Breadcrumb>
                 </Col>
-                {data.crms.map((item, index) => (
+                {data?.crms.map((item, index) => (
                     <Col xl={6} key={ index }>
                         <CRMCard 
                             variant={ item.variant }
@@ -32,23 +32,23 @@ export default function CRM() {
                 ))}
                 <Col xl={12}>
                     <DealsCard 
-                        title={ data.deals.title }
-                        dotsMenu={ data.deals.dotsMenu }
-                        table={ data.deals.table }
+                        title={ data?.deals.title }
+                        dotsMenu={ data?.deals.dotsMenu }
+                        table={ data?.deals.table }
                     />
                 </Col>
                 <Col xl={6}>
                     <ClientsCard 
-                        title={ data.clients.title }
-                        dotsMenu={ data.clients.dotsMenu }
-                        table={ data.clients.table }
+                        title={ data?.clients.title }
+                        dotsMenu={ data?.clients.dotsMenu }
+                        table={ data?.clients.table }
                     />
                 </Col>
                 <Col xl={6}>
                     <ActivityCard 
-                        title={ data.activity.title }
-                        dotsMenu={ data.activity.dotsMenu }
-                        items={ data.activity.items }
+                        title={ data?.activity.title }
+                        dotsMenu={ data?.activity.dotsMenu }
+                        items={ data?.activity.items }
                     />
                 </Col>
             </Row>

@@ -227,7 +227,7 @@
                 "bounce": "15%" 
             },
             { 
-                "path": "/messages",
+                "path": "/message",
                 "visitor": "3589", 
                 "bounce": "40%" 
             },

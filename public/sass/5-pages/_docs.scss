@@ -30,3 +30,23 @@
         }
     }
 }
+
+.mc-docs-footer {
+    max-width: 300px;
+    text-align: center;
+    margin: 60px auto 50px;
+
+    @include custom-breakpoint(0px, 350px) {
+        max-width: 100%;
+    }
+    
+    h3 {
+        @include text-font(36px, 900);
+        text-transform: uppercase;
+        margin-bottom: 28px;
+
+        @include mobile-breakpoint {
+            font-size: 28px;
+        }
+    }
+}
