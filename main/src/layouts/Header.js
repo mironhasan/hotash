@@ -1,9 +1,9 @@
 import React, { useContext, useState, useRef } from 'react';
-import { Dropdown } from 'react-bootstrap';
-import { Logo, DropdownMenu, RoundAvatar, DuelText } from '../components';
-import { Button, Section, Box, Icon, Anchor, Input, Text, Image } from "../components/elements";
+import { LanguageDropdown, WidgetDropdown, ProfileDropdown } from '../components/header';
+import { Button, Section, Box, Input } from "../components/elements";
 import { DrawerContext } from '../context/Drawer';
 import { ThemeContext } from '../context/Themes';
+import { Logo } from '../components';
 import data from "../data/master/header.json";
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
     });
 
     document.addEventListener('mousedown', (event) => {
-        if (!searchRef.current.contains(event.target)) {
+        if (!searchRef.current?.contains(event.target)) {
             setSearch("");
         }
     })
@@ -53,46 +53,45 @@ export default function Header() {
                     </Box>
                 </Box>
                 <Box className="mc-header-right">
-                    {data?.widgets.map((widget, index) => (
-                        widget.dropdown ?
-                            <Dropdown key={ index }>
-                                <Dropdown.Toggle className={`mc-dropdown-toggle mc-header-icon ${ widget.addClass }`}>
-                                    <Icon type="language" />
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu align="end" className="mc-dropdown-paper">
-                                    {widget.dropdown.map((item, index) => (
-                                        <Button key={ index } className={`mc-header-language ${ item.check ? item.check  : "" }`}>
-                                            <Image src={ item.flag } alt="flag" />
-                                            <Text as="span">{ item.name }</Text>
-                                        </Button>
-                                    ))}
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        : widget.theme ?
-                            <Button 
-                                key={ index } 
-                                icon={ theme }
-                                title={ widget.title }
-                                onClick={ toggleTheme }
-                                className={`mc-header-icon ${ widget.addClass }`}
-                            />
-                        :
-                            <Anchor 
-                                key={ index }
-                                href={ widget.path } 
-                                icon={ widget.icon }
-                                title={ widget.title }
-                                badge={ widget.badge }
-                                className={`mc-header-icon ${ widget.addClass }`}
-                            />
-                    ))}
-                    <Dropdown className="mc-header-user">
-                        <Dropdown.Toggle className="mc-dropdown-toggle">
-                            <RoundAvatar src={ data?.profile.src } alt={ data?.profile.alt } size="xs" />
-                            <DuelText title={ data?.profile.name } descrip={ data?.profile.username } size="xs" />
-                        </Dropdown.Toggle>
-                        <DropdownMenu dropdown={ data?.profile.dropdown } />
-                    </Dropdown>
+                    <Button 
+                        icon={ theme }
+                        title={ data.theme.title }
+                        onClick={ toggleTheme }
+                        className={`mc-header-icon ${ data.theme.addClass }`}
+                    />
+                    <LanguageDropdown  
+                        icon={ data.language.icon }
+                        title={ data.language.title }
+                        addClass={ data.language.addClass }
+                        dropdown={ data.language.dropdown }
+                    />
+                    <WidgetDropdown 
+                        icon={ data.cart.icon }
+                        title={ data.cart.title }
+                        badge={ data.cart.badge }
+                        addClass={ data.cart.addClass }
+                        dropdown={ data.cart.dropdown }
+                    />
+                    <WidgetDropdown 
+                        icon={ data.message.icon }
+                        title={ data.message.title }
+                        badge={ data.message.badge }
+                        addClass={ data.message.addClass }
+                        dropdown={ data.message.dropdown }
+                    />
+                    <WidgetDropdown 
+                        icon={ data.notify.icon }
+                        title={ data.notify.title }
+                        badge={ data.notify.badge }
+                        addClass={ data.notify.addClass }
+                        dropdown={ data.notify.dropdown }
+                    />
+                    <ProfileDropdown 
+                        name={ data.profile.name }
+                        image={ data.profile.image }
+                        username={ data.profile.username }
+                        dropdown={ data.profile.dropdown }
+                    />
                 </Box>
             </Box>
         </Section>

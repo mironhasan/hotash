@@ -12,10 +12,19 @@
         padding: 20px 25px;
         border-radius: 8px;
         @include text-font(15px, 500);
+        color: var(--headingColor);
         text-transform: capitalize;
+        @include transition-linear;
+
+        &:hover {
+            color: var(--lightColor);
+            background-color: var(--primaryHEX);
+        }
 
         &.active {
             border: none;
+            color: var(--lightColor);
+            background-color: var(--primaryHEX);
         }
     }
 }
@@ -29,6 +38,12 @@
 
     .mc-icon-field {
         margin-bottom: 0px;
+        border-color: var(--deepBorder);
+        background-color: var(--thinGray);
+        
+        &:focus-within { 
+            border-color: var(--primaryHEX); 
+        }
     }
 
     &.settings {

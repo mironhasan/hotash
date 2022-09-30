@@ -30,11 +30,13 @@
 .mc-review-analytics-graph {
     width: 100%;
     border-radius: 6px;
+    background: var(--deepGray);
 
     span {
         height: 6px;
-        border-radius: 6px;
         display: block;
+        border-radius: 6px;
+        background-color: $yellow-600;
     }
 }
 
@@ -51,6 +53,7 @@
 }
 
 .mc-review-analytics-total {
+    color: var(--textColor);
     margin-bottom: 20px;
     text-transform: capitalize;
     @include text-font(20px, 500);
@@ -116,6 +119,7 @@
 .mc-review-data {
     padding: 35px;
     border-radius: 15px;
+    background-color: var(--thinGray);
 
     @include mobile-breakpoint {
         padding: 15px;
@@ -142,6 +146,8 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     display: inline-block;
+    color: var(--lightColor);
+    background-color: $gray-900;
 
     @include mobile-breakpoint {
         top: -16px;
@@ -161,15 +167,23 @@
 
     i {
         font-size: 22px;
+        color: $yellow-600;
     }
 }
 
 .mc-review-dots {
     .mc-dropdown-toggle {
         i {
+            color: var(--textColor);
+            background-color: var(--lightGray);
             font-size: 20px;
             @include content-center(35px, 35px, 50%);
             @include transition-linear;
+
+            &:hover {
+                color: var(--lightColor);
+                background: var(--primary);
+            }
         }
     }
 }

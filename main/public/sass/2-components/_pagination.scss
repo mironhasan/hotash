@@ -19,12 +19,23 @@
 
 .mc-paginate-item {
     cursor: pointer;
+    background-color: var(--lightGray);
     @include content-center(35px, 35px, 50%);
     @include text-font(12px, 500);
     @include transition-linear;
 
+    &:hover {
+        color: var(--lightColor);
+        background-color: var(--primaryHEX);
+    }
+
     i {
         line-height: 35px;
         font-size: 20px;
+    }
+
+    &.active {
+        color: var(--lightColor);
+        background-color: var(--primaryHEX);
     }
 }

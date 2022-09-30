@@ -38,7 +38,8 @@
     padding: 35px;
     margin-bottom: 20px;
     border-radius: 8px;
-    border: 1px solid;
+    background-color: var(--lightGray);
+    border: 1px solid var(--deepBorder);
 
     @include mobile-breakpoint {
         padding: 25px
@@ -52,6 +53,7 @@
 
     &:hover {
         text-decoration: underline;
+        color: var(--primaryHRX);
     }
 }
 
@@ -83,6 +85,8 @@
     letter-spacing: 2px;
     border-radius: 8px;
     margin-bottom: 8px;
+    color: var(--lightColor);
+    background-color: var(--primaryHEX);
 
     &.h-sm { height: 42px; }
     &.h-md { height: 45px; }
@@ -104,14 +108,16 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background: $gray-400;
+        background-color: var(--hardBorder);
     }
 
     span {
         @include content-center(36px, 32px, 50%);
-        display: inline-block;
-        border: 1px solid;
         font-size: 15px;
+        display: inline-block;
+        color: var(--textColor);
+        border: 1px solid var(--hardBorder);
+        background-color: var(--lightGray);
     }
 }
 
@@ -123,13 +129,13 @@
     a {
         font-size: 15px;
         border-radius: 8px;
-        color: $white;
-        background-color: $primary;
+        color: var(--lightColor);
+        background-color: var(--primaryHEX);
         @include flex-dimension(center, center, 0px 10px);
 
-        &.instagram { background-color: $instagram; }
-        &.facebook { background-color: $facebook; }
-        &.twitter { background-color: $twitter; }
+        &.instagram { background-color: var(--instagram); }
+        &.facebook { background-color: var(--facebook); }
+        &.twitter { background-color: var(--twitter); }
 
         &.h-sm { height: 42px; }
         &.h-md { height: 45px; }
@@ -143,10 +149,11 @@
     padding: 20px;
     font-size: 15px;
     border-radius: 8px;
-    border: 1px solid;
+    background-color: var(--lightGray);
+    border: 1px solid var(--deepBorder);
 
     a {
-        color: $primary;
+        color: var(--primaryHEX);
         font-weight: 500;
         text-transform: capitalize;
         @include transition-linear;

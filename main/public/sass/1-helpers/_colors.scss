@@ -86,19 +86,125 @@ $yellow-700: #e1940e;
 $yellow-800: #ae640f;
 $yellow-900: #8e4d12;
 
-// custom color
-$text: #5e5d72;
-$white: #ffffff;
-$black: #000000;
-$heading: #403e57;
-$primary: #0857f5;
 
-// social color
-$facebook: #3b5998;
-$linkedin: #0e76a8;
-$twitter: #00acee;
-$google: #E60023;
-$instagram: #F77737;
-$whatsapp: #25D366;
-$pinterest: #f0002a;
-$youtube: #FF0000;
+.light_mode {
+    --primaryHEX: #0858f7;
+
+    // Color
+    --lightColor: #ffffff;
+    --textColor: #5e5d72;
+    --activeColor: #0858f7;
+    --placeholderColor:#9a9a9a;
+    --headingColor: #403e57;
+    
+    // Background
+    --bodyBG: #ffffff;
+    --cardBG: #ffffff;
+    --paperBG: #ffffff;
+    --lightBG: #ffffff;
+
+    // Border
+    --thinBorder: #f8f8f8;
+    --lightBorder: #f0f0f0;
+    --deepBorder: #e4e4e4;
+    --hardBorder: #d1d1d1;
+
+    // Gray
+    --thinGray: #f8f8f8;
+    --lightGray: #f0f0f0;
+    --deepGray: #e4e4e4;
+    --hardGray: #d1d1d1;
+
+    // Hover
+    --hoverBG: #f1f1f1;
+    --activeBG: #ebf6ff;
+
+    // Social
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+    --twitter: #00acee;
+    --google: #E60023;
+    --instagram: #F77737;
+    --whatsapp: #25D366;
+    --pinterest: #f0002a;
+    --youtube: #FF0000;
+
+    // RGB 
+    --primaryRGB: 8, 88, 247;
+    --lightRGB: 255, 255, 255;
+    --blackRGB: 0, 0, 0;
+    --redRGB: 241, 17, 51;
+    --darkRGB: 1, 12, 44;
+    --grayRGB: 129, 129, 129;
+    --blueRGB: 43, 119, 229;
+    --greenRGB: 26, 159, 83;
+    --purpleRGB: 190, 14, 225;
+    --orangeRGB: 255, 115, 0;
+    --yellowRGB: 225, 148, 14;
+
+    // Box shadow
+    --btnBoxShadow: 0px 8px 18px 0px rgba(var(--blackRGB), 12%);
+    --cardBoxShadow: 0px 15px 25px 0px rgba(var(--blackRGB), 6%);
+    --paperBoxShadow: 0px 15px 35px 0px rgba(var(--blackRGB), 10%);
+}
+
+.dark_mode {
+    --primaryHEX: #1e66ff;
+
+    // Color
+    --lightColor: #ffffff;
+    --textColor: #b4b4b4;
+    --activeColor: #94b7ff;
+    --placeholderColor:#acacac;
+    --headingColor: #e4e4e4;
+    
+    // Background
+    --bodyBG: #112143;
+    --cardBG: #112143;
+    --paperBG: #132140;
+    --lightBG: #071739;
+
+    // Border
+    --thinBorder: #253557;
+    --lightBorder: #1b2b4d;
+    --deepBorder: #253557;
+    --hardBorder: #31436a;
+
+    // Gray
+    --thinGray: #071739;
+    --lightGray:#1b2b4d;
+    --deepGray: #00031f;
+    --hardGray: #000015;
+
+    // Hover
+    --hoverBG: #253557;
+    --activeBG: rgba(40, 129, 227, 0.100);
+
+    // Social
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+    --twitter: #00acee;
+    --google: #E60023;
+    --instagram: #F77737;
+    --whatsapp: #25D366;
+    --pinterest: #f0002a;
+    --youtube: #FF0000;
+
+    // RGB 
+    --primaryRGB: 35, 108, 255;
+    --lightRGB: 17, 33, 67;
+    --blackRGB: 0, 0, 0;
+    --redRGB: 241, 17, 51;
+    --darkRGB: 1, 12, 44;
+    --grayRGB: 129, 129, 129;
+    --blueRGB: 43, 119, 229;
+    --greenRGB: 26, 159, 83;
+    --purpleRGB: 190, 14, 225;
+    --orangeRGB: 255, 115, 0;
+    --yellowRGB: 225, 148, 14;
+
+    // Box shadow
+    --btnBoxShadow: 0px 8px 18px 0px rgba(var(--blackRGB), 12%);
+    --cardBoxShadow: 0px 15px 25px 0px rgba(var(--blackRGB), 6%);
+    --paperBoxShadow: 0px 15px 35px 0px rgba(var(--blackRGB), 10%);
+}

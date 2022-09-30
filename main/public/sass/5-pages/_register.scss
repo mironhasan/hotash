@@ -7,6 +7,7 @@
     position: relative;
     z-index: 1;
     @include flex-dimension(center, center, 0px);
+    background: linear-gradient(to right, var(--lightGray), var(--thinGray));
 
     @include custom-breakpoint(768px, 1199px) {
         width: 55%;
@@ -34,6 +35,7 @@
     text-transform: uppercase;
     margin-bottom: 15px;
 
+
     @include custom-breakpoint(768px, 991px) {
         font-size: 35px;
     }
@@ -49,6 +51,7 @@
     height: 100%;
     text-align: center;
     padding: 30px 60px 50px;
+    background-color: var(--lightGray);
 
     @include custom-breakpoint(768px, 1199px) {
         width: 45%;
@@ -80,6 +83,7 @@
 
     a {
         font-weight: 500;
+        color: var(--primaryHEX);
         text-transform: capitalize;
         @include transition-linear;
 

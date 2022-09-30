@@ -20,11 +20,14 @@
     display: flex;
     align-items: center;
     text-transform: capitalize;
+    color: var(--textColor);
+    @include transition-linear;
 
     &::after {
         content: "~";
         font-size: 16px;
         margin: 0px 7px;
+        color: var(--textColor);
     }
 
     &:last-child {
@@ -35,9 +38,11 @@
 }
 
 .mc-breadcrumb-link {
+    color: var(--primaryHEX);
     @include transition-linear;
 
     &:hover {
+        color: var(--primaryHEX);
         text-decoration: underline;
     }
 }

@@ -8,7 +8,8 @@
 
     @include laptop-breakpoint {
         z-index: 5;
-        border-#{$end-direction}: 1px solid;
+        background-color: var(--bodyBG);
+        border-#{$end-direction}: 1px solid var(--lightGray);
     }
 
     @include mobile-breakpoint {
@@ -30,13 +31,24 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    color: $gray-500;
 }
 
 .mc-sidebar-menu-item {
     margin-bottom: 3px;
+
+    &.focused {
+        .mc-sidebar-menu-btn  {
+            color: var(--activeColor);
+            background-color: var(--activeBG);
+        }
+    }
     
     &.active {
         .mc-sidebar-menu-btn  {
+            color: var(--activeColor);
+            background-color: var(--activeBG);
+            
             small { transform: rotate(0deg); }
         }
 
@@ -55,6 +67,10 @@
     @include flex-dimension(center, start, 0px 12px);
     @include transition-linear;
 
+    &:hover { 
+        background-color: var(--hoverBG); 
+    }
+
     i { 
         font-size: 22px; 
         @include transition-linear;
@@ -72,6 +88,7 @@
         letter-spacing: 0.3px;
         @include text-font(10px, 600);
         text-transform: uppercase;
+        color: var(--lightColor);
 
         &.square {
             padding: 0px 5px 1px;
@@ -88,7 +105,7 @@
         &.green { background: $green-600; }
         &.purple { background: $purple-600; }
         &.yellow { background: $yellow-600; }
-        &.primary { background: $primary; }
+        &.primary { background: var(--primaryHEX); }
     }
 
     small {
@@ -102,13 +119,15 @@
     height: 0px;
     overflow: hidden;
     margin: 0px 20px;
-    border-#{$start-direction}: 1px solid;
+    border-#{$start-direction}: 1px solid var(--deepBorder);
     @include transition-linear;
 }
 
 .mc-sidebar-dropdown-item {
     &.active {
         .mc-sidebar-dropdown-link {
+            color: var(--primaryHEX);
+
             &::before {
                 opacity: 1;
             }
@@ -125,12 +144,15 @@
     margin: 6px 0px;
     @include transition-linear;
 
+    &:hover { color: var(--primaryHEX); }
+
     &::before {
         content: "";
         @include position-top-left(absolute, 0px, -1px, 1);
         width: 2px;
         height: 100%;
         opacity: 0;
+        background-color: var(--primaryHEX);
         @include transition-linear;
     }
 
@@ -142,7 +164,7 @@
 .mc-sidebar-logout {
     padding: 45px;
     border-radius: 8px;
-    background: linear-gradient(rgba($primary, 0.25), rgba($primary, 0.40));
+    background: linear-gradient(rgba(var(--primaryRGB), 25%), rgba(var(--primaryRGB), 40%));
     position: relative;
     overflow: hidden;
 
@@ -150,14 +172,14 @@
         content: "";
         @include position-top-left(absolute, 15px, 15px, 1);
         @include content-center(30px, 30px, 50%);
-        background: linear-gradient(rgba($primary, 0.25), rgba($primary, 0.40));
+        background: linear-gradient(rgba(var(--primaryRGB), 25%), rgba(var(--primaryRGB), 40%));
     }
 
     &::after {
         content: "";
         @include position-top-right(absolute, -40px, -10px, 1);
         @include content-center(80px, 80px, 50%);
-        background: linear-gradient(rgba($primary, 0.24), rgba($primary, 0.40));
+        background: linear-gradient(rgba(var(--primaryRGB), 25%), rgba(var(--primaryRGB), 40%));
     }
 
     .mc-btn {

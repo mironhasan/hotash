@@ -6,7 +6,7 @@ export default function ChangeLog() {
     return (
         <PageLayout>
             <Box className="mc-blank">
-                <Image src="images/blank.png" alt="blank" />
+                <Image src="images/blank.webp" alt="blank" />
             </Box>
         </PageLayout>
     )

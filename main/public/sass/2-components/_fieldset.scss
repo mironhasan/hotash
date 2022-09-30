@@ -2,9 +2,15 @@
     min-width: inherit;
     padding: 8px 15px;
     margin: 0px;
-    border: 1px solid;
     border-radius: 8px;
+    border: 1px solid var(--hardBorder);
+    background-color: var(--lightGray);
     @include transition-linear;
+
+    &:focus-within {
+        border-color: var(--primaryHEX);
+        legend { color: var(--primaryHEX); }
+    }
 
     legend {
         float: inherit;

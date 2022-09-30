@@ -143,63 +143,63 @@
         },
         "items": [
             {
-                "src": "images/flag/bangladesh.jpg",
+                "src": "images/flag/bangladesh.webp",
                 "alt": "bangladesh",
                 "name": { "title": "country", "text": "bangladesh" },
                 "sales": { "title": "value", "text": "2500" },
                 "bounce": { "title": "seo", "text": "90%" }
             },
             {
-                "src": "images/flag/usa.jpg",
+                "src": "images/flag/usa.webp",
                 "alt": "united state",
                 "name": { "title": "country", "text": "united state" },
                 "sales": { "title": "value", "text": "1400" },
                 "bounce": { "title": "seo", "text": "85%" }
             },
             {
-                "src": "images/flag/saudi.jpg",
+                "src": "images/flag/saudi.webp",
                 "alt": "saudi arabia",
                 "name": { "title": "country", "text": "saudi arabia" },
                 "sales": { "title": "value", "text": "3900" },
                 "bounce": { "title": "seo", "text": "70%" }
             },
             {
-                "src": "images/flag/germany.jpg",
+                "src": "images/flag/germany.webp",
                 "alt": "germany",
                 "name": { "title": "country", "text": "germany" },
                 "sales": { "title": "value", "text": "4170" },
                 "bounce": { "title": "seo", "text": "65%" }
             },
             {
-                "src": "images/flag/philippines.jpg",
+                "src": "images/flag/philippines.webp",
                 "alt": "philippines",
                 "name": { "title": "country", "text": "philippines" },
                 "sales": { "title": "value", "text": "5298" },
                 "bounce": { "title": "seo", "text": "58%" }
             },
             {
-                "src": "images/flag/switzerland.jpg",
+                "src": "images/flag/switzerland.webp",
                 "alt": "switzerland",
                 "name": { "title": "country", "text": "switzerland" },
                 "sales": { "title": "value", "text": "4892" },
                 "bounce": { "title": "seo", "text": "47%" }
             },
             {
-                "src": "images/flag/venezuela.jpg",
+                "src": "images/flag/venezuela.webp",
                 "alt": "venezuela",
                 "name": { "title": "country", "text": "venezuela" },
                 "sales": { "title": "value", "text": "3541" },
                 "bounce": { "title": "seo", "text": "36%" }
             },
             {
-                "src": "images/flag/netherlands.jpg",
+                "src": "images/flag/netherlands.webp",
                 "alt": "netherlands",
                 "name": { "title": "country", "text": "venezuela" },
                 "sales": { "title": "value", "text": "2467" },
                 "bounce": { "title": "seo", "text": "25%" }
             },
             {
-                "src": "images/flag/sa.jpg",
+                "src": "images/flag/sa.webp",
                 "alt": "south-africa",
                 "name": { "title": "country", "text": "south africa" },
                 "sales": { "title": "value", "text": "1568" },

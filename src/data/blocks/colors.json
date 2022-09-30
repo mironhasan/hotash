@@ -130,15 +130,6 @@
                 { "name": "pinterest", "code": "#f0002a" },
                 { "name": "youtube", "code": "#FF0000" }
             ]
-        },
-        {
-            "title": "custom variants",
-            "colors": [
-                { "name": "text", "code": "#5e5d72" },
-                { "name": "black", "code": "#000000" },
-                { "name": "heading", "code": "#403e57" },
-                { "name": "primary", "code": "#2255bb" }
-            ]
         }
     ]
 }

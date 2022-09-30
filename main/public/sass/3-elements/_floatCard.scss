@@ -1,7 +1,7 @@
 .mc-float-card {
     position: relative;
     border-radius: 8px;
-    filter: drop-shadow(0px 7px 12px rgba($black, 0.1));
+    filter: drop-shadow(0px 7px 12px rgba(var(--blackRGB), 10%));
 
     &.sm {
         padding: 20px;
@@ -23,18 +23,18 @@
 
     i {
         @include position-top-right(absolute, -18px, 5px, 1);
-        filter: drop-shadow(3px 5px 0px rgba($black, 0.07));
+        filter: drop-shadow(3px 5px 0px rgba(var(--blackRGB), 7%));
         font-size: 50px;
     }
 
     h3 {
         text-transform: capitalize;
-        color: $white;
+        color: var(--lightColor);
     }
 
     p {
         text-transform: capitalize;
-        color: $white;
+        color: var(--lightColor);
     }
 
     &.purple {

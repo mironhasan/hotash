@@ -1,12 +1,12 @@
 {
     "logo": {
         "path": "/ecommerce",
-        "src": "images/logo.png",
+        "src": "images/logo.webp",
         "alt": "blue",
         "name": "hotash"
     },
     "pattern": { 
-        "src": "images/pattern.png", 
+        "src": "images/pattern.webp", 
         "alt": "line-pattern" 
     },
     "title": {

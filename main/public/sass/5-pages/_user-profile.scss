@@ -5,7 +5,7 @@
 .mc-user-avatar {
     width: fit-content;
     border-radius: 50%;
-    border: 2px solid;
+    border: 2px solid var(--primaryHEX);
     margin: 0px auto 15px;
 
     img {
@@ -48,7 +48,11 @@
         display: flex;
         gap: 15px;
 
-        i { font-size: 20px; }
+        i { 
+            font-size: 20px;
+            color: var(--primaryHEX); 
+        }
+
         span { font-size: 15px; }
     }
 }
@@ -66,6 +70,8 @@
         @include flex-dimension(center, center, 5px);
         border-radius: 8px;
         padding: 8px 15px;
+        color: var(--lightColor);
+        background-color: var(--lightGray);
 
         i {
             font-size: 15px;
@@ -76,11 +82,11 @@
             text-transform: capitalize;
         }
 
-        &.facebook { background-color: $facebook; }
-        &.twitter { background-color: $twitter; }
-        &.linkedin { background-color: $linkedin; }
-        &.youtube { background-color: $youtube; }
-        &.whatsapp { background-color: $whatsapp; }
+        &.facebook { background-color: var(--facebook); }
+        &.twitter { background-color: var(--twitter); }
+        &.linkedin { background-color: var(--linkedin); }
+        &.youtube { background-color: var(--youtube); }
+        &.whatsapp { background-color: var(--whatsapp); }
     }
 }
 
@@ -88,14 +94,20 @@
     position: relative;
     margin: 15px 0px;
     padding-#{$start-direction}: 20px;
-    border-#{$start-direction}: 1px solid;
+    border-#{$start-direction}: 1px solid var(--deepBorder);
     @include transition-linear;
+
+    &:hover {
+        border-color: var(--primaryHEX);
+        &::before { background-color: var(--primaryHEX); }
+    }
 
     &::before {
         content: "";
         @include position-top-left(absolute, 0px, -10px, 1);
         @include content-center(20px, 20px, 50%);
-        border: 6px solid;
+        border: 6px solid var(--lightColor);
+        background-color: $gray-500;
         @include transition-linear;
     }
 }
@@ -133,7 +145,7 @@
         height: 30px;
         flex-shrink: 0;
         border-radius: 8px;
-        box-shadow: 0px 3px 10px 0px rgba($black, 0.15);
+        box-shadow: 0px 3px 10px 0px rgba(var(--blackRGB), 15%);
     }
 
     h6 { font-size: 14px; }

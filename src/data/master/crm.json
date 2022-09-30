@@ -93,7 +93,7 @@
             "thead": ["representer", "email", "amount", "status", "issue date", "action"],
             "tbody": [
                 {
-                    "src": "images/avatar/01.jpg",
+                    "src": "images/avatar/01.webp",
                     "alt": "client",
                     "name": "miron mahmud", 
                     "email": "miron@gmail.com", 
@@ -103,7 +103,7 @@
                     "action": { "delete": "delete", "download": "download", "view": "visibility" }
                 },
                 {
-                    "src": "images/avatar/02.jpg",
+                    "src": "images/avatar/02.webp",
                     "alt": "client",
                     "name": "tahmina bonny", 
                     "email": "tahmina@gmail.com", 
@@ -113,7 +113,7 @@
                     "action": { "delete": "delete", "download": "download", "view": "visibility" }
                 },
                 {
-                    "src": "images/avatar/03.jpg",
+                    "src": "images/avatar/03.webp",
                     "alt": "client",
                     "name": "labonno khan", 
                     "email": "labonno@gmail.com", 
@@ -123,7 +123,7 @@
                     "action": { "delete": "delete", "download": "download", "view": "visibility" }
                 },
                 {
-                    "src": "images/avatar/04.jpg",
+                    "src": "images/avatar/04.webp",
                     "alt": "client",
                     "name": "sheikh adabali", 
                     "email": "sheikh@gmail.com", 
@@ -133,7 +133,7 @@
                     "action": { "delete": "delete", "download": "download", "view": "visibility" }
                 },
                 {
-                    "src": "images/avatar/05.jpg",
+                    "src": "images/avatar/05.webp",
                     "alt": "client",
                     "name": "johara khatun", 
                     "email": "johara@gmail.com", 
@@ -143,7 +143,7 @@
                     "action": { "delete": "delete", "download": "download", "view": "visibility" }
                 },
                 {
-                    "src": "images/avatar/06.jpg",
+                    "src": "images/avatar/06.webp",
                     "alt": "client",
                     "name": "kurulus osman", 
                     "email": "kurulus@gmail.com", 
@@ -170,7 +170,7 @@
             "tbody": [
                 {
                     "id": "#4980",
-                    "src": "images/avatar/01.jpg",
+                    "src": "images/avatar/01.webp",
                     "alt": "client",
                     "name": "miron mahmud", 
                     "order": "648",
@@ -179,7 +179,7 @@
                 },
                 {
                     "id": "#4981",
-                    "src": "images/avatar/02.jpg",
+                    "src": "images/avatar/02.webp",
                     "alt": "client",
                     "name": "tahmina bonny", 
                     "order": "590",
@@ -188,7 +188,7 @@
                 },
                 {
                     "id": "#4982",
-                    "src": "images/avatar/03.jpg",
+                    "src": "images/avatar/03.webp",
                     "alt": "client",
                     "name": "labonno khan", 
                     "order": "408",
@@ -197,7 +197,7 @@
                 },
                 {
                     "id": "#4983",
-                    "src": "images/avatar/04.jpg",
+                    "src": "images/avatar/04.webp",
                     "alt": "client",
                     "name": "sheikh adabali", 
                     "order": "357",
@@ -206,7 +206,7 @@
                 },
                 {
                     "id": "#4984",
-                    "src": "images/avatar/05.jpg",
+                    "src": "images/avatar/05.webp",
                     "alt": "client",
                     "name": "johara khatun", 
                     "order": "289",
@@ -215,7 +215,7 @@
                 },
                 {
                     "id": "#4985",
-                    "src": "images/avatar/06.jpg",
+                    "src": "images/avatar/06.webp",
                     "alt": "client",
                     "name": "kurulus osman", 
                     "order": "194",
@@ -240,19 +240,19 @@
                 "title": "Your account is logged in",
                 "time": "45 min ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/avatar/01.jpg", "alt": "avatar", "name": "miron mahmud" }
+                "media": { "src": "images/avatar/01.webp", "alt": "avatar", "name": "miron mahmud" }
             },
             { 
                 "title": "Current language has been changed",
                 "time": "24 hr ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/flag/bangladesh.jpg", "alt": "flag", "name": "bengali language" }
+                "media": { "src": "images/flag/bangladesh.webp", "alt": "flag", "name": "bengali language" }
             },
             { 
                 "title": "Asked about this product",
                 "time": "Yesterday",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/product/01.jpg", "alt": "product", "name": "Modern tiny red skirt" },
+                "media": { "src": "images/product/01.webp", "alt": "product", "name": "Modern tiny red skirt" },
                 "button": { "path": "#", "label": "go there" }
             }
         ]

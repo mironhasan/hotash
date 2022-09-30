@@ -3,7 +3,14 @@
     width: fit-content;
     margin: 0 auto;
     border-radius: 8px;
+    color: var(--textColor);
+    background-color: var(--lightGray);
     @include transition-linear;
+
+    &:hover {
+        color: var(--lightColor);
+        background-color: var(--primaryHEX);
+    }
 
     &.button {
         label {

@@ -2,7 +2,8 @@
     gap: 30px;
     display: flex;
     border-radius: 15px;
-    border: 1px solid;
+    background-color: var(--cardBG);
+    border: 1px solid var(--lightBorder);
     @include padding(30px, 10px, 15px, 28px);
     @include transition-linear;
 
@@ -13,7 +14,7 @@
     }
 
     &:hover {
-        box-shadow: 0px 15px 25px 0px rgba($black, 0.06);
+        box-shadow: var(--cardBoxShadow);
     }
 }
 
@@ -28,7 +29,7 @@
         @include content-center(45px, 45px, 50%);
         margin-bottom: 25px;
         font-size: 20px;
-        color: $white;
+        color: var(--lightColor);
 
         &.red {
             background: linear-gradient($red-700, $red-500);

@@ -78,17 +78,17 @@ export default function ProductUpload() {
                     <CardLayout>
                         <CardHeader title="media &amp; published" dotsMenu={ data?.dotsMenu }  />
                         <Box className="mc-product-upload-media">
-                            <Box className="mc-product-upload-image"><Image src="images/product/single/01.jpg" alt="product" /></Box>
-                            <Box className="mc-product-upload-image"><Image src="images/product/single/02.jpg" alt="product" /></Box>
-                            <Box className="mc-product-upload-image"><Image src="images/product/single/03.jpg" alt="product" /></Box>
-                            <Box className="mc-product-upload-image"><Image src="images/product/single/04.jpg" alt="product" /></Box>
+                            <Box className="mc-product-upload-image"><Image src="images/product/single/01.webp" alt="product" /></Box>
+                            <Box className="mc-product-upload-image"><Image src="images/product/single/02.webp" alt="product" /></Box>
+                            <Box className="mc-product-upload-image"><Image src="images/product/single/03.webp" alt="product" /></Box>
+                            <Box className="mc-product-upload-image"><Image src="images/product/single/04.webp" alt="product" /></Box>
                             <Box className="mc-product-upload-file">
                                 <Input type="file" id="product" onChange={(e)=> setUploadFile(e.target.files[0].name)} />
                                 <Label htmlFor="product"><Icon type="collections" /><Text>{ uploadFile }</Text></Label>
                             </Box>
                         </Box>
                         <Anchor 
-                            className="mc-btn form-btn primary mt-5" 
+                            className="mc-btn w-100 primary mt-5" 
                             text="publish &amp; view" 
                             icon="cloud_upload" 
                             href="#"

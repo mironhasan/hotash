@@ -1,8 +1,8 @@
 /*
-*   Template name v1.0.0
-*   Themeforest portfolio (https://themeforest.net/user/mironcoder/portfolio)
-*   Service center (https://www.fiverr.com/mironcoder)
-*   Support email (mironcoder@gmail.com)
+*   Template name: Hotash - React Admin Dashboard Template
+*   Themeforest portfolio: (https://themeforest.net/user/mironcoder/portfolio)
+*   Service center: (https://www.fiverr.com/mironcoder)
+*   Support email: (mironcoder@gmail.com)
 *   All copyrights reserved by Mironcoder
 */
 
@@ -15,8 +15,6 @@
 @import '1-helpers/mixins';
 @import '1-helpers/globals';
 @import '1-helpers/typography';
-@import '1-helpers/lightMode';
-@import '1-helpers/darkMode';
 
 //========================================
 //          2 - COMPONENTS FOLDER
@@ -65,7 +63,6 @@
 @import '4-layouts/main';
 @import '4-layouts/footer';
 @import '4-layouts/review';
-@import '4-layouts/invoice';
 
 //=======================================
 //          5 - PAGES FOLDER
@@ -75,6 +72,7 @@
 @import '5-pages/user-profile';
 @import '5-pages/product-view';
 @import '5-pages/product-upload';
+@import '5-pages/invoice-details';
 @import '5-pages/notification';
 @import '5-pages/overview';
 @import '5-pages/message';

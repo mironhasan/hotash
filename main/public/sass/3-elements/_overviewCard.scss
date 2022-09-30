@@ -24,7 +24,7 @@
         width: 100%;
         height: auto;
         border-radius: 8px;
-        box-shadow: 0px 15px 35px 0px rgba($black, 0.08);
+        box-shadow: 0px 15px 35px 0px rgba(var(--blackRGB), 8%);
     }
 }
 
@@ -34,10 +34,12 @@
     z-index: 1;
     @include text-font(26px, 700);
     @include content-center(100px, 100px, 50%);
-    border: 8px solid;
+    border: 8px solid var(--lightColor);
     letter-spacing: 0.3px;
     text-transform: uppercase;
-    box-shadow: 0px 8px 30px 0px rgba($black, 0.2);
+    color: var(--lightColor);
+    background: var(--primaryHEX);
+    box-shadow: 0px 8px 30px 0px rgba(var(--blackRGB), 20%);
 
     &.left { left: -25px; }
     &.right { right: -25px; }
@@ -57,7 +59,9 @@
     @include text-font(18px, 500);
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    box-shadow: 0px 8px 30px 0px rgba($black, 0.2);
+    color: var(--lightColor);
+    background-color: $red-600;
+    box-shadow: 0px 8px 30px 0px rgba(var(--blackRGB), 20%);
 }
 
 .mc-overview-overlay {
@@ -65,6 +69,7 @@
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    background-color: rgba(var(--blackRGB), 70%);
     visibility: hidden;
     opacity: 0;
     @include transition-linear;
@@ -78,9 +83,13 @@
     letter-spacing: 0.5px;
     white-space: nowrap;
     text-transform: uppercase;
+    color: var(--lightColor);
+    background: var(--primaryHEX);
     transform: translate(-50%, -50%);
-    box-shadow: 0px 15px 35px 0px rgba($black, 0.08);
+    box-shadow: var(--btnBoxShadow);
     @include transition-linear;
+
+    &:hover { color: var(--lightColor); }
 }
 
 .mc-overview-name {
@@ -88,4 +97,5 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.5px;
+    color: $blue-500;
 }

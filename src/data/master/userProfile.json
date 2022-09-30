@@ -13,7 +13,7 @@
         ]
     },
     "profile": {
-        "src": "images/avatar/01.jpg",
+        "src": "images/avatar/01.webp",
         "alt": "avatar",
         "size": "lg",
         "fullname": "miron mahmud",
@@ -56,19 +56,19 @@
                 "title": "Your account is logged in",
                 "time": "45 min ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/avatar/01.jpg", "alt": "avatar", "name": "miron mahmud" }
+                "media": { "src": "images/avatar/01.webp", "alt": "avatar", "name": "miron mahmud" }
             },
             { 
                 "title": "Current language has been changed",
                 "time": "24 hr ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/flag/bangladesh.jpg", "alt": "flag", "name": "bengali language" }
+                "media": { "src": "images/flag/bangladesh.webp", "alt": "flag", "name": "bengali language" }
             },
             { 
                 "title": "Asked about this product",
                 "time": "Yesterday",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/product/01.jpg", "alt": "product", "name": "Modern tiny red skirt" },
+                "media": { "src": "images/product/01.webp", "alt": "product", "name": "Modern tiny red skirt" },
                 "button": { "path": "#", "label": "go there" }
             }
         ]

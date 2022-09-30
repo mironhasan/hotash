@@ -24,18 +24,22 @@
 }
 
 .mc-table-head {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid var(--lightBorder);
+    border-bottom: 1px solid var(--lightBorder);
 
     &.sticky {
         @include position-top-left(sticky, 0px, 0px, 1);
         width: 100%;
     }
 
+    &.gray {
+        background-color: var(--thinBorder);
+    }
+
     &.primary {
         border: none;
-        color: $white;
-        background: linear-gradient(to top, $primary, $blue-700);
+        color: var(--lightColor);
+        background: linear-gradient(to top, var(--primaryHEX), $blue-700);
 
         tr {
             th {
@@ -59,7 +63,7 @@
             text-transform: uppercase;
             white-space: nowrap;
             overflow: hidden;
-            border-#{$end-direction}: 1px solid;
+            border-#{$end-direction}: 1px solid var(--lightBorder);
 
             &:last-child {
                 border-#{$end-direction}: none;
@@ -69,6 +73,22 @@
 }
 
 .mc-table-body {
+    &.even {
+        tr {
+            &:nth-child(even) {
+                background-color: var(--thinGray);
+            }
+        }
+    }
+
+    &.odd {
+        tr {
+            &:nth-child(odd) {
+                background-color: var(--thinGray);
+            }
+        }
+    }
+
     tr {
         td {
             max-width: 120px;
@@ -78,8 +98,8 @@
             text-overflow: ellipsis;
             padding: 15px 15px;
             @include text-font(14px, 400);
-            border-#{$end-direction}: 1px solid;
-            border-bottom: 1px solid;
+            border-#{$end-direction}: 1px solid var(--lightBorder);
+            border-bottom: 1px solid var(--lightBorder);
 
             &:last-child {
                 border-#{$end-direction}: none;
@@ -95,7 +115,7 @@
         width: 15px;
         height: 15px;
         flex-shrink: 0;
-        outline: 2px solid;
+        outline: 2px solid var(--lightBorder);
     }
 
     p { 
@@ -114,7 +134,7 @@
         height: 25px;
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 0px 3px 10px 0px rgba($black, 0.15);
+        box-shadow: 0px 3px 10px 0px rgba(var(--blackRGB), 15%);
     }
 
     p { 
@@ -148,8 +168,8 @@
         flex-shrink: 0;
         border-radius: 8px;
         object-fit: cover;
-        border: 1px solid;
-        box-shadow: 0px 7px 15px 0px rgba($black, 0.06);
+        border: 1px solid var(--lightBorder);
+        box-shadow: 0px 7px 15px 0px rgba(var(--blackRGB), 6%);
     }
 
     h6 {
@@ -206,7 +226,7 @@
         }
     }
 
-    i { color: $primary; }
+    i { color: var(--primaryHEX); }
     p {
         font-weight: 500;
         text-transform: capitalize;
@@ -221,7 +241,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         @include transition-linear;
-        &:hover { color: $primary; }
+        &:hover { color: var(--primaryHEX); }
     }
 }
 
@@ -271,9 +291,39 @@
     gap: 6px;
 
     a,
-    button {
+    button { 
         font-size: 16px;
         padding: 6px 6px;
         border-radius: 6px;
+        color: var(--lightColor);
+        background-color: var(--lightGray);
+    }
+}
+
+.light_mode {
+    .mc-table-action {
+        a,
+        button {
+            &.download { color: $blue-700; background-color: $blue-200; }
+            &.view { color: $purple-700; background-color: $purple-200; }
+            &.edit { color: $green-700; background-color: $green-200; }
+            &.chat { color: $green-700; background-color: $green-200; }
+            &.delete { color: $red-700; background-color: $red-200; }
+            &.block { color: $red-700; background-color: $red-200; }
+        }
+    }
+}
+
+.dark_mode {
+    .mc-table-action {
+        a,
+        button {
+            &.view { background-color: $purple-600; }
+            &.edit { background-color: $green-600; }
+            &.chat { background-color: $green-600; }
+            &.delete { background-color: $red-600; }
+            &.block { background-color: $red-600; }
+            &.download { background-color: $blue-600; }
+        }
     }
 }

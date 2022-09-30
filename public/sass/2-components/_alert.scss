@@ -102,7 +102,7 @@
     i {
         font-size: 22px;
         @include content-center(42px, 42px, 10px);
-        text-shadow: 2px 4px 6px rgba($black, 0.1);
+        text-shadow: 2px 4px 6px rgba(var(--blackRGB), 10%);
         flex-shrink: 0;
     }
 
@@ -123,6 +123,12 @@
         @include position-top-right(absolute, -15px, 20px, 1);
         @include content-center(35px, 30px, 50%);
         @include text-font(18px, 700);
-        border: 3px solid;
+        border: 3px solid var(--lightColor);
+    }
+}
+
+.dark_mode {
+    .mc-alert button {
+        border-color: var(--lightBorder);
     }
 }

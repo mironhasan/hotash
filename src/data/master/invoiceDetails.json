@@ -15,7 +15,7 @@
     },
     "logo": {
         "path": "#",
-        "src": "images/logo.png",
+        "src": "images/logo.webp",
         "alt": "logo",
         "name": "hotash"
     },
@@ -28,7 +28,7 @@
             { 
                 "id": "#5768", 
                 "name": "modern summer short",
-                "src": "images/product/01.jpg", 
+                "src": "images/product/01.webp", 
                 "alt": "product",
                 "price": "$20", 
                 "discount": "20%", 
@@ -38,7 +38,7 @@
             { 
                 "id": "#6489", 
                 "name": "stylish official suites", 
-                "src": "images/product/02.jpg", 
+                "src": "images/product/02.webp", 
                 "alt": "product",
                 "price": "$129", 
                 "discount": "10%", 
@@ -48,7 +48,7 @@
             { 
                 "id": "#2086", 
                 "name": "party footware grooming",
-                "src": "images/product/03.jpg", 
+                "src": "images/product/03.webp", 
                 "alt": "product", 
                 "price": "$84", 
                 "discount": "25%", 
@@ -58,7 +58,7 @@
             { 
                 "id": "#9834", 
                 "name": "wedding red bubble dress", 
-                "src": "images/product/04.jpg", 
+                "src": "images/product/04.webp", 
                 "alt": "product",
                 "price": "$405", 
                 "discount": "08%", 
@@ -68,7 +68,7 @@
             { 
                 "id": "#3908", 
                 "name": "children take care pack", 
-                "src": "images/product/05.jpg", 
+                "src": "images/product/05.webp", 
                 "alt": "product",
                 "price": "$370", 
                 "discount": "15%", 

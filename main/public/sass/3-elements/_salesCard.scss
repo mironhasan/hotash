@@ -1,11 +1,14 @@
 .mc-sales-card {
     border-radius: 8px;
-    background: linear-gradient(to bottom, $primary, $blue-800);
+    background: linear-gradient(to bottom, var(--primaryHEX), $blue-800);
     @include transition-linear;
 
     &:hover {
-        box-shadow: 0px 15px 25px 0px rgba($black, 0.06);
+        box-shadow: 0px 15px 25px 0px rgba(var(--blackRGB), 6%);
     }
+
+    .mc-card-title { color: var(--lightColor); }
+    .mc-dropdown-toggle i {  color: var(--lightColor); }
 }
 
 .mc-sales-card-group {
@@ -22,7 +25,7 @@
 
     h3 {
         font-size: 26px;
-        color: $white;
+        color: var(--lightColor);
     }
 
     p {

@@ -1,118 +1,118 @@
 {
     "banner": {
-        "logo": "images/logo.png",
+        "logo": "images/logo.webp",
         "title": "react admin dashboard",
         "descrip": "This template built with powerful user interface and highly responsive experience with a versatile dashboard such as CRM, eCommerce, and analytics.",
         "subtitle": "build with -"
     },
     "tools": [
-        "images/tools/react.png",
-        "images/tools/sass.png",
-        "images/tools/bs.png"
+        "images/tools/react.webp",
+        "images/tools/sass.webp",
+        "images/tools/bs.webp"
     ],
     "demos": [
         { 
-            "image": "images/pages/ecommerce.jpg", 
+            "image": "images/pages/ecommerce.webp", 
             "path": "/ecommerce", 
             "title": "ecommerce" 
         },
         { 
-            "image": "images/pages/analytics.jpg", 
+            "image": "images/pages/analytics.webp", 
             "path": "/analytics", 
             "title": "analytics" 
         },
         { 
-            "image": "images/pages/crm.jpg", 
+            "image": "images/pages/crm.webp", 
             "path": "/crm", 
             "title": "crms" 
         },
         { 
-            "image": "images/pages/user-list.jpg", 
+            "image": "images/pages/user-list.webp", 
             "path": "/user-list", 
             "title": "user list" 
         },
         { 
-            "image": "images/pages/user-profile.jpg", 
+            "image": "images/pages/user-profile.webp", 
             "path": "/user-profile", 
             "title": "user profile" 
         },
         { 
-            "image": "images/pages/my-account.jpg", 
+            "image": "images/pages/my-account.webp", 
             "path": "/my-account", 
             "title": "my account" 
         },
         { 
-            "image": "images/pages/product-list.jpg", 
+            "image": "images/pages/product-list.webp", 
             "path": "/product-list", 
             "title": "product list" 
         },
         { 
-            "image": "images/pages/product-view.jpg", 
+            "image": "images/pages/product-view.webp", 
             "path": "/product-view", 
             "title": "product view" 
         },
         { 
-            "image": "images/pages/product-upload.jpg", 
+            "image": "images/pages/product-upload.webp", 
             "path": "/product-upload", 
             "title": "product upload" 
         },
         { 
-            "image": "images/pages/invoice-list.jpg", 
+            "image": "images/pages/invoice-list.webp", 
             "path": "/invoice-list", 
             "title": "invoice list" 
         },
         { 
-            "image": "images/pages/invoice-details.jpg", 
+            "image": "images/pages/invoice-details.webp", 
             "path": "/invoice-details", 
             "title": "invoice details" 
         },
         { 
-            "image": "images/pages/settings.jpg", 
+            "image": "images/pages/settings.webp", 
             "path": "/settings", 
             "title": "settings" 
         },
         { 
-            "image": "images/pages/order-list.jpg", 
+            "image": "images/pages/order-list.webp", 
             "path": "/order-list", 
             "title": "orders" 
         },
         { 
-            "image": "images/pages/message.jpg", 
+            "image": "images/pages/message.webp", 
             "path": "/message", 
             "title": "messages" 
         },
         { 
-            "image": "images/pages/notification.jpg", 
+            "image": "images/pages/notification.webp", 
             "path": "/notification", 
             "title": "notifications" 
         },
         { 
-            "image": "images/pages/login.jpg", 
+            "image": "images/pages/login.webp", 
             "path": "/login", 
             "title": "login" 
         },
         { 
-            "image": "images/pages/registration.jpg", 
+            "image": "images/pages/registration.webp", 
             "path": "/register", 
             "title": "registration" 
         },
         { 
-            "image": "images/pages/forgot-password.jpg", 
+            "image": "images/pages/forgot-password.webp", 
             "path": "/forgot-password", 
             "title": "forgot password" 
         },
         { 
-            "image": "images/pages/error.jpg", 
+            "image": "images/pages/error.webp", 
             "path": "*", 
             "title": "404 error" 
         },
         { 
-            "image": "images/pages/blank.jpg", 
+            "image": "images/pages/blank.webp", 
             "path": "/blank-page", 
             "title": "blank page" 
         },
         { 
-            "image": "images/pages/docs.jpg", 
+            "image": "images/pages/docs.webp", 
             "path": "/documentation", 
             "title": "documentation" 
         }

@@ -53,7 +53,7 @@ export default function Message() {
                     <CardLayout>
                         <Box className="mc-message-chat">
                             <Box className="mc-message-chat-header">
-                                <RoundAvatar src="images/avatar/01.jpg" alt="avatar" size="xs" />
+                                <RoundAvatar src="images/avatar/01.webp" alt="avatar" size="xs" />
                                 <DuelText title="miron mahmud" descrip="active now" size="xs" gap="4px" />
                                 <Box className="mc-message-chat-action-group">
                                     {data?.actions.map((item, index) => (

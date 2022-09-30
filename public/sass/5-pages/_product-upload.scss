@@ -26,11 +26,17 @@
     position: relative;
 
     &:hover {
-        &::after { opacity: 1; }
+        &::after { 
+            opacity: 1;
+            color: var(--primaryHEX); 
+        }
+
+        img { border-color: var(--primaryHEX); }
     }
 
     &.active {
         &::after { opacity: 1; }
+        img { border-color: $green-600; }
     }
 
     &::after {
@@ -40,14 +46,15 @@
         font-size: 22px;
         content: "\e86c";
         opacity: 0;
+        color: $green-600;
         @include transition-linear;
     }
 
     img {
         width: 100%;
         border-radius: 8px;
-        border: 2px dashed;
-        filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
+        border: 2px dashed var(--deepBorder);
+        filter: drop-shadow(0px 10px 15px rgba(var(--blackRGB), 5%));
         @include transition-linear;
     }
 }
@@ -55,9 +62,11 @@
 .mc-product-upload-file {
     position: relative;
     border-radius: 8px;
-    border: 2px dashed;
-    filter: drop-shadow(0px 10px 15px rgba($black, 0.05));
+    border: 2px dashed var(--deepBorder);
+    filter: drop-shadow(0px 10px 15px rgba(var(--blackRGB), 5%));
     @include transition-linear;
+
+    &:hover { border-color: $gray-500; }
 
     input { 
         width: 100%;

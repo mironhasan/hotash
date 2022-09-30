@@ -3,8 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import { CardLayout, FloatCard } from "../../components/cards";
 import ProductsTable from "../../components/tables/ProductsTable";
 import LabelField from "../../components/fields/LabelField";
+import { Pagination, Breadcrumb } from "../../components";
 import Anchor from "../../components/elements/Anchor";
-import Breadcrumb from "../../components/Breadcrumb";
 import PageLayout from "../../layouts/PageLayout";
 import data from "../../data/master/productList.json";
 
@@ -53,6 +53,7 @@ export default function ProductList() {
                                     thead = { data?.product.thead } 
                                     tbody = { data?.product.tbody } 
                                 />
+                                <Pagination />
                             </Col>
                         </Row>
                     </CardLayout>

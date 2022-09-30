@@ -5,6 +5,8 @@
 
     .mc-icon-field {
         margin-bottom: 0px;
+        background-color: var(--thinGray);
+        border-color: var(--lightBorder);
     }
 }
 
@@ -19,7 +21,7 @@
 
     i {
         font-size: 35px;
-        color: $primary;
+        color: var(--primaryHEX);
 
         &.blue {
             background: -webkit-linear-gradient($blue-700, $blue-500);
@@ -48,6 +50,7 @@
             @include text-font(14px, 400);
             text-transform: capitalize;
             margin-bottom: 5px;
+            color: var(--textColor);
         }
     }
 }

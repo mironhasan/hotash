@@ -124,7 +124,7 @@
             "tbody": [
                 { 
                     "name":"check0",
-                    "src": "images/product/01.jpg",
+                    "src": "images/product/01.webp",
                     "alt": "scart",
                     "heading": "Tops and skirt set for Female", 
                     "descrip": "Women's exclusive summer Tops and skirt set for Female Tops and skirt set", 
@@ -139,7 +139,7 @@
                 },
                 {
                     "name":"check1",
-                    "src": "images/product/02.jpg",
+                    "src": "images/product/02.webp",
                     "alt": "scart",
                     "heading": "Leather belt steve madden men's", 
                     "descrip": "Steve madden men's dress casual cvery cay ceather belt", 
@@ -154,7 +154,7 @@
                 },
                 {
                     "name":"check2",
-                    "src": "images/product/03.jpg",
+                    "src": "images/product/03.webp",
                     "alt": "scart",
                     "heading": "Existing product name", 
                     "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -169,7 +169,7 @@
                 },
                 {
                     "name":"check3",
-                    "src": "images/product/04.jpg",
+                    "src": "images/product/04.webp",
                     "alt": "scart",
                     "heading": "Existing product name", 
                     "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -184,7 +184,7 @@
                 },
                 {
                     "name":"check4",
-                    "src": "images/product/05.jpg",
+                    "src": "images/product/05.webp",
                     "alt": "scart",
                     "heading": "Existing product name", 
                     "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -199,7 +199,7 @@
                 },
                 {
                     "name":"check5",
-                    "src": "images/product/06.jpg",
+                    "src": "images/product/06.webp",
                     "alt": "scart",
                     "heading": "Existing product name", 
                     "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -275,7 +275,7 @@
             "tbody": [
                 {
                     "id": "#4980",
-                    "src": "images/avatar/01.jpg",
+                    "src": "images/avatar/01.webp",
                     "alt": "client",
                     "name": "miron mahmud", 
                     "order": "648",
@@ -284,7 +284,7 @@
                 },
                 {
                     "id": "#4981",
-                    "src": "images/avatar/02.jpg",
+                    "src": "images/avatar/02.webp",
                     "alt": "client",
                     "name": "tahmina bonny", 
                     "order": "590",
@@ -293,7 +293,7 @@
                 },
                 {
                     "id": "#4982",
-                    "src": "images/avatar/03.jpg",
+                    "src": "images/avatar/03.webp",
                     "alt": "client",
                     "name": "labonno khan", 
                     "order": "408",
@@ -302,7 +302,7 @@
                 },
                 {
                     "id": "#4983",
-                    "src": "images/avatar/04.jpg",
+                    "src": "images/avatar/04.webp",
                     "alt": "client",
                     "name": "sheikh adabali", 
                     "order": "357",
@@ -311,7 +311,7 @@
                 },
                 {
                     "id": "#4984",
-                    "src": "images/avatar/05.jpg",
+                    "src": "images/avatar/05.webp",
                     "alt": "client",
                     "name": "johara khatun", 
                     "order": "289",
@@ -320,7 +320,7 @@
                 },
                 {
                     "id": "#4985",
-                    "src": "images/avatar/06.jpg",
+                    "src": "images/avatar/06.webp",
                     "alt": "client",
                     "name": "kurulus osman", 
                     "order": "194",
@@ -345,19 +345,19 @@
                 "title": "Your account is logged in",
                 "time": "45 min ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/avatar/01.jpg", "alt": "avatar", "name": "miron mahmud" }
+                "media": { "src": "images/avatar/01.webp", "alt": "avatar", "name": "miron mahmud" }
             },
             { 
                 "title": "Current language has been changed",
                 "time": "24 hr ago",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/flag/bangladesh.jpg", "alt": "flag", "name": "bengali language" }
+                "media": { "src": "images/flag/bangladesh.webp", "alt": "flag", "name": "bengali language" }
             },
             { 
                 "title": "Asked about this product",
                 "time": "Yesterday",
                 "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem quam pede lobortis ligula, sit amet eleifend.",
-                "media": { "src": "images/product/01.jpg", "alt": "product", "name": "Modern tiny red skirt" },
+                "media": { "src": "images/product/01.webp", "alt": "product", "name": "Modern tiny red skirt" },
                 "button": { "path": "#", "label": "go there" }
             }
         ]

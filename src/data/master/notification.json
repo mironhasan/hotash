@@ -16,7 +16,7 @@
     "notify": [
         {
             "path": "#",
-            "src": "images/avatar/01.jpg",
+            "src": "images/avatar/01.webp",
             "alt": "avatar",
             "icon": { "variant": "favorite", "label": "favorite" },
             "note": { "user": "Autoland", "text": "added to his favorite list", "reason": "Mercedez benz super mclaren" },
@@ -25,7 +25,7 @@
         },
         {
             "path": "#",
-            "src": "images/avatar/02.jpg",
+            "src": "images/avatar/02.webp",
             "alt": "avatar",
             "icon": { "variant": "rating", "label": "star" },
             "note": { "user": "Autoland", "text": "just review on", "reason": "Mercedez benz super mclaren" },
@@ -34,7 +34,7 @@
         },
         {
             "path": "#",
-            "src": "images/avatar/03.jpg",
+            "src": "images/avatar/03.webp",
             "alt": "avatar",
             "icon": { "variant": "comment", "label": "forum" },
             "note": { "user": "Autoland", "text": "just comment on", "reason": "Mercedez benz super mclaren" },
@@ -43,7 +43,7 @@
         },
         {
             "path": "#",
-            "src": "images/avatar/04.jpg",
+            "src": "images/avatar/04.webp",
             "alt": "avatar",
             "icon": { "variant": "announce", "label": "campaign" },
             "note": { "user": "Autoland", "text": "announce on", "reason": "Mercedez benz super mclaren" },
@@ -52,7 +52,7 @@
         },
         {
             "path": "#",
-            "src": "images/avatar/05.jpg",
+            "src": "images/avatar/05.webp",
             "alt": "avatar",
             "icon": { "variant": "blog", "label": "edit" },
             "note": { "user": "Autoland", "text": "write a super blog on", "reason": "Mercedez benz super mclaren" },
@@ -61,7 +61,7 @@
         },
         {
             "path": "#",
-            "src": "images/logo.png",
+            "src": "images/logo.webp",
             "alt": "avatar",
             "icon": { "variant": "privacy", "label": "shield" },
             "note": { "user": "Autoland", "text": "privacy concern on", "reason": "Mercedez benz super mclaren" },

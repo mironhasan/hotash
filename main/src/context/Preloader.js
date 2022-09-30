@@ -16,7 +16,7 @@ export const LoaderProvider = ({ children }) => {
         <LoaderContext.Provider value={{ loading }}>
             { loading ? 
                 <Box className="mc-spinner">
-                    <Image src="images/logo.png" aly="logo" />
+                    <Image src="images/logo.webp" aly="logo" />
                     <Box className="mc-spinner-group">
                         <Heading>Loading</Heading>
                         <PulseLoader 

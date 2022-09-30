@@ -1,6 +1,7 @@
 .mc-main {
     padding: 24px;
     border-radius: 8px;
+    background-color: var(--thinGray);
     @include margin(75px, 20px, 20px, 20px);
     @include transition-linear;
     

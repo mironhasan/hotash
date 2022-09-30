@@ -39,7 +39,7 @@
     ],
     "users": [
         {
-            "src": "images/avatar/01.jpg",
+            "src": "images/avatar/01.webp",
             "alt": "avatar",
             "name": "miron mahmud",
             "status": "online",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "src": "images/avatar/02.jpg",
+            "src": "images/avatar/02.webp",
             "alt": "avatar",
             "name": "tahmina bonny",
             "time": "3m",
@@ -75,7 +75,7 @@
             }
         },
         {
-            "src": "images/avatar/03.jpg",
+            "src": "images/avatar/03.webp",
             "alt": "avatar",
             "name": "labonno khan",
             "mark": "unread",
@@ -93,7 +93,7 @@
             }
         },
         {
-            "src": "images/avatar/04.jpg",
+            "src": "images/avatar/04.webp",
             "alt": "avatar",
             "name": "shipon ahmed",
             "status": "online",
@@ -110,7 +110,7 @@
             }
         },
         {
-            "src": "images/avatar/05.jpg",
+            "src": "images/avatar/05.webp",
             "alt": "avatar",
             "name": "rabeya akter",
             "time": "9s",
@@ -126,7 +126,7 @@
             }
         },
         {
-            "src": "images/avatar/06.jpg",
+            "src": "images/avatar/06.webp",
             "alt": "avatar",
             "name": "shah nasrullah",
             "time": "4w",
@@ -142,7 +142,7 @@
             }
         },
         {
-            "src": "images/logo.png",
+            "src": "images/logo.webp",
             "alt": "avatar",
             "name": "hotash admin",
             "status": "online",
@@ -161,7 +161,7 @@
     ],
     "chats": [
         {
-            "src": "images/avatar/01.jpg",
+            "src": "images/avatar/01.webp",
             "time": "2 minute ago!",
             "text" :[
                 { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolore animi dolores autem assumenda fuga consequuntur, laboriosam laborum minus provident error officia quasi atque deleniti.", "icon": ["delete", "fast_forward"] },
@@ -169,7 +169,7 @@
             ]
         },
         {
-            "src": "images/logo.png",
+            "src": "images/logo.webp",
             "time": "2 minute ago!",
             "text" :[
                 { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum tempora consequatur. Deleniti nisi libero!", "icon": ["delete", "fast_forward"] },
@@ -177,7 +177,7 @@
             ]
         },
         {
-            "src": "images/avatar/01.jpg",
+            "src": "images/avatar/01.webp",
             "time": "2 minute ago!",
             "text" :[
                 { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolore animi dolores autem assumenda fuga consequuntur, laboriosam laborum minus provident error officia quasi atque deleniti.", "icon": ["delete", "fast_forward"] },
@@ -185,7 +185,7 @@
             ]
         },
         {
-            "src": "images/logo.png",
+            "src": "images/logo.webp",
             "time": "2 minute ago!",
             "text" :[
                 { "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum tempora consequatur. Deleniti nisi libero!", "icon": ["delete", "fast_forward"] },

@@ -22,11 +22,11 @@ export default function Avatars() {
                 <Col xl={12}>
                     <Box className="mc-card p-4">
                         <CardHeader title="custom avatars" />
-                        <RoundAvatar src="images/avatar/08.jpg" alt="avatar" size="xl d-inline-flex m-3" />
-                        <RoundAvatar src="images/avatar/08.jpg" alt="avatar" size="lg d-inline-flex m-3" />
-                        <RoundAvatar src="images/avatar/08.jpg" alt="avatar" size="md d-inline-flex m-3" />
-                        <RoundAvatar src="images/avatar/08.jpg" alt="avatar" size="sm d-inline-flex m-3" />
-                        <RoundAvatar src="images/avatar/08.jpg" alt="avatar" size="xs d-inline-flex m-3" />
+                        <RoundAvatar src="images/avatar/08.webp" alt="avatar" size="xl d-inline-flex m-3" />
+                        <RoundAvatar src="images/avatar/08.webp" alt="avatar" size="lg d-inline-flex m-3" />
+                        <RoundAvatar src="images/avatar/08.webp" alt="avatar" size="md d-inline-flex m-3" />
+                        <RoundAvatar src="images/avatar/08.webp" alt="avatar" size="sm d-inline-flex m-3" />
+                        <RoundAvatar src="images/avatar/08.webp" alt="avatar" size="xs d-inline-flex m-3" />
                     </Box>
                 </Col>
             </Row>

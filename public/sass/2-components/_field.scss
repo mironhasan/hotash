@@ -27,6 +27,7 @@
 .mc-label-field-title {
     @include text-font(12px, 700);
     text-transform: uppercase;
+    color: var(--headingColor);
 }
 
 .mc-label-field-input,
@@ -35,8 +36,9 @@
     padding: 0px 15px;
     border-radius: 8px;
     @include text-font(14px, 500);
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid var(--deepBorder);
+    background-color: var(--lightGray);
+
 
     &.w-sm { width: 200px; }
     &.w-md { width: 300px; }
@@ -80,9 +82,15 @@
     padding: 0px 12px;
     border-radius: 8px;
     margin-bottom: 20px;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid var(--deepBorder);
+    background-color: var(--lightBG);
     @include transition-linear;
+
+    &:focus-within {
+        border-color: var(--primaryHEX);
+        i { color: var(--primaryHEX) }
+        button { opacity: 1; }
+    }
 
     &.textarea {
         align-items: start;
@@ -92,8 +100,8 @@
     }
 
     &.gray {
-        background-color: $gray-200;
-        border-color: $gray-300;
+        background-color: var(--thinGray);
+        border-color: var(--deepBorder);
     }
 
     &.light {
@@ -102,12 +110,8 @@
     }
 
     &.white {
-        background-color: $white;
+        background-color: var(--lightBG);
         border-color: $gray-100;
-    }
-
-    &:focus-within {
-        button { opacity: 1; }
     }
 
     &.w-sm { width: 200px; }
@@ -132,6 +136,7 @@
         width: 100%;
         height: 100%;
         padding: 0px 12px;
+        background-color: var(--thinGray);
     }
 
     select {

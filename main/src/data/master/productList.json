@@ -28,7 +28,7 @@
         "thead": ["product", "category", "brand", "price", "stock", "rating", "order", "sales", "action"],
         "tbody": [
             {
-                "src": "images/product/01.jpg",
+                "src": "images/product/01.webp",
                 "alt": "scart",
                 "heading": "Tops and skirt set for Female", 
                 "descrip": "Women's exclusive summer Tops and skirt set for Female Tops and skirt set", 
@@ -42,7 +42,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/02.jpg",
+                "src": "images/product/02.webp",
                 "alt": "scart",
                 "heading": "Leather belt steve madden men's", 
                 "descrip": "Steve madden men's dress casual cvery cay ceather belt", 
@@ -56,7 +56,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/03.jpg",
+                "src": "images/product/03.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -70,7 +70,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/04.jpg",
+                "src": "images/product/04.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -84,7 +84,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/05.jpg",
+                "src": "images/product/05.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -98,7 +98,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/06.jpg",
+                "src": "images/product/06.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -112,7 +112,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/07.jpg",
+                "src": "images/product/07.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -126,7 +126,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/08.jpg",
+                "src": "images/product/08.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -140,7 +140,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/09.jpg",
+                "src": "images/product/09.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
@@ -154,7 +154,7 @@
                 "action": { "edit": "edit", "delete": "delete", "view": "visibility" }
             },
             {
-                "src": "images/product/10.jpg",
+                "src": "images/product/10.webp",
                 "alt": "scart",
                 "heading": "Existing product name", 
                 "descrip": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur", 
