@@ -1,7 +1,7 @@
 {
     "pageTitle": "settings",
     "breadcrumb": [
-        { "path": "/", "text": "home" },
+        { "path": "/hotash", "text": "home" },
         { "text": "settings" }
     ],
     "dotsMenu": {

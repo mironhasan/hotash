@@ -1,7 +1,7 @@
 {
     "pageTitle": "analytics",
     "breadcrumb": [
-        { "path": "/", "text": "home" },
+        { "path": "/hotash", "text": "home" },
         { "text": "dashboard" },
         { "text": "analytics" }
     ],

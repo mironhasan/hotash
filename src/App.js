@@ -46,7 +46,7 @@ export default function App() {
 
                         {/* Supports Pages */}
                         <Route path="*" element={<Error />} />
-                        <Route path="/" element={<Overview />} />
+                        <Route exact path="/" element={<Overview />} />
                         <Route path="/documentation" element={<Documentation />} />
                         <Route path="/changelog" element={<ChangeLog />} />
                     </Routes>

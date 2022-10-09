@@ -32,7 +32,7 @@ export default function Documentation() {
                 ))}
                 <Box className="mc-docs-footer">
                     <Heading>Need to more support?</Heading>
-                    <a href="/" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
+                    <a href="/hotash" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
                         <Icon type="forum" />
                         <Text as="span">contact us</Text>
                     </a>

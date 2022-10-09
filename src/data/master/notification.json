@@ -1,7 +1,7 @@
 {
     "pageTitle": "notification",
     "breadcrumb": [
-        { "path": "/", "text": "home" },
+        { "path": "/hotash", "text": "home" },
         { "text": "notification" }
     ],
     "dotsMenu": {

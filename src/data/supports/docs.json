@@ -1,7 +1,7 @@
 {
     "pageTitle": "documentation",
     "breadcrumb": [
-        { "path": "/", "text": "home" },
+        { "path": "/hotash", "text": "home" },
         { "text": "supports" },
         { "text": "documentation" }
     ],
