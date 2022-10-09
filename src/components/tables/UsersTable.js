@@ -92,7 +92,7 @@ export default function UsersTable({ thead, tbody }) {
                             <Td title={ item.created }>{ item.created }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Anchor href="/user-profile" title="View" className="material-icons view">{ item.action.view }</Anchor>
+                                    <Anchor href="/hotash/user-profile" title="View" className="material-icons view">{ item.action.view }</Anchor>
                                     <Button title="Edit" className="material-icons edit" onClick={()=> setEditModal(true, setUserData(item))}>{ item.action.edit }</Button>
                                     <Button title="Block" className="material-icons block" onClick={()=> setBlockModal(true)}>{ item.action.block }</Button>
                                 </Box>

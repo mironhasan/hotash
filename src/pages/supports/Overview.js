@@ -9,7 +9,7 @@ export default function Overview() {
         <Box className="mc-overview">
             <Section className="mc-overview-banner">
                 <Container>
-                    <Logo href="/" src={ data?.banner.logo } alt="logo" name="hotash" className="lg" />
+                    <Logo href="/hotash" src={ data?.banner.logo } alt="logo" name="hotash" className="lg" />
                     <Heading as="h1">{ data?.banner.title }</Heading>
                     <Text>{ data?.banner.descrip }</Text>
                     <Box className="tools">
@@ -19,10 +19,11 @@ export default function Overview() {
                         ))}
                     </Box>
                     <Anchor 
-                        href="/ecommerce" 
+                        href="/hotash/ecommerce" 
                         target="_blank" 
                         icon="launch" 
                         text="explore now" 
+                        rel="noopener noreferrer"
                         className="mc-btn primary"
                     />
                 </Container>
@@ -37,7 +38,7 @@ export default function Overview() {
                                     <Box className="mc-overview-media">
                                         <Image src={demo.image} alt="demo" />
                                         <Box className="mc-overview-overlay">
-                                            <Anchor href={demo.path} target="_blank" className="mc-overview-link">live preview</Anchor>
+                                            <Anchor href={demo.path} target="_blank" rel="noopener noreferrer" className="mc-overview-link">live preview</Anchor>
                                         </Box>
                                     </Box>
                                     <Heading className="mc-overview-name">{demo.title}</Heading>
@@ -49,7 +50,7 @@ export default function Overview() {
             </Section>
             <Section className="mc-overview-footer">
                 <Heading as="h2">Do you want to inquiry about hotash template?</Heading>
-                <a href="/" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
+                <a href="/hotash" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
                     <Icon type="forum" />
                     <Text as="span">contact us</Text>
                 </a>

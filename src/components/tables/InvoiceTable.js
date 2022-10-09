@@ -73,7 +73,7 @@ export default function InvoiceTable({ thead, tbody }) {
                             <Td>{ item.date }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Anchor title="View" href="/invoice-details" className="material-icons view">{ item.action.view }</Anchor>
+                                    <Anchor title="View" href="/hotash/invoice-details" className="material-icons view">{ item.action.view }</Anchor>
                                     <Anchor title="Download" href="#" className="material-icons download" download>{ item.action.download }</Anchor>
                                     <Button title="Delete" className="material-icons delete" onClick={()=> setAlertModal(true)}>{ item.action.delete }</Button>
                                 </Box>

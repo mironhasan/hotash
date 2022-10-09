@@ -17,7 +17,7 @@ export default function PageLayout({ children }) {
             <Main>
                 <>
                     { children }
-                    {location.pathname !== "/message" ? <Footer /> : ""}
+                    {location.pathname !== "/hotash/message" ? <Footer /> : ""}
                 </>
             </Main>
         </DrawerProvider>
