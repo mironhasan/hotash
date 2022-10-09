@@ -1,7 +1,7 @@
 {
     "pageTitle": "tables variant",
     "breadcrumb": [
-        { "path": "/hotash/", "text": "home" },
+        { "path": "/", "text": "home" },
         { "text": "blocks" },
         { "text": "tables" }
     ],
@@ -196,47 +196,47 @@
         "thead": ["page name", "visitors", "bounce"],
         "tbody": [
             { 
-                "path": "/hotash/ecommerce",
+                "path": "/ecommerce",
                 "visitor": "5787", 
                 "bounce": "20%" 
             },
             { 
-                "path": "/hotash/analytics",
+                "path": "/analytics",
                 "visitor": "4934", 
                 "bounce": "35%" 
             },
             { 
-                "path": "/hotash/register",
+                "path": "/register",
                 "visitor": "6478", 
                 "bounce": "15%" 
             },
             { 
-                "path": "/hotash/messages",
+                "path": "/messages",
                 "visitor": "3589", 
                 "bounce": "40%" 
             },
             { 
-                "path": "/hotash/product-upload",
+                "path": "/product-upload",
                 "visitor": "2872", 
                 "bounce": "55%" 
             },
             { 
-                "path": "/hotash/user-profile",
+                "path": "/user-profile",
                 "visitor": "1236", 
                 "bounce": "63%" 
             },
             { 
-                "path": "/hotash/my-account",
+                "path": "/my-account",
                 "visitor": "908", 
                 "bounce": "72%" 
             },
             { 
-                "path": "/hotash/invoice-details",
+                "path": "/invoice-details",
                 "visitor": "756", 
                 "bounce": "84%" 
             },
             { 
-                "path": "/hotash/order-list",
+                "path": "/order-list",
                 "visitor": "248", 
                 "bounce": "91%" 
             }

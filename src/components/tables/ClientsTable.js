@@ -26,8 +26,8 @@ export default function ClientsTable({ thead, tbody }) {
                             <Td>{ item.amount }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Anchor href="/hotash/message" title="Chat" className="material-icons chat">{ item.action.chat }</Anchor>
-                                    <Anchor href="/hotash/user-profile" title="View" className="material-icons view">{ item.action.view }</Anchor>
+                                    <Anchor href="/message" title="Chat" className="material-icons chat">{ item.action.chat }</Anchor>
+                                    <Anchor href="/user-profile" title="View" className="material-icons view">{ item.action.view }</Anchor>
                                 </Box>
                             </Td>
                         </Tr>

@@ -7,7 +7,7 @@ export default function Error() {
             <Image src="images/404.webp" alt="404" />
             <Heading>ooops! this page can't be found.</Heading>
             <Text>It's looks like nothing was found at this location.</Text>
-            <Anchor href="/hotash/ecommerce" className="mc-btn primary" icon="home" text="back to home" />
+            <Anchor href="/ecommerce" className="mc-btn primary" icon="home" text="back to home" />
         </Box>
     )
 }
