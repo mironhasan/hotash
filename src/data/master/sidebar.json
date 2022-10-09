@@ -7,18 +7,18 @@
                     "icon": "dashboard", 
                     "text": "dashboard",
                     "submenu": [
-                        { "href": "/hotash/ecommerce", "text": "ecommerce" },
-                        { "href": "/hotash/analytics", "text": "analytics" },
-                        { "href": "/hotash/crm", "text": "CRM" }
+                        { "href": "/ecommerce", "text": "ecommerce" },
+                        { "href": "/analytics", "text": "analytics" },
+                        { "href": "/crm", "text": "CRM" }
                     ]
                 },
                 { 
                     "icon": "lock", 
                     "text": "authentication",
                     "submenu": [
-                        { "href": "/hotash/login", "text": "login" },
-                        { "href": "/hotash/register", "text": "registration" },
-                        { "href": "/hotash/forgot-password", "text": "forgot password" }
+                        { "href": "/login", "text": "login" },
+                        { "href": "/register", "text": "registration" },
+                        { "href": "/forgot-password", "text": "forgot password" }
                     ]
                 },
                 { 
@@ -26,9 +26,9 @@
                     "text": "users", 
                     "badge": { "text": "hot", "variant": "red square" },
                     "submenu": [
-                        { "href": "/hotash/user-list", "text": "user list" },
-                        { "href": "/hotash/user-profile", "text": "user profile" },
-                        { "href": "/hotash/my-account", "text": "my account" }
+                        { "href": "/user-list", "text": "user list" },
+                        { "href": "/user-profile", "text": "user profile" },
+                        { "href": "/my-account", "text": "my account" }
                     ]
                 },
                 { 
@@ -36,9 +36,9 @@
                     "text": "products",
                     "badge": { "text": "new", "variant": "purple square" },
                     "submenu": [
-                        { "href": "/hotash/product-list", "text": "product list" },
-                        { "href": "/hotash/product-view", "text": "product view" },
-                        { "href": "/hotash/product-upload", "text": "product upload" }
+                        { "href": "/product-list", "text": "product list" },
+                        { "href": "/product-view", "text": "product view" },
+                        { "href": "/product-upload", "text": "product upload" }
                     ]
                 },
                 { 
@@ -46,35 +46,35 @@
                     "icon": "article", 
                     "text": "invoices",
                     "submenu": [
-                        { "href": "/hotash/invoice-list", "text": "invoice list" },
-                        { "href": "/hotash/invoice-details", "text": "invoice details" }
+                        { "href": "/invoice-list", "text": "invoice list" },
+                        { "href": "/invoice-details", "text": "invoice details" }
                     ]
                 },
                 { 
-                    "href": "/hotash/order-list",
+                    "href": "/order-list",
                     "icon": "shopping_cart", 
                     "text": "orders",
                     "badge": { "text": "05", "variant": "primary round" }
                 },
                 { 
-                    "href": "/hotash/message",
+                    "href": "/message",
                     "icon": "email", 
                     "text": "messages",
                     "badge": { "text": "03", "variant": "primary round" }
                 },
                 { 
-                    "href": "/hotash/notification",
+                    "href": "/notification",
                     "icon": "notifications", 
                     "text": "notifications",
                     "badge": { "text": "9+", "variant": "primary round" }
                 },
                 { 
-                    "href": "/hotash/settings",
+                    "href": "/settings",
                     "icon": "settings", 
                     "text": "settings" 
                 },
                 { 
-                    "href": "/hotash/blank-page",
+                    "href": "/blank-page",
                     "icon": "class", 
                     "text": "blank page" 
                 }
@@ -84,42 +84,42 @@
             "title": "blocks",
             "menu": [
                 { 
-                    "href": "/hotash/alerts",
+                    "href": "/alerts",
                     "icon": "report", 
                     "text": "alerts"
                 },
                 { 
-                    "href": "/hotash/avatars",
+                    "href": "/avatars",
                     "icon": "collections", 
                     "text": "avatars"
                 },
                 {
-                    "href": "/hotash/headings",
+                    "href": "/headings",
                     "icon": "text_fields", 
                     "text": "headings"
                 },
                 { 
-                    "href": "/hotash/buttons",
+                    "href": "/buttons",
                     "icon": "mouse", 
                     "text": "buttons"
                 },
                 { 
-                    "href": "/hotash/colors",
+                    "href": "/colors",
                     "icon": "palette", 
                     "text": "colors"
                 },
                 { 
-                    "href": "/hotash/charts",
+                    "href": "/charts",
                     "icon": "donut_small", 
                     "text": "charts"
                 },
                 {
-                    "href": "/hotash/fields",
+                    "href": "/fields",
                     "icon": "feed", 
                     "text": "fields"
                 },
                 { 
-                    "href": "/hotash/tables",
+                    "href": "/tables",
                     "icon": "grid_on", 
                     "text": "tables"
                 }
@@ -129,17 +129,17 @@
             "title": "supports",
             "menu": [
                 {
-                    "href": "/hotash/",
+                    "href": "/",
                     "icon": "streetview",
                     "text": "overview"
                 },
                 { 
-                    "href": "/hotash/documentation",
+                    "href": "/documentation",
                     "icon": "menu_book", 
                     "text": "Documentation"
                 },
                 { 
-                    "href": "/hotash/changelog",
+                    "href": "/changelog",
                     "icon": "layers", 
                     "text": "change log",
                     "badge": { "text": "v1.0", "variant": "primary square" }
@@ -147,6 +147,6 @@
             ]
         }
     ],
-    "button": { "icon": "lock", "path": "/hotash/login", "text": "logout" }
+    "button": { "icon": "lock", "path": "/login", "text": "logout" }
 
 }

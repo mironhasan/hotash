@@ -1,8 +1,8 @@
 {
     "pageTitle": "my account",
     "breadcrumb": [
-        { "path": "/hotash/", "text": "home" },
-        { "path": "/hotash/user-list", "text": "user-list" },
+        { "path": "/", "text": "home" },
+        { "path": "/user-list", "text": "user-list" },
         { "text": "my-account" }
     ],
     "id": { "title": "unique id", "value": "#783404edft97e3445" },

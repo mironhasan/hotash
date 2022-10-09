@@ -91,8 +91,8 @@ export default function ProductsTable({ thead, tbody }) {
                             <Td>{ item.sales }</Td>
                             <Td>
                                 <Box className="mc-table-action">
-                                    <Anchor href="/hotash/product-view" title="View" className="material-icons view">{ item.action.view }</Anchor>
-                                    <Anchor href="/hotash/product-upload" title="Edit" className="material-icons edit">{ item.action.edit }</Anchor>
+                                    <Anchor href="/product-view" title="View" className="material-icons view">{ item.action.view }</Anchor>
+                                    <Anchor href="/product-upload" title="Edit" className="material-icons edit">{ item.action.edit }</Anchor>
                                     <Button title="Delete" className="material-icons delete" onClick={()=> setAlertModal(true)}>{ item.action.delete }</Button>
                                 </Box>
                             </Td>
