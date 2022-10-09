@@ -1,7 +1,7 @@
 {
     "pageTitle": "alerts variant",
     "breadcrumb": [
-        { "path": "/", "text": "home" },
+        { "path": "/hotash/", "text": "home" },
         { "text": "blocks" },
         { "text": "alerts" }
     ],

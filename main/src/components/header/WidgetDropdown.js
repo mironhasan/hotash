@@ -14,7 +14,7 @@ export default function WidgetDropdown({ title, icon, addClass, badge, dropdown 
             <Dropdown.Menu align="end" className="mc-dropdown-paper">
                 <Box className="mc-header-dropdown-group">
                     <CardHeader 
-                        title={ dropdown?.title + " " + `(${badge?.text})` } 
+                        title={ `${dropdown?.title} (${badge?.text})` } 
                         dotsMenu={ dropdown?.dotsMenu } 
                     />
                     <List className="mc-header-dropdown-list thin-scrolling">

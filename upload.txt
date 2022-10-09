@@ -1,0 +1,31 @@
+1. Specially Build for Admin Dashboard
+2. Based on Bootstrap 5x + React 18x + SASS
+3. Included Dark Mode & React Router Dom 6x
+
+
+
+<p style="margin-bottom: 40px;">Our idea is that the <strong>Hotash</strong> react admin dashboard will be very effective for e-commerce, CRM and Analytics admin dashboard. It is a responsive device suitable for any device so that your product and information can be presented to the customer very nicely.</p>
+
+<p style="margin-bottom: 40px;">This template build with the Bootstrap 5.x framework. Every element, layout, a section of the template is 100% customizable according to your needs. It is supported on all modern & old browsers, tablets, and mobile devices.</p>
+
+<h2 style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 25px;"><strong>Template Mian Features</strong></h2>
+<ul style="margin-bottom: 80px;">
+    <li>Dark and Light Mode included</li>
+    <li>Easy to all element customization</li>
+    <li>Fully RTL Supported version included</li>
+    <li>W3C valid coding without any error</li>
+    <li>SEO-Friendly of all layout & pages</li>
+    <li>Perfect Responsive Design of all device</li>
+    <li>Flexible & Customizable Code</li>
+    <li>Lifetime Free Updates</li>
+    <li>Cross Browser Compatible</li>
+    <li>Creative & Modern Layout Design</li>
+    <li>Quickly Response Support System</li>
+    <li>Highly Speed Oriented Code</li>
+</ul>
+
+<h2 style="border-bottom: 1px solid #ddd; padding-bottom: 15px;"><strong>Thank You -</strong></h2>
+<p style="margin-bottom: 25px;">We deeply appreciate your interest. Feel free to leave your comments and rate our products. With this template you get qualified and friendly customer support. The template is regularly updated, so let us know what you would like to get in the upcoming updates or new products.</p>
+
+
+<p><strong>Note</strong> : This item is static React Admin Dashboard Template, It’s not a WordPress Theme. All Images are only for demo purposes, and not included in download files.</p>

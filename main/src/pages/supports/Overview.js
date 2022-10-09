@@ -9,7 +9,7 @@ export default function Overview() {
         <Box className="mc-overview">
             <Section className="mc-overview-banner">
                 <Container>
-                    <Logo href="/" src={ data?.banner.logo } alt="logo" name="hotash" className="lg" />
+                    <Logo href="/hotash/" src={ data?.banner.logo } alt="logo" name="hotash" className="lg" />
                     <Heading as="h1">{ data?.banner.title }</Heading>
                     <Text>{ data?.banner.descrip }</Text>
                     <Box className="tools">
@@ -19,7 +19,7 @@ export default function Overview() {
                         ))}
                     </Box>
                     <Anchor 
-                        href="/ecommerce" 
+                        href="/hotash/ecommerce" 
                         target="_blank" 
                         icon="launch" 
                         text="explore now" 
@@ -49,7 +49,7 @@ export default function Overview() {
             </Section>
             <Section className="mc-overview-footer">
                 <Heading as="h2">Do you want to inquiry about hotash template?</Heading>
-                <a href="https://themeforest.net/user/mironcoder" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
+                <a href="/hotash/" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
                     <Icon type="forum" />
                     <Text as="span">contact us</Text>
                 </a>

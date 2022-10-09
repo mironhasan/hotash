@@ -2,7 +2,7 @@
     "breadcrumb": {
         "title": "CRM Dashboard",
         "items": [
-            { "path": "/", "text": "home" },
+            { "path": "/hotash/", "text": "home" },
             { "text": "dashboard" },
             { "text": "CRM" }
         ]
