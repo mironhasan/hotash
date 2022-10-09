@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/hotash/static/js/main.7c8b77c4.js",
+    "main.js": "/hotash/static/js/main.28a33482.js",
     "index.html": "/hotash/index.html",
-    "main.7c8b77c4.js.map": "/hotash/static/js/main.7c8b77c4.js.map"
+    "main.28a33482.js.map": "/hotash/static/js/main.28a33482.js.map"
   },
   "entrypoints": [
-    "static/js/main.7c8b77c4.js"
+    "static/js/main.28a33482.js"
   ]
 }
