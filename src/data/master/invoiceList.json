@@ -1,7 +1,7 @@
 {
     "pageTitle": "invoice list",
     "breadcrumb": [
-        { "path": "/hotash", "text": "home" },
+        { "path": "/", "text": "home" },
         { "text": "invoice" },
         { "text": "list" }
     ],

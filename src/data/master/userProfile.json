@@ -1,6 +1,6 @@
 {
     "breadcrumb": [
-        { "path": "/hotash", "text": "home" },
+        { "path": "/", "text": "home" },
         { "path": "/user-list", "text": "user-list" },
         { "text": "user-profile" }
     ],

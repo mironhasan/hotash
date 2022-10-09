@@ -1,6 +1,6 @@
 import { ThemeProvider } from "./context/Themes";
 import { LoaderProvider } from "./context/Preloader";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Overview, Documentation, ChangeLog, Error } from "./pages/supports";
 import { Avatars, Alerts, Buttons, Charts, Tables, Fields, Headings, Colors } from "./pages/blocks";
 import { Ecommerce, Analytics, CRM, ForgotPassword, Register, Login, UserList, UserProfile, MyAccount, 
@@ -11,7 +11,7 @@ export default function App() {
     return (
         <ThemeProvider>
             <LoaderProvider>
-                <BrowserRouter basename="/hotash">
+                <HashRouter>
                     <Routes>
                         {/* master Pages */}
                         <Route path="/ecommerce" element={<Ecommerce /> } />
@@ -46,11 +46,11 @@ export default function App() {
 
                         {/* Supports Pages */}
                         <Route path="*" element={<Error />} />
-                        <Route exact path="/" element={<Overview />} />
+                        <Route path="/" element={<Overview />} />
                         <Route path="/documentation" element={<Documentation />} />
                         <Route path="/changelog" element={<ChangeLog />} />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </LoaderProvider>
         </ThemeProvider>
     );

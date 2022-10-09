@@ -1,7 +1,7 @@
 {
     "pageTitle": "product view",
     "breadcrumb": [
-        { "path": "/hotash", "text": "home" },
+        { "path": "/", "text": "home" },
         { "text": "product" },
         { "text": "view" }
     ],

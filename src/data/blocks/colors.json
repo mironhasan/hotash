@@ -1,7 +1,7 @@
 {
     "pageTitle": "colors variant",
     "breadcrumb": [
-        { "path": "/hotash", "text": "home" },
+        { "path": "/", "text": "home" },
         { "text": "blocks" },
         { "text": "colors" }
     ],
