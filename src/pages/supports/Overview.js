@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../components/Logo";
 import data from "../../data/supports/overview.json";
-import { Anchor, Box, Image, Heading, Section, Text, Icon } from "../../components/elements";
+import { Anchor, Box, Image, Heading, Section, Text } from "../../components/elements";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Overview() {
@@ -50,10 +50,14 @@ export default function Overview() {
             </Section>
             <Section className="mc-overview-footer">
                 <Heading as="h2">Do you want to inquiry about hotash template?</Heading>
-                <a href="/" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
-                    <Icon type="forum" />
-                    <Text as="span">contact us</Text>
-                </a>
+                <Anchor 
+                    href="/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    icon="forum" 
+                    text="contact us" 
+                    className="mc-btn primary" 
+                />
                 <Text>Hotash | © Copyrights by <Text as="span">Mironcoder</Text></Text>
             </Section>
         </Box>

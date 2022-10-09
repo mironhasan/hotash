@@ -1,6 +1,6 @@
 import React from "react";
 import { Breadcrumb, DivideTitle } from "../../components";
-import { Box, Item, Anchor, Image, Heading, Icon, Text } from "../../components/elements";
+import { Box, Item, Anchor, Image, Heading } from "../../components/elements";
 import PageLayout from "../../layouts/PageLayout";
 import data from "../../data/supports/docs.json";
 
@@ -32,10 +32,14 @@ export default function Documentation() {
                 ))}
                 <Box className="mc-docs-footer">
                     <Heading>Need to more support?</Heading>
-                    <a href="/" target="_blank" rel="noopener noreferrer" className="mc-btn primary">
-                        <Icon type="forum" />
-                        <Text as="span">contact us</Text>
-                    </a>
+                    <Anchor 
+                        href="/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        icon="forum" 
+                        text="contact us" 
+                        className="mc-btn primary" 
+                    />
                 </Box>
             </Box>
         </PageLayout>
