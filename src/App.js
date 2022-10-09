@@ -11,7 +11,7 @@ export default function App() {
     return (
         <ThemeProvider>
             <LoaderProvider>
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Routes>
                         {/* master Pages */}
                         <Route path="/hotash/ecommerce" element={<Ecommerce /> } />
