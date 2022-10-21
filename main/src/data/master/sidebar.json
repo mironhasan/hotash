@@ -1,0 +1,152 @@
+{
+    "navs": [
+        {
+            "title": "master",
+            "menu": [
+                { 
+                    "icon": "dashboard", 
+                    "text": "dashboard",
+                    "submenu": [
+                        { "href": "/ecommerce", "text": "ecommerce" },
+                        { "href": "/analytics", "text": "analytics" },
+                        { "href": "/crm", "text": "CRM" }
+                    ]
+                },
+                { 
+                    "icon": "lock", 
+                    "text": "authentication",
+                    "submenu": [
+                        { "href": "/login", "text": "login" },
+                        { "href": "/register", "text": "registration" },
+                        { "href": "/forgot-password", "text": "forgot password" }
+                    ]
+                },
+                { 
+                    "icon": "account_circle", 
+                    "text": "users", 
+                    "badge": { "text": "hot", "variant": "red square" },
+                    "submenu": [
+                        { "href": "/user-list", "text": "user list" },
+                        { "href": "/user-profile", "text": "user profile" },
+                        { "href": "/my-account", "text": "my account" }
+                    ]
+                },
+                { 
+                    "icon": "pix", 
+                    "text": "products",
+                    "badge": { "text": "new", "variant": "purple square" },
+                    "submenu": [
+                        { "href": "/product-list", "text": "product list" },
+                        { "href": "/product-view", "text": "product view" },
+                        { "href": "/product-upload", "text": "product upload" }
+                    ]
+                },
+                { 
+                    "href": "#",
+                    "icon": "article", 
+                    "text": "invoices",
+                    "submenu": [
+                        { "href": "/invoice-list", "text": "invoice list" },
+                        { "href": "/invoice-details", "text": "invoice details" }
+                    ]
+                },
+                { 
+                    "href": "/order-list",
+                    "icon": "shopping_cart", 
+                    "text": "orders",
+                    "badge": { "text": "05", "variant": "primary round" }
+                },
+                { 
+                    "href": "/message",
+                    "icon": "email", 
+                    "text": "messages",
+                    "badge": { "text": "03", "variant": "primary round" }
+                },
+                { 
+                    "href": "/notification",
+                    "icon": "notifications", 
+                    "text": "notifications",
+                    "badge": { "text": "9+", "variant": "primary round" }
+                },
+                { 
+                    "href": "/settings",
+                    "icon": "settings", 
+                    "text": "settings" 
+                },
+                { 
+                    "href": "/blank-page",
+                    "icon": "class", 
+                    "text": "blank page" 
+                }
+            ]
+        },
+        {
+            "title": "blocks",
+            "menu": [
+                { 
+                    "href": "/alerts",
+                    "icon": "report", 
+                    "text": "alerts"
+                },
+                { 
+                    "href": "/avatars",
+                    "icon": "collections", 
+                    "text": "avatars"
+                },
+                {
+                    "href": "/headings",
+                    "icon": "text_fields", 
+                    "text": "headings"
+                },
+                { 
+                    "href": "/buttons",
+                    "icon": "mouse", 
+                    "text": "buttons"
+                },
+                { 
+                    "href": "/colors",
+                    "icon": "palette", 
+                    "text": "colors"
+                },
+                { 
+                    "href": "/charts",
+                    "icon": "donut_small", 
+                    "text": "charts"
+                },
+                {
+                    "href": "/fields",
+                    "icon": "feed", 
+                    "text": "fields"
+                },
+                { 
+                    "href": "/tables",
+                    "icon": "grid_on", 
+                    "text": "tables"
+                }
+            ]
+        },
+        {
+            "title": "supports",
+            "menu": [
+                {
+                    "href": "/",
+                    "icon": "streetview",
+                    "text": "overview"
+                },
+                { 
+                    "href": "/documentation",
+                    "icon": "menu_book", 
+                    "text": "Documentation"
+                },
+                { 
+                    "href": "/changelog",
+                    "icon": "layers", 
+                    "text": "change log",
+                    "badge": { "text": "v1.0", "variant": "primary square" }
+                }
+            ]
+        }
+    ],
+    "button": { "icon": "lock", "path": "/login", "text": "logout" }
+
+}

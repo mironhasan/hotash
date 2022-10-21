@@ -1,0 +1,19 @@
+{
+    "pageTitle": "product upload",
+    "breadcrumb": [
+        { "path": "/", "text": "home" },
+        { "text": "product" },
+        { "text": "upload" }
+    ],
+    "title": "add new product",
+    "button": { "path": "#", "icon": "visibility", "text": "show all products" },
+    "dotsMenu": {
+        "dots": "more_horiz",
+        "dropdown": [
+            { "icon": "edit", "text": "edit" },
+            { "icon": "delete", "text": "delete" },
+            { "icon": "download", "text": "download" }
+        ]
+    }
+    
+}
