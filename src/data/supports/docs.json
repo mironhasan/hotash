@@ -8,7 +8,7 @@
     "docs": [
         {
             "heading": "01. How to install this react template?",
-            "describe": "First install the <b>LTS</b> version of nodejs from <b>nodejs.org</b>. No need if already installed. Then open the entire project in any terminal and write this command <b>npm install</b> and press the enter button of the keyboard. After <b>node_modules</b> install complete then <b>npm start</b> this command should be run. After a while you can see your project installed and running in your default browser.",
+            "describe": "First install the <b>LTS Version</b> of nodejs from <b>nodejs.org</b>. No need if already installed. Then open the entire project in any terminal and write this command <b>npm install</b> and press the enter button of the keyboard. After <b>node_modules</b> install complete then <b>npm start</b> this command should be run. After a while you can see your project installed and running in your default browser.",
             "images": ["images/docs/npm_install.webp", "images/docs/node.webp", "images/docs/npm_start.webp"]
         },
         {
