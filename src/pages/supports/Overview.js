@@ -50,14 +50,15 @@ export default function Overview() {
             </Section>
             <Section className="mc-overview-footer">
                 <Heading as="h2">Do you want to inquiry about hotash template?</Heading>
-                <Anchor 
-                    href="/" 
+                <a 
+                    href="https://themeforest.net/item/hotash-react-admin-dashboard-template/40188968/support" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    icon="forum" 
-                    text="contact us" 
                     className="mc-btn primary" 
-                />
+                >
+                    <i className="material-icons">forum</i>
+                    <span>contact us</span>
+                </a>
                 <Text>Hotash | © Copyrights by <Text as="span">Mironcoder</Text></Text>
             </Section>
         </Box>

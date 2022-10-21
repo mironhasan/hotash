@@ -32,14 +32,15 @@ export default function Documentation() {
                 ))}
                 <Box className="mc-docs-footer">
                     <Heading>Need to more support?</Heading>
-                    <Anchor 
-                        href="/" 
+                    <a 
+                        href="https://themeforest.net/item/hotash-react-admin-dashboard-template/40188968/support" 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        icon="forum" 
-                        text="contact us" 
                         className="mc-btn primary" 
-                    />
+                    >
+                        <i className="material-icons">forum</i>
+                        <span>contact us</span>
+                    </a>
                 </Box>
             </Box>
         </PageLayout>
